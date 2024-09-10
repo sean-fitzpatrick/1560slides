@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>November 28</title>
+
+  <slide>
+    <title>Antiderivatives (recap)</title>
+    
+    <p>
+      We say a function <m>F(x)</m> is an antiderivative of <m>f(x)</m> if <m>F'(x)=f(x)</m>.
+    </p>
+
+    <p>
+      Antiderivatives are only defined up to a constant, so a general result looks like <m>F(x)+C</m>,
+      where <m>C</m> is some unknown constant.
+    </p>
+
+    <p>
+      We refer to this as an <em>indefinite integral</em>: <m>\int f(x)\,dx = F(x)+C</m>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          If we are given the velocity <m>v(t)</m> of some object,
+          then the position of that object is <m>x(t)=\int v(t)\,dt</m>.
+        </p>
+
+        <p>
+          This only defines <m>x(t)</m> up to a constant, unless we know the value of <m>x</m> at some time.
+        </p>
+
+        <p>
+          If <m>v(t)=15-10t</m> and <m>x(1)=-8</m>, what is <m>x(t)</m>?
+          <ol marker="A.">
+            <li>
+              <p>
+                <m>x(t)=15t-5t^2-8</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>x(t)=15t-10t^2-8</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>x(t)=15t-5t^2-18</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>x(t)=15t-10t^2-18</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </example>
+  </slide>
+
+  <slide>
+    <title>The broken odemeter</title>
+    
+    <p>
+      Note: for constant velocity <m>v</m>, distance travelled is velocity times time: <m>d = vt</m>.
+    </p>
+
+    <p>
+      Note also: the product <m>vt</m> could be interpreted as the area of a rectangle, at least when <m>v,t</m> are both positive.
+    </p>
+
+    <p>
+      Imagine we are driving in a car where the speedometer works, but the odometer is broken,
+      and we want to keep track of how far we've gone. I'm driving, and every minute, you record the following speeds in km/h:
+    </p>
+
+    <tabular>
+      <row>
+        <cell>Time</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>8</cell><cell>9</cell><cell>10</cell>
+      </row>
+      <row>
+        <cell>Speed</cell><cell>60</cell><cell>68</cell><cell>75</cell><cell>81</cell><cell>58</cell><cell>70</cell><cell>74</cell><cell>77</cell><cell>79</cell><cell>82</cell>
+      </row>
+    </tabular>
+
+    <p pause="yes">
+      How far have we gone after 10 minutes?
+    </p>
+
+    <p pause="yes">
+      What would it mean if one of the speeds was negative?
+    </p>
+  </slide>
+
+  <slide>
+    <title>Coming soon: Fundamental Theorem of Calculus</title>
+    
+    <p>
+      Notice that we have two ways of recovering position from velocity:
+      <ol pause="yes">
+        <li>
+          <p>
+            Using an antiderivative
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Calculating (and adding up) areas
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p pause="yes">
+      In the first case, we need to know the velocity function <em>exactly</em>.
+    </p>
+    <p pause="yes">
+      In the second, approximate data is good enough for an estimate.
+    </p>
+
+    <p pause="yes">
+      In the second approach, if it were possible to compute an exact area,
+      the two results would be the same.
+    </p>
+
+    <p pause="yes">
+      This is essentially what the Fundamental Theorem of Calculus says. (Tune in next time.)
+    </p>
+
+    <p pause="yes">
+      First: let's make sense of what we mean by area.
+    </p>
+  </slide>
+
+  <slide>
+    <title>The definite integral (working definition)</title>
+    
+    <p>
+      Let <m>f</m> be a continuous function defined on an interval <m>[a,b]</m>.
+    </p>
+
+    <p>
+      The <term>definite integral</term> of <m>f</m> from <m>a</m> to <m>b</m> is denoted <m>\di \int_a^b f(x)\,dx</m>,
+      and defined to be the <em>total signed area</em> between the graph <m>y=f(x)</m> and the <m>x</m> axis, for <m>a\leq x\leq b</m>.
+    </p>
+
+    <sidebyside widths="50% 40%" margins="auto">
+      <image source="images/area1.png"/>
+
+      <image source="images/area2.png"/>
+    </sidebyside>
+  </slide>
+ 
+  <slide>
+    <title>Time to try it out!</title>
+    
+    <p>
+      What is the value of <m>\di \int_1^4 (6-2x)\,dx</m>?
+    </p>
+
+    <p>
+      Suggestion: sketch the line, and think triangles.
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            3
+          </p>
+        </li>
+
+        <li>
+          <p>
+            5
+          </p>
+        </li>
+
+        <li>
+          <p>
+            9
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>6x-x^2+C</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      Try for yourself: what are the values of the following?
+      <me>
+        \int_1^3 (6-2x)\,dx \quad \int_3^4 (6-2x)\,dx \quad \int_1^2 (6-2x)\,dx \quad \int_1^1 (6-2x)\,dx
+      </me>
+      
+    </p>
+  </slide>
+
+  <slide>
+    <title>Some properties</title>
+    
+    <p>
+      Using our area interpretation of the integral, we obtain the following properties:
+      <ul>
+        <li>
+          <p>
+            <m>\di \int_a^b f(x)\,dx + \int_b^c f(x)\,dx = \int_a^c f(x)\,dx</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\di \int_a^af(x)\,dx = 0</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\di \int_a^b (f(x)+g(x))\,dx = \int_a^b f(x)\,dx + \int_a^b g(x)\,dx</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\di \int_a^b kf(x)\,dx = k\int_a^b f(x)\,dx</m> if <m>k</m> is a constant
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>f(x)\leq g(x)</m> on <m>[a,b]</m>, then <m>\di \int_a^b f(x)\,dx \leq \int_a^b g(x)\,dx</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      It's not quite as obvious based on our area interpretation, but the following property is also useful:
+      <me>
+        \int_b^a f(x) \,dx = -\int_a^b f(x)\,dx
+      </me>.
+      
+    </p>
+  </slide>
+
+  <slide>
+    <title>Using properties</title>
+    
+    <p>
+      Suppose you know the following:
+      <me>
+        \int_1^3 f(x)\,dx = 6, \quad \int_3^4 f(x)\,dx = 3, \quad \int_1^3 g(x)\,dx = -2,\quad \int_1^4 g(x)\,dx = 1
+      </me>.
+      
+    </p>
+
+    <sidebyside widths="45% 10% 45%">
+      <p>
+        What is the value of <m>\di \int_1^4 (f(x)-2g(x))\,dx</m>?
+        <ol marker="A.">
+          <li>
+            <p>
+              10
+            </p>
+          </li>
+
+          <li>
+            <p>
+              7
+            </p>
+          </li>
+
+          <li>
+            <p>
+              8
+            </p>
+          </li>
+
+          <li>
+            <p>
+              4
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Not enough information to solve
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>\phantom{abcdefg}</m>
+      </p>
+
+      <p pause="yes">
+        What is the value of <m>\di \int_3^4(2f(x)+3g(x))\,dx</m>?
+        <ol pause="yes" marker="A.">
+          <li>
+            <p>
+              15
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              9
+            </p>
+          </li>
+
+          <li>
+            <p>
+              22
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Not enough information to solve
+            </p>
+          </li>
+        </ol>
+      </p>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Approximating area with rectangles</title>
+    
+    <p>
+      We only know how to find exact area for a handful of shapes: rectangles, triangles, circles, <etc/>
+    </p>
+
+    <p>
+      The area under <m>y=f(x)</m> is the definite integral, but how do we actually <em>compute</em> these things?
+    </p>
+
+    <p pause="yes">
+      We start by settling for an <em>approximation</em>.
+    </p>
+
+    <p pause="yes">
+      Consider the graph <m>y=10+3x-x^2</m>, on the interval <m>[0,4]</m>.
+    </p>
+
+    <sidebyside widths="40% 10% 40%">
+      <stack pause="yes">
+        <image source="images/area3.png"/>
+      </stack>
+
+      <p>
+        <m>\phantom{abcde}</m>
+      </p>
+      <stack pause="yes">
+        <p pause="yes">
+          Let's try to approximate the integral <m>\int_0^4 f(x)\,dx</m> using 4 rectangles,
+          with bases along the intervals <m>[0,1],[1,2],[2,3],[3,4]</m>.
+          How should we calculate the heights?
+        </p>
+
+        <p pause="yes">
+          Maybe we should <url href="https://www.geogebra.org/m/f2effbwq">let the computer do it</url>.
+        </p>
+      </stack>
+    </sidebyside>
+
+    
+  </slide>
+
+  <slide>
+    <title>Riemann sums</title>
+    
+    <p>
+      The sums we create by adding up areas of rectangles are called <term>Riemann sums</term>,
+      after Bernhard Riemann.
+    </p>
+
+    <p>
+      The general process is as follows. Given <m>f(x)</m> on <m>[a,b]</m>:
+      <ol pause="yes">
+        <li>
+          <p>
+            Divide the interval <m>[a,b]</m> into smaller sub-intervals by choosing points
+            <m>a=x_0\lt x_1\lt x_2\lt\cdots\lt x_n=b</m> (this is called a <term>partition</term>, which we'll label <m>P</m>)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The length of the interval <m>[x_{i-1},x_i]</m> is denoted <m>\Delta x_i = x_i-x_{i-1}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            It is usually convenient to make each sub-interval the same length, in which case
+            <m>\Delta x_i = \dfrac{b-a}{n}</m> (a <term>uniform partition</term>)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            In each interval, choose a point <m>c_i\in [x_{i-1},x_i]</m>,
+            and plug this into your function to get <m>f(c_i)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The area of the <m>i</m>th rectangle is then <m>A_i = f(c_i)\Delta x_i</m>, for <m>i=1,2,\ldots, n</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Adding the areas gives the <term>Riemann sum</term> <m>\di R(f,P) = \sum_{i=1}^nf(c_i)\Delta x_i</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p pause="yes">
+      Common choices for <m>c_i</m> are the left endpoint (<m>c_i=x_{i-1}</m>), the right endpoint (<m>c_i=x_i</m>),
+      or the midpoint (<m>c_i =(x_{i-1}+x_i)/2</m>).
+    </p>
+  </slide>
+
+  <slide>
+    <title>Time for some exercise</title>
+    
+    <p>
+      Let <m>f(x) = 5x-x^2</m>, on <m>[1,3]</m>.
+    </p>
+
+    <p pause="yes">
+      If we want a uniform partition of <m>[1,3]</m> into 4 rectangles, what is the value of <m>\Delta x</m>?
+    </p>
+
+    <p pause="yes">
+      A. <m>2\phantom{abcd}</m> B. <m>1\phantom{abcd}</m> C. <m>0.5\phantom{abcd}</m> D. <m>0.25</m>
+    </p>
+
+    <p pause="yes">
+      If we want to use left endpoints, which points should we use?
+    </p>
+
+    <p pause="yes">
+      A. <m>1.5, 2, 2.5\phantom{abcd}</m> B. <m>1, 1.5, 2, 2.5\phantom{abcd}</m> C. <m>1,1.5,2,2.5,3\phantom{abcd}</m> D. <m>1.5,2,2.5,3</m>
+    </p>
+
+    <p pause="yes">
+      Our Riemann sum is therefore:
+    </p>
+  </slide>
+
+  <slide>
+    <title>Take it to the limit</title>
+    
+    <p>
+      One more time: a Riemann sum lets us approximate a definite integral using rectangles.
+    </p>
+
+    <p>
+      And the more rectangles we use, the better our approximation gets.
+    </p>
+
+    <p>
+      What if we let <m>n\to\infty</m>?
+    </p>
+
+    <p>
+      Given <m>y=f(x)</m>, <m>a\leq x\leq b</m>, we set <m>\Delta x = \dfrac{b-a}{n}</m>, and then:
+      <me>
+        x_0 = a, x_1 = a+\Delta x, x_2 = a+2\Delta x,\cdots,x_i = a+i\Delta x,\cdots, x_n = a+n\Delta x = b
+      </me>
+    </p>
+
+    <p>
+      In the limit, it turns out to not matter how we choose the <m>c_i</m>,
+      so choose <m>c_i=x_i</m> for convenience.
+    </p>
+
+    <p>
+      Then: <m>\di \int_a^b f(x) \,dx = \lim_{n\to\infty}\sum_{i=1}^n f(x_i)\Delta x</m>
+    </p>
+  </slide>
+
+  <slide>
+    <title>In which Sean demonstrates why we don't use Riemann sums every day</title>
+    
+    <p>
+      Use Riemann sums to evaluate the integral <m>\di \int_1^5 (2x-3)\,dx</m>.
+    </p>
+  </slide>
+</section>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>November 7</title>
+
+  <slide>
+    <title>Whooops!</title>
+    
+    <p>
+      The file with the exercises for November 7th got accidentally overwritten!
+    </p>
+
+    <p>
+      This was the day for optimization problems.
+    </p>
+
+    <p>
+      I believe we did:
+      <ul>
+        <li>
+          <p>
+            The minimum surface area of a box with fixed volume, if the length is three times the width
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The area of the largest rectangle that can fit under the parabola <m>y=4-x^2</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            A third problem that I can't seem to remember.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+  
+</section>

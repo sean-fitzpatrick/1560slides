@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>December 5</title>
+
+  <slide>
+    <title>Let's try using the FTC again</title>
+    
+    <p>
+      The value of <m>\di \int_{-1}^1 \frac{1}{x^3}\,dx</m> is:
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>1</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>-1</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>0</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Undefined
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p pause="yes">
+      Remember that the FTC applies to <em>continuous</em> functions.
+    </p>
+
+    <p pause="yes">
+      We can handle jump discontinuities by splitting up the integral,
+      but we can't deal with vertical asymptotes (for now...)
+    </p>
+  </slide>
+
+  <slide>
+    <title>Some other considerations</title>
+    
+    <p>
+      Observations of <m>symmetry</m> can often be useful.
+    </p>
+
+    <p>
+      A function <m>f</m> is <term>even</term> if <m>f(-x)=f(x)</m> for each <m>x</m> in its domain.
+    </p>
+
+    <p>
+      For even functions <m>\di \int_{-a}^a f(x)\,dx = 2\int_0^a f(x)\,dx</m>.
+    </p>
+
+    <p>
+      A function <m>f</m> is <term>odd</term> if <m>f(-x)=-f(x)</m> for each <m>x</m> in its domain.
+    </p>
+
+    <p>
+      For odd functions, <m>\di \int_{-a}^a f(x)\,dx = 0</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>The other part of the FTC</title>
+    
+    <p>
+      I said that the Fundamental Theorem of Calculus has two parts, and we've seen the second.
+    </p>
+
+    <p>
+      What's the first part?
+    </p>
+
+    <p>
+      To use the FTC to evaluate <m>\int_a^b f(x)\,dx</m>, we need an antiderivative.
+      Can we always find one?
+    </p>
+
+    <p>
+      The first part of the FTC says that the answer is <q>yes, but you might not like it</q>.
+    </p>
+
+    <theorem xml:id="thm-ftc1">
+      <statement>
+        <p>
+          Let <m>f</m> be a continuous function on <m>[a,b]</m>.
+        </p>
+
+        <p>
+          Define a function <m>F</m> as follows:
+          <me>
+            F(x) = \int_a^x f(t)\,dt
+          </me>.
+          
+        </p>
+
+        <p>
+          Then <m>F</m> is differentiable on <m>[a,b]</m>, and <m>F'(x)=f(x)</m>.
+        </p>
+      </statement>
+    </theorem>
+    
+  </slide>
+
+  <slide>
+    <title>An exercise</title>
+    
+    <p>
+      Let <m>\di F(x) = \int_1^x 8t^3\,dt</m>
+    </p>
+
+    <p>
+      According to part 1 of the FTC, what is <m>F'(x)</m>?
+    </p>
+
+    <p>
+      A. <m>24t^2\phantom{abcdef}</m> B. <m>24x^2\phantom{abcdef}</m> C. <m>8x^3\phantom{abcdef}</m> D. <m>2x^4</m>
+    </p>
+
+    <p pause="yes">
+      If we use part 2 of the FTC, we can also find <m>\di F(x) = 2t^4\bigr\rvert_1^x = 2x^4-2</m>,
+      so <m>F'(x)=8x^3</m>.
+    </p>
+
+    <p pause="yes">
+      Which method is faster?
+    </p>
+
+    <p pause="yes">
+      What if you had no other way of coming up with an antiderivative?
+    </p>
+  </slide>
+
+  <slide>
+    <title>Some variations on this theme</title>
+    
+    <p>
+      If <m>\di F(x) = \int_0^x (t^2+2t\ln(t^2+1))e^{\sin(t^3)-4t}\,dt</m>,
+      do we have any hope of using the second part of the FTC?
+    </p>
+
+    <p pause="yes">
+      What is <m>F'(x)</m> according to the second part?
+    </p>
+
+    <p pause="yes">
+      What if <m>x</m> is the lower bound?
+    </p>
+
+    <p pause="yes">
+      What if the upper bound is not <m>x</m>, but a <em>function</em> of <m>x</m>?
+    </p>
+
+    <p pause="yes">
+      What if both bounds depend on <m>x</m>?
+    </p>
+  </slide>
+
+  <slide>
+    <title>FTC, part 1: harder problems</title>
+    
+    <p>
+      If <m>\di F(x) = \int_a^x f(t)\,dt</m> and <m>\di G(x) = \int_a^{h(x)}f(t)\,dt</m>, then <m>G(x)=F(h(x))</m>.
+    </p>
+
+    <p>
+      By the chain rule, <m>G'(x)=F'(h(x))h'(x)</m>.
+    </p>
+
+    <p pause="yes">
+      If <m>\di G(x) = \int_2^{\sin(x)}t^2e^{2t}\,dt</m>, what is <m>F'(x)</m>?
+    </p>
+
+    <p pause="yes">
+      A. <m>\int_2^{\cos(x)}t^2e^{2t}\,dt \phantom{abcd}</m> B. <m>(2te^{2t}+2t^2e^{2t})\cos(x) \phantom{abcd}</m> C. <m>\sin^2(x)e^{2\sin(x)}\cos(x)</m>
+    </p>
+
+    <p pause="yes">
+      How about <m>\di \int_{\sin(x)}^{\cos(x)}e^{-t^2}\,dt</m>?
+    </p>
+  </slide>
+
+  <slide>
+    <title>Substitution</title>
+    
+    <p>
+      Speaking of chain rule...
+    </p>
+
+    <p pause="yes">
+      If <m>F(x)=f(g(x))</m>, then <m>F'(x)=f'(g(x))g'(x)</m>. Therefore, <m>\di \int f'(g(x))g'(x)\,dx = f(g(x))+C</m>.
+    </p>
+
+    <p pause="yes">
+      If we write <m>u=g(x)</m>, then <m>du = g'(x)\,dx</m>, so <m>f'(g(x))g'(x)\,dx = f'(u)\,du</m>.
+    </p>
+
+    <p pause="yes">
+      We call this <m>u</m>-substitution.
+    </p>
+
+    <p pause="yes">
+      <em>Example:</em> for the integral <m>\di\int 4x(x^2+4)^7\,dx</m>, we could multiply everything out.
+    </p>
+
+    <p pause="yes">
+      Or... let <m>u=x^2+4</m>. Then <m>du = 2x\,dx</m> (so <m>4x\,dx = 2\,du</m>), and
+      <me>
+        \int 4x(x^2+4)^7\,dx = \int 2u^7\,du
+      </me>.
+      
+    </p>
+  </slide>
+
+  <slide>
+    <title>An exercise</title>
+    
+    <p>
+      Evaluate the indefinite integral <m>\di \int x^2\sin(x^3)\,dx</m>.
+    </p>
+
+    <p>
+      The result:
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>-\frac13\cos(u)+C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>-\frac13\cos(x^3)+C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\frac13\cos(u)+C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\frac13\cos(x^3)+C</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>How do we know when we should use substitution?</title>
+    
+    <p pause="yes">
+      No really, I'm asking you!
+    </p>
+  </slide>
+
+  <slide>
+    <title>Should we use a substitution?</title>
+    
+    <p>
+      Which of the following integrals can be simplified using a <m>u</m>-substitution?
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            <m>\di \int \tan(x)\,dx</m> (remember that <m>\tan(x)=\sin(x)/\cos(x)</m>)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\di \int\sec(x)\,dx</m> (remember that <m>\sec(x)=1/\cos(x)</m>)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\int \sqrt{x^2+1}\,dx</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\int 8x\sqrt{x^2+1}\,dx</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Definite integrals</title>
+    
+    <p>
+      What happens when we use substitution for a definite integral? There are two options:
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            Use substitution on the corresponding <em>indefinite</em> integral, then use the FTC.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Adjust the bounds on your integral as well as the integrand.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p pause="yes">
+      <em>Example:</em> evaluate <m>\di \int_0^3 \frac{4x}{x^2+1}\,dx</m>.
+    </p>
+
+    <p>
+      <ul pause="yes">
+        <li>
+          <p>
+            Option 1: consider <m>\int \frac{4x}{x^2+1}\,dx</m> first.
+            Let <m>u=x^2+1</m>. Then <m>du=2x\,dx</m> and <m>\int \frac{4x}{x^2+1}\,dx = \int\frac{2}{u}\,du = 2\ln\lvert u\rvert +C=2\ln(x^2+1)+C</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Using the FTC, <m>\int_0^3 \frac{4x}{x^2+1}\,dx = 2\ln(x^2+1)\bigr\vert_0^3 = 2\ln(10)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Option 2: adjust bounds. If <m>u=x^2+1</m>, then when <m>x=0</m>, <m>u=0^2+1=1</m>,
+            and when <m>x=3</m>, <m>u=3^2+1=10</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Then <m>\int_0^3\frac{4x}{x^2+1}\,dx = \int_1^{10}\frac{2}{u}\,du = 2\ln\lvert u\rvert\bigr\vert_1^{10} = 2\ln(10)</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+
+  <slide>
+    <title>A definite integral</title>
+    
+    <p>
+      Using the substitution <m>u=\sin(2x)</m>, which of the following integrals is equal to <m>\di \int_0^{\pi/4} e^{\sin(2x)}\cos(2x)\,dx</m>?
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>\di 2\int_0^1 e^u \,du</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\frac12 \int_0^{\pi/4} e^u \,du</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\frac12 \int_0^1 e^u\,du</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>2\int_0^{\pi/4} e^u\,du</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>One more, if there's time</title>
+    
+    <p>
+      Evaluate the integral <m>\di \int_0^3 x\sqrt{x+1}\,dx</m>.
+    </p>
+  </slide>
+</section>

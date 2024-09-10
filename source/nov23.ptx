@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>November 23</title>
+
+  <slide>
+    <title>Antiderivatives</title>
+    
+    <p>
+      A function <m>F(x)</m> is an <term>antiderivative</term> of a function <m>f(x)</m>
+      on an interval <m>I</m> if <m>F'(x) = f(x)</m> for each <m>x</m> in <m>I</m>.
+    </p>
+
+    <p>
+      Examples:
+      <ul>
+        <li>
+          <p>
+            <m>F(x)=e^x</m> is an antiderivative of <m>f(x)=e^x</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>F(x)=\sin(x)</m> is an antiderivative of <m>f(x)=\cos(x)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>F(x)=x^3</m> is an antidervative of <m>f(x)=3x^2</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p pause="yes">
+      Which of the following is an antiderivative of <m>f(x)=x^3</m>?
+      <ol pause="yes" marker="A.">
+        <li>
+          <p>
+            <m>F(x)=3x^2</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>F(x)=4x^4</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>F(x)=\dfrac14 x^4</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>F(x)=\dfrac34 x^4</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+  </slide>
+
+  <slide>
+    <title>A power rule for antiderivatives</title>
+    
+    <p>
+      What is an antiderivative of <m>f(x)=x^n</m>?
+    </p>
+
+    <p>
+      We want <m>F(x)</m> so that <m>F'(x)=x^n</m>.
+    </p>
+
+    <p pause="yes">
+      Guess: <m>F(x)</m> is also a power function. 
+    </p>
+
+    <p pause="yes">
+      What should the power be? What about the coefficient?
+    </p>
+
+    <p pause="yes">
+      We want the opposite of the derivative, so we should <em>add</em> 1 to the power,
+      and <em>divide</em> by the power.
+    </p>
+
+    <p pause="yes">
+      Result: <m>F(x) = \dfrac{1}{n+1}x^{n+1}</m>
+    </p>
+
+    <p pause="yes">
+      Does this work for all values of <m>n</m>?
+    </p>
+  </slide>
+
+  <slide>
+    <title>A suspicious exercise</title>
+    <p>
+      Which of the following functions is an antiderivative of <m>f(x)=2x+3</m>?
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>F(x)=x^2+3x+4</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>F(x)=x^2+3x-7</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>F(x)=x^2+3x+42</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>F(x)=x^2+3x-\pi</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Indefinite integrals</title>
+    
+    <theorem xml:id="thm-anti">
+      <statement>
+        <p>
+          If <m>F(x)</m> and <m>G(x)</m> are both antiderivatives of <m>f(x)</m>,
+          then <m>G(x)=F(x)+C</m> for some constant <m>C</m>.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      This is a consequence of the Mean Value Theorem.
+    </p>
+
+    <definition xml:id="def-indef">
+      <statement>
+        <p>
+          The <term>indefinite integral</term> of a function <m>f</m>,
+          which is denoted by <m>\int f(x)\,dx</m>,
+          represents the <q>most general antiderivative</q> of <m>f</m>.
+        </p>
+
+        <p>
+          That is, <m>\di \int f(x)\,dx = F(x)+C</m>,
+          where <m>F</m> is an antiderivative of  <m>f</m>,
+          and <m>C</m> is any constant.
+          
+        </p>
+      </statement>
+    </definition>
+
+   
+  </slide>
+
+  <slide>
+    <title>An exercise</title>
+    
+    <p>
+      Determine the indefinite integral <m>\di \int (x^5+\cos(x)+3)\,dx</m>
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>5x^4+\sin(x)+3x+C</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\dfrac16 x^6-\sin(x)+3x+C</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\dfrac16 x^6 +\sin(x)+3x</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\dfrac16 x^6 +\sin(x)+3+C</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\dfrac16 x^6 + \sin(x)+3x+C</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>An important antiderivative</title>
+    
+    <p>
+      What is an antiderivative of <m>f(x)=\dfrac1x</m>?
+    </p>
+
+    <p pause="yes">
+      Does your answer work if <m>x\lt 0</m>?
+    </p>
+
+    <p pause="yes">
+      Take a moment: what is the derivative of <m>\ln(-x)</m>? Where is this function defined?
+    </p>
+
+    <p pause="yes">
+      Perhaps you have come up with <m>F(x) = \begin{cases}\ln(x), x\gt 0\\ \ln(-x), x\lt 0\end{cases}</m>.
+      Is there a shorter way to write this?
+    </p>
+  </slide>
+
+  <slide>
+    <title>Initial value problems</title>
+    
+    <p>
+      Suppose we know that <m>f'(x)=3x^2+\sec^2(x)-2</m>, and we want to recover <m>f(x)</m>.
+    </p>
+
+    <p>
+      The most general antiderivative is
+      <me>
+        \int f'(x)\,dx = \int(3x^2+\sec^2(x)-2)\,dx = x^3+\tan(x)-2x+C
+      </me>.
+      
+    </p>
+
+    <p>
+      But what value of <m>C</m> gives us <m>f(x)</m>?
+    </p>
+
+    <p pause="yes">
+      Right now, we can't say. But we only need one more piece of information: 
+      the value of <m>f(x)</m> at a single point. This is called an <term>initial value</term>.
+    </p>
+
+    <p pause="yes">
+      Suppose we are told that <m>f(0)=7</m>. What value of <m>C</m> will satisfy this condition?
+    </p>
+
+  </slide>
+
+  <slide>
+    <title>An initial value problem</title>
+    
+    <p>
+      Find the function <m>f(x)</m> such that <m>f''(x) = 4x^2+3\sin(x)</m>, if <m>f(0)=3</m> and <m>f'(0)=-4</m>.
+    </p>
+
+    <sidebyside widths="44% 10% 44%">
+      <p>
+        First, find <m>f'(x)</m>. The result is:
+        <ol marker="A.">
+          <li>
+            <p>
+              <m>f'(x)=\frac43 x^3+3\cos(x)-4</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f'(x)=\frac43 x^3+3\cos(x)-7</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f'(x)=\frac43 x^3-3\cos(x)-4</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f'(x)=\frac43 x^3-3\cos(x)-1</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>\phantom{123456}</m>
+      </p>
+
+      <p pause="yes">
+        Now find <m>f(x)</m>. We get:
+        <ol pause="yes" marker="A.">
+          <li>
+            <p>
+              <m>f(x) = 4x^2+3\sin(x)+3</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(x) = \frac13 x^4-3\sin(x)-x+3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(x) = \frac13 x^4+3\sin(x)-x+3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(x) = \frac13 x^4-3\sin(x)+2</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>A <q>real world</q> initial value problem</title>
+    
+    <p>
+      A rock is dropped from a 100 metre high cliff.
+      Assuming acceleration due to gravity of <m>-9.8 \text{ m}/\text{s}^2</m>,
+      how long does it take until the rock hits the ground?
+    </p>
+
+    <p>
+      (Assume the rock is dropped at time 0, and the ground is height 0.)
+    </p>
+
+    <p pause="yes">
+      Writing <m>h(t)</m> for the height at time <m>t</m>,
+      our information tells us that <m>h''(t)=-9.8</m>.
+    </p>
+
+    <p pause="yes">
+      What are <m>h(0)</m> and <m>h'(0)</m>?
+    </p>
+
+    <p pause="yes">
+      Now we can solve. <m>h'(t)=-9.8t+C_1</m> for some constant <m>C_1</m>, 
+      and <m>h'(0)=0+C_1=0</m>, so <m>C_1=0</m> and <m>h'(t)=-9.8t</m>.
+    </p>
+
+    <p pause="yes">
+      Then <m>h(t)=-4.9t^2+C_2</m> for some constant <m>C_2</m>,
+      and <m>h(0)=0+C_2=100</m>, so <m>C_2=100</m> and <m>h(t)=100-4.9t^2</m>.
+    </p>
+  </slide>
+</section>

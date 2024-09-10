@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>September 28</title>
+
+
+  
+  <slide>
+    <title>Horizontal asymptotes of rational functions</title>
+    
+    <p>
+      A <term>rational function</term> looks like
+      <me>
+        f(x) = \frac{a_mx^m+a_{m-1}x^{m-1}+\cdots+a_1x+a_0}{b_nx^n+b_{n-1}x^{n-1}+\cdots + b_1x+b_0}
+      </me>.
+      (<m>f(x)</m> is the ratio of two polynomials)
+    </p>
+
+    <p>
+      For any rational function:
+      <ol>
+        <li>
+          <p>
+            If <m>m\gt n</m>, there is no horizontal asymptote
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>m\lt n</m>, the horizontal asymptote is <m>y=0</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>m=n</m>, the horizontal asymptote is <m>y=\dfrac{a_n}{b_n}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>An interesting limit</title>
+
+    <p>
+      For the function <m>f(x)=\dfrac{x}{\sqrt{x^2+1}}</m>:
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>\lim\limits_{x\to \infty}f(x)=1</m> and <m>\lim\limits_{x\to -\infty}f(x)=1</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\lim\limits_{x\to \infty}f(x)=1</m> and <m>\lim\limits_{x\to -\infty}f(x)=-1</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\lim\limits_{x\to \infty}f(x)=0</m> and <m>\lim\limits_{x\to -\infty}f(x)=0</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+    
+    
+  </slide>
+
+  <slide>
+    <title>Understanding asymptotes</title>
+    
+    <p>
+      Which of the following is true?
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            The graph of a function cannot cross either a vertical asymptote or a horizontal asymptote
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The graph of a function cannot cross a horizontal asymptote, but it can cross a vertical asymptote
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The graph of a function cannot cross a vertical asymptote, but it can cross a horizontal asymptote
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The graph of a function can cross both a horizontal asymptote and a vertical asymptote
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Average speed</title>
+    
+    <p>
+      An object is flying straight upwards. Its height is measured as follows:
+    </p>
+
+    <tabular>
+      <row>
+        <cell>time <m>t</m> (seconds)</cell><cell>1</cell><cell>1.25</cell><cell>1.5</cell><cell>1.75</cell><cell>2</cell><cell>2.25</cell><cell>2.5</cell><cell>2.75</cell><cell>3</cell>
+      </row>
+      <row>
+        <cell>height <m>f(t)</m> (metres)</cell><cell>8</cell><cell>12</cell><cell>17</cell><cell>25</cell><cell>35</cell><cell>43</cell><cell>50</cell><cell>55</cell><cell>59</cell>
+      </row>
+    </tabular>
+
+    
+      <p>
+        What is the average speed on the interval <m>[1.75,2]</m>?
+      </p>
+
+      
+      <p pause="yes">
+        What is the average speed on the interval <m>[2,2.25]</m>?
+      </p>
+
+    <p pause="yes">
+      What is your best guess for the instanteuous speend when <m>t=2</m>?
+    </p>
+  </slide>
+
+  <slide>
+    <title>Slope: average rate of change</title>
+    
+    <sidebyside widths="50% 50%">
+      <p>
+        For the function <m>f</m> whose graph is shown,
+        what is the average rate of change on the interval <m>[1,4]</m>?
+        <ol marker="A.">
+          <li>
+            <p>
+              6
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>-6</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              2
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>-2</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <image source="images/Se28Q1.png" width="100%">
+        <description></description>
+      </image>
+    </sidebyside>
+
+    <p pause="yes">
+      What if we used the interval <m>[1,3]</m>? Or <m>[1,2]</m>? Or <m>[1,1.1]</m>? Or <m>[0.9,1]</m>?
+    </p>
+
+    <p pause="yes">
+      <url href="https://www.geogebra.org/calculator/u768yf86">Let's try it out!</url>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Secant lines</title>
+    
+    <p>
+      Given a graph <m>y=f(x)</m> and two points <m>(a,f(a)), (b,f(b))</m> on the graph,
+      the through those points is called a <term>secant line</term>.
+    </p>
+
+    <p>
+      The secant line has slope
+      <me>
+        m = \frac{f(b)-f(a)}{b-a}
+      </me>.
+      
+    </p>
+
+    <p>
+      If we let <m>\Delta x = b-a</m>, then <m>b=a+\Delta x</m> and
+      <me>
+        m = \frac{f(a+\Delta x)-f(a)}{\Delta x} = \frac{\Delta y}{\Delta x}
+      </me>.
+      
+    </p>
+  </slide>
+
+  <slide>
+    <title>Tangent lines</title>
+    
+    <p>
+      The <term>tangent</term> line at a point <m>(a,f(a))</m> on a graph <m>y=f(x)</m>
+      is the line with slope given by
+      <me>
+        m = f'(a) = \lim_{h\to 0}\frac{f(a+h)-f(a)}{h}
+      </me>.
+      
+    </p>
+
+    <p>
+      The slope <m>f'(a)</m> (read f prime at a) is called the <term>derivative</term> of <m>f</m> at <m>a</m>.
+    </p>
+
+    <p pause="yes">
+      Notice that this is the same calculation we'd use to find instantaneous velocity.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Computing a derivative</title>
+    
+    <p>
+      Let <m>f(x)=x^2+3x</m>. Compute the derivative <m>f'(2)</m> by evaluating the limit
+      <me>
+        \lim_{h\to 0}\frac{f(2+h)-f(2)}{h}
+      </me>.
+      
+    </p>
+
+    <p>
+      The value of <m>f'(2)</m> is:
+      <ol marker="A.">
+        <li>
+          <p>
+            1
+          </p>
+        </li>
+
+        <li>
+          <p>
+            7
+          </p>
+        </li>
+
+        <li>
+          <p>
+            3
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Undefined
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>The derivative as a function</title>
+    
+    <p>
+      By varying the point at which we compute the derivative, we can define a new function <m>f'(x)</m>,
+      the <term>derivative</term> of <m>f</m>:
+      <me>
+        f'(x) = \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
+      </me>.
+      
+    </p>
+
+    <p>
+      For the function <m>f(x)=x^2+3x</m>, the derivative <m>f'(x)</m> is:
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>2x+3</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            3
+          </p>
+        </li>
+
+        <li>
+          
+          <p>
+            1
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Undefined
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>The tangent line</title>
+    
+    <p>
+      To find the equation of the tangent line, we use the point-slope formula:
+    </p>
+
+    <p>
+      The equation of the line through <m>(x_0,y_0)</m> with slope <m>m</m> is
+      <me>
+        y=y_0+m(x-x_0)
+      </me>.
+      
+    </p>
+
+    <p>
+      For the tangent line through <m>(a,f(a))</m> with slope <m>f'(a)</m>,
+      this becomes
+      <me>
+        y=f(a)+f'(a)(x-a)
+      </me>.
+      
+    </p>
+
+    <p>
+      The equation of the tangent line to <m>y=x^2+3x</m> when <m>x=2</m> is:
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>y=7x+10</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>y=x^2+3x+(2x+3)x</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>y=10+7(x-2)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>y=7+10(x-2)</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>A harder example</title>
+    
+    <p>
+      Find <m>f'(x)</m> for the function <m>f(x)=\dfrac{1}{\sqrt{x+3}}</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>A trig example</title>
+    
+    <p>
+      Find <m>f'(x)</m> for the function <m>f(x)=\cos(x)</m>.
+    </p>
+  </slide>
+</section>

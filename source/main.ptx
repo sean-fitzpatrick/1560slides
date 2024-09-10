@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--********************************************************************
+Copyright 2019 Robert A. Beezer
+This file is part of PreTeXt.
+PreTeXt is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+PreTeXt is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+
+    <docinfo>
+        <macros>
+        \newcommand{\abs}[1]{\left\lvert #1\right\rvert}
+        \newcommand{\di}{\displaystyle}
+        </macros>
+
+        <latex-image-preamble>
+            \usepackage{pgfplots}
+            \usepackage{tikz-cd}
+            \usetikzlibrary{positioning,matrix,arrows,arrows.meta}
+        
+            \usetikzlibrary{shapes,decorations,shadows,fadings}
+            \usepgfplotslibrary{fillbetween,decorations.softclip,polar}
+        
+            \usepackage{tkz-euclide}
+            %\usetkzobj{all}
+            %%% uncomment above line if on TeXLive 2017 or earlier %%%
+        
+            \colorlet{firstcolor}{blue}
+            \colorlet{secondcolor}{red}
+            \pgfplotsset{firstcurvestyle/.style={color=firstcolor,mark=none,ultra thick,{Kite}-{Kite},solid,fill=firstcolor!50,fill=none}}
+            \pgfplotsset{secondcurvestyle/.style={color=secondcolor,mark=none,ultra thick,{Kite}-{Kite},dashdotted,fill=secondcolor!50,fill=none}}
+            \pgfplotsset{openinterval/.style={color=black,mark=none,ultra thick,{Circle[open]}-{Circle[open]}}}
+            \pgfplotsset{closedinterval/.style={color=black,mark=none,ultra thick,{Circle}-{Circle}}}
+        
+            \pgfplotscreateplotcyclelist{curvestylelist}{%
+              firstcurvestyle\\%
+              secondcurvestyle\\%
+              thirdcurvestyle\\%
+            }
+        
+            %To disable arrows, edit these and the above lines accordingly
+            \pgfplotsset{leftarrow/.style={{Kite}-}}
+            \pgfplotsset{rightarrow/.style={-{Kite}}}
+        
+            % Redefine these to be empty to turn off axis discontinuities
+            \pgfplotsset{xdiscontinuity/.style={axis x discontinuity=parallel}}
+            \pgfplotsset{ydiscontinuity/.style={axis y discontinuity=crunch}}
+        
+            \pgfplotsset{hollowdot/.style={color=firstcolor,fill=white,only marks,mark=*, mark size=6pt}}
+            \pgfplotsset{soliddot/.style={color=firstcolor,fill=firstcolor,only marks,mark=*, mark size=6pt}}
+            \pgfplotsset{squaremark/.style={color=black,fill=black,only marks,mark size=12pt,mark=square*}}
+        
+            \pgfplotsset{open/.style={firstcurvestyle,{Circle[open]}-{Circle[open]}}}
+            \pgfplotsset{openclosed/.style={firstcurvestyle,{Circle[open]}-{Circle}}}
+            \pgfplotsset{closed/.style={firstcurvestyle,{Circle}-{Circle}}}
+            \pgfplotsset{closedopen/.style={firstcurvestyle,{Circle}-{Circle[open]}}}
+            \pgfplotsset{infiniteopen/.style={firstcurvestyle,{Kite}-{Circle[open]}}}
+            \pgfplotsset{openinfinite/.style={firstcurvestyle,{Circle[open]}-{Kite}}}
+            \pgfplotsset{infiniteclosed/.style={firstcurvestyle,{Kite}-{Circle}}}
+            \pgfplotsset{closedinfinite/.style={firstcurvestyle,{Circle}-{Kite}}}
+            \pgfplotsset{infinite/.style={firstcurvestyle,{Kite}-{Kite}}}
+            \pgfplotsset{infiniteleft/.style={firstcurvestyle,{Kite}-}}
+            \pgfplotsset{infiniteright/.style={firstcurvestyle,-{Kite}}}
+            \pgfplotsset{openleft/.style={firstcurvestyle,{Circle[open]}-}}
+            \pgfplotsset{openright/.style={firstcurvestyle,-{Circle[open]}}}
+            \pgfplotsset{closedleft/.style={firstcurvestyle,{Circle}-}}
+            \pgfplotsset{closedright/.style={firstcurvestyle,-{Circle}}}
+        
+            \pgfplotsset{every axis/.append style = {
+              cycle list name = curvestylelist,
+              %tick label style = {font = \Large},
+              axis x line = middle,
+              axis y line = middle,
+              xlabel = {$x$},
+              ylabel = {$y$},
+              %x label style = {font = \Large},
+              %y label style = {font = \Large},
+              minor x tick num = 1,
+              minor y tick num = 1,
+              %width = {ifthenelse(.9\linewidth&gt;240pt,240pt,.9\linewidth)},
+              name=myplot,
+            }}
+        
+            \pgfplotsset{numberline/.style = {
+              xmin=-10,xmax=10,
+              minor xtick={-11,-10,...,11},
+              xtick={-10,-5,...,10},
+              axis y line=none,
+              every axis x label/.style={at={(current axis.right of origin)},anchor=west},
+              y=15pt,
+              axis lines=middle,
+              enlarge x limits,
+              xlabel={},
+              grid=none,
+              clip=false,
+              axis background/.style={},
+            }}
+        </latex-image-preamble>
+
+    </docinfo>
+
+    <slideshow>
+        <title>Activities for Math 1560</title>
+        <subtitle>Fall 2024</subtitle>
+
+        <frontmatter>
+            <titlepage>
+                <author>
+                    <personname>Sean Fitzpatrick</personname>
+                    <institution>University of Lethbridge</institution>
+                </author>
+                <!-- <event>At a Test Conference</event> -->
+                <!-- <date><today/></date> -->
+            </titlepage>
+
+            <!-- <abstract>
+                <p>An <tag>abstract</tag> can appear on an early slide, optionally.  This is a standard component of a <pretext/> <tag>article</tag> (but not of a <tag>book</tag>).</p>
+
+                <p>This is a second paragraph of the abstract for this wonderful talk, just so we have something a bit more substantial.</p>
+            </abstract> -->
+        </frontmatter>
+
+        <xi:include href="./sept10.ptx"/>
+        <!-- <xi:include href="./sept12.ptx"/> -->
+        <!-- <xi:include href="./sept17.ptx"/> -->
+        <!-- <xi:include href="./sept19.ptx"/> -->
+        <!-- <xi:include href="./sept24.ptx"/> -->
+        <!-- <xi:include href="./sept26.ptx"/> -->
+        <!-- <xi:include href="./oct1.ptx"/> -->
+        <!-- <xi:include href="./oct3.ptx"/> -->
+        <!-- <xi:include href="./oct8.ptx"/> -->
+        <!-- <xi:include href="./oct10.ptx"/> -->
+        <!-- <xi:include href="./oct15.ptx"/> -->
+        <!-- <xi:include href="./oct17.ptx"/> -->
+        <!-- <xi:include href="./oct22.ptx"/> -->
+        <!-- <xi:include href="./oct24.ptx"/> -->
+        <!-- <xi:include href="./oct29.ptx"/> -->
+        <!-- <xi:include href="./oct31.ptx"/> -->
+        <!-- <xi:include href="./nov5.ptx"/> -->
+        <!-- <xi:include href="./nov7.ptx"/> -->
+        <!-- <xi:include href="./nov19.ptx"/> -->
+        <!-- <xi:include href="./nov21.ptx"/> -->
+        <!-- <xi:include href="./nov26.ptx"/> -->
+        <!-- <xi:include href="./nov28.ptx"/> -->
+        <!-- <xi:include href="./dec03.ptx"/> -->
+    </slideshow>
+</pretext>

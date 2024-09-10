@@ -1,0 +1,10 @@
+Here is a snippet you can use:
+div[style*="display:table-cell"] img[src$=".svg"] {
+    width: 100%;
+}
+
+This part is optional limits it to sidebysides:
+div[style*="display:table-cell"]
+
+This part makes it only affect files with the extension svg
+img[src$=".svg"]

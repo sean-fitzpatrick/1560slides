@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>September 19</title>
+
+  <slide>
+    <title>Warm-up: a 0/0 limit</title>
+    
+    <p>
+      What is the value of <m>\lim\limits_{x\to 4}\dfrac{x^3-4x^2}{x^3-16x}</m>?
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            Undefined
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\frac12</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            1
+          </p>
+        </li>
+
+        <li>
+          <p>
+            2
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Other algebraic techniques</title>
+    
+    <ul>
+      <li>
+        <p>
+          Common denominators. E.g.
+          <me>
+            \lim_{x\to 1}\frac{\frac1x-x}{x^2-1}
+          </me>
+          
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Rationalizing. E.g.
+          <me>
+            \lim_{x\to 4}\frac{x^2-5x+4}{2-\sqrt{x}}
+          </me>
+          
+        </p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>A trigonometric limit</title>
+    
+    <p>
+      The limit <m>\lim\limits_{x\to 0}\dfrac{\sin(2x)}{x}</m> is a <m>0/0</m> limit.
+    </p>
+    <p>
+      Which of the following is a valid first step? 
+    </p>
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            Factor out the 2 to get <m>2\sin(x)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Cancel the <m>x</m> in the numerator with the <m>x</m> in the denominator
+          </p>
+        </li>
+        <li>
+          <p>
+            Multiply numerator and denominator by 2
+          </p>
+        </li>
+        <li>
+          <p>
+            Put your calculator in degrees mode
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Piecewise-defined functions</title>
+    
+    <p>
+      Sometimes we need to work with functions that are defined differently on different parts of their domain.
+    </p>
+
+    <p>
+      Applications include more than just providing examples for calculus class,
+      including <url href="https://en.wikipedia.org/wiki/Ultraviolet_index">UV index</url>
+      and your taxes.
+    </p>
+
+    <p>
+      For the piecewise-defined function <m>f(x) = \begin{cases}2-x, \amp x\lt -1\\ 1+x^2, \amp -1\leq x\lt 2\\ \sin(\pi x),\amp x\geq 2\end{cases}</m>:
+    </p>
+
+    <sidebyside widths="40% 20% 40%">
+      <p>
+        What is the value of <m>f(0)</m>?
+        <ol marker="A.">
+          <li>
+            <p>
+              2
+            </p>
+          </li>
+          <li>
+            <p>
+              0
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>-1</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              1
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>\phantom{ajdflkdsajfalsdks}</m>
+      </p>
+
+      <p>
+        What is the value of <m>f(2)</m>?
+        <ol marker="A.">
+          <li>
+            <p>
+              2
+            </p>
+          </li>
+
+          <li>
+            <p>
+              0
+            </p>
+          </li>
+
+          <li>
+            <p>
+              5
+            </p>
+          </li>
+
+          <li>
+            <p>
+              1
+            </p>
+          </li>
+        </ol>
+      </p>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>The absolute value is piecewise-defined</title>
+    
+    <p>
+      You may have learned that the function <m>\abs{x}</m> measures <q>distance from 0</q>:
+    </p>
+
+    <p>
+      If <m>x\gt 0</m>, then <m>\abs{x}=x</m>. If <m>x\lt 0</m>, then <m>\abs{x}=-x</m>.
+    </p>
+
+    <p>
+      Which of the following functions is equivalent to <m>f(x)=\abs{x-2}</m>?
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>f(x) = \begin{cases}x-2, \amp x\geq 2\\ 2-x, \amp x\lt 2\end{cases}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f(x) = \begin{cases}x-2, \amp x\geq 0\\ 2-x, \amp x\lt 0\end{cases}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f(x) = \begin{cases}x, \amp x\geq 2\\ -x, \amp x\lt 2\end{cases}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>One-sided limits</title>
+    
+    <p>
+      For piecewise-defined functions, it may be the case that the values of <m>f(x)</m> 
+      on one side of <m>x=c</m> are nowhere near the values of <m>f(x)</m> on the other side.
+    </p>
+
+    <p>
+      In this case, <m>\lim\limits_{x\to c}f(x)</m> doesn't exist.
+    </p>
+
+    <p>
+      But we might still be able to talk about limits <q>from the left</q> or <q>from the right</q>.
+    </p>
+
+    <p>
+      The <em>left-hand limit</em>
+      <me>\lim\lim_{x\to c^-}f(x)=L</me> 
+      means that <m>f(x)</m> is close to <m>L</m> when <m>x</m> is close to <m>c</m>
+      <alert>and</alert> <m>x\lt c</m>.
+    </p>
+
+    <p>
+      The <em>right-hand limit</em>
+      <me>\lim_{x\to c^+}f(x)=L</me> 
+      means that <m>f(x)</m> is close to <m>L</m> when <m>x</m> is close to <m>c</m>
+      <alert>and</alert> <m>x\gt c</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Finding one-sided limits (graph)</title>
+    
+    <sidebyside widths="50% 50%">
+      <p>
+        For the graph on the right:
+        <ol marker="A.">
+          <li>
+            <p>
+              The left-hand limit is 3 and the right-hand limit is 3.
+            </p>
+          </li>
+          <li>
+            <p>
+              The left-hand limit is 1 and the right-hand limit is 3.
+            </p>
+          </li>
+          <li>
+            <p>
+              The left-hand limit is 3 and the right-hand limit is 1.
+            </p>
+          </li>
+          <li>
+            <p>
+              The left-hand limit is 1 and the right-hand limit is 1.
+            </p>
+          </li>
+          <li>
+            <p>
+              The left-hand limit is 3 and the right-hand limit does not exist.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <image source="images/Se19.svg">
+        <description></description>
+      </image>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Finding one-sided limits (formula)</title>
+    
+    <p>
+      Let <m>f(x) = \begin{cases}4-x^2,\amp x\lt 3\\ 2x-5,\amp x\geq 3\end{cases}</m>.
+    </p>
+
+    <p>
+      To compute the left-hand limit <m>\lim\limits_{x\to 3^-}f(x)</m>:
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            We plug in <m>x=2.99</m>, since that's a little less than 3.
+          </p>
+        </li>
+        <li>
+          <p>
+            We plug in <m>3.01</m>, since that's a little more than 3.
+          </p>
+        </li>
+        <li>
+          <p>
+            We set <m>f(x)=4-x^2</m>, since <m>x\lt 3</m>, and take the limit as <m>x\to 3</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            We set <m>f(x)=2x-5</m>, since <m>x\gt 3</m>, and take the limit as <m>x\to 3</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            We plug in <m>x=3</m>, since the limit is the same as <m>f(3)</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>The key theorem</title>
+    
+    <theorem>
+      <statement>
+        <p>
+          Let <m>f(x)</m> be defined for all <m>x</m> in an open interval containing <m>c</m>,
+          except possibly not at <m>x=c</m>. Then
+          <me>
+            \lim_{x\to c}f(x) = L
+          </me>
+          if and only if
+          <me>
+            \lim_{x\to c^-}f(x) = L \quad \text{ and } \quad \lim_{x\to c^+}f(x) = L
+          </me>.
+          
+        </p>
+      </statement>
+    </theorem>
+    
+  </slide>
+
+  <slide>
+    <title>Existence of limits</title>
+    
+    <p>
+      The graph of a function <m>f(x)</m> is shown on the right.
+      At what point(s) <m>c</m> does <m>\lim\limits_{x\to c}f(x)</m> exist?
+    </p>
+
+    <sidebyside widths="40% 20% 40%">
+      <p>
+        <ol marker="A.">
+          <li>
+            <p>
+              At <m>-2</m> and <m>-1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              At <m>-2</m> and <m>1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              At <m>-2</m>, <m>-1</m>, and <m>1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Only at <m>-2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              At none of <m>-2</m>, <m>-1</m>, or <m>1</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>\phantom{abcsadfadfae}</m>
+      </p>
+
+      <image source="images/Se192.svg">
+        <description></description>
+      </image>
+    </sidebyside>
+  </slide>
+</section>

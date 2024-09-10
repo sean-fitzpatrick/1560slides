@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>September 21</title>
+
+  <slide>
+    <title>Finding one-sided limits (formula)</title>
+    
+    <p>
+      Let <m>f(x) = \begin{cases}4-x^2,\amp x\lt 3\\ 2x-5,\amp x\geq 3\end{cases}</m>.
+    </p>
+
+    <p>
+      To compute the left-hand limit <m>\lim\limits_{x\to 3^-}f(x)</m>:
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            We plug in <m>x=2.99</m>, since that's a little less than 3.
+          </p>
+        </li>
+        <li>
+          <p>
+            We plug in <m>3.01</m>, since that's a little more than 3.
+          </p>
+        </li>
+        <li>
+          <p>
+            We set <m>f(x)=4-x^2</m>, since <m>x\lt 3</m>, and take the limit as <m>x\to 3</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            We set <m>f(x)=2x-5</m>, since <m>x\gt 3</m>, and take the limit as <m>x\to 3</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            We plug in <m>x=3</m>, since the limit is the same as <m>f(3)</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>The key theorem</title>
+    
+    <theorem>
+      <statement>
+        <p>
+          Let <m>f(x)</m> be defined for all <m>x</m> in an open interval containing <m>c</m>,
+          except possibly not at <m>x=c</m>. Then
+          <me>
+            \lim_{x\to c}f(x) = L
+          </me>
+          if and only if
+          <me>
+            \lim_{x\to c^-}f(x) = L \quad \text{ and } \quad \lim_{x\to c^+}f(x) = L
+          </me>.
+          
+        </p>
+      </statement>
+    </theorem>
+    
+  </slide>
+
+  <slide>
+    <title>Existence of limits</title>
+    
+    <p>
+      The graph of a function <m>f(x)</m> is shown on the right.
+      At what point(s) <m>c</m> does <m>\lim\limits_{x\to c}f(x)</m> exist?
+    </p>
+
+    <sidebyside widths="40% 20% 40%">
+      <p>
+        <ol marker="A.">
+          <li>
+            <p>
+              At <m>-2</m> and <m>-1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              At <m>-2</m> and <m>1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              At <m>-2</m>, <m>-1</m>, and <m>1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Only at <m>-2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              At none of <m>-2</m>, <m>-1</m>, or <m>1</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>\phantom{abcsadfadfae}</m>
+      </p>
+
+      <image source="images/Se192.svg">
+        <description></description>
+      </image>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Continuity</title>
+    
+    <definition>
+      <statement>
+        <p>
+          A function <m>f</m> is continuous at a point <m>c</m> if
+          <me>
+            \lim_{x\to c}f(x) = f(c)
+          </me>.          
+        </p>
+
+        <p>
+          <m>f</m> is continuous on an open interval <m>(a,b)</m>
+          if it is continuous at each point in the interval.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Buried in this equation:
+      <ul>
+        <li>
+          <p>
+            <m>f(x)</m> is defined for all <m>x</m> close to <m>c</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\lim\limits_{x\to c}f(x)</m> exists
+          </p>
+
+          <p>
+            (So the left and right hand limits must be the same.)
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f(c)</m> is defined
+          </p>
+        </li>
+        <li>
+          <p>
+            The limit at <m>c</m> (which exists) must be equal to the value of <m>f(c)</m> (which is defined)
+          </p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Some everyday functions</title>
+    
+    <p>
+      Which of the following would best be modelled by a continuous function of time?
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            The enrollment in this course.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The outdoor temperature.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The outdoor temperature, rounded to the nearest degree.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The number of subscribers to Sean's YouTube channel.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Continuity, graphically</title>
+    
+    <sidebyside widths="45% 10% 45%">
+      <p>
+        The graph of a function is shown on the right.
+        At what points is the function not continuous?
+        <ol marker="A.">
+          <li>
+            <p>
+              At <m>x=-2</m> only
+            </p>
+          </li>
+
+          <li>
+            <p>
+              At <m>x=-2</m> and <m>x=3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              At <m>x=-2</m> and <m>x=2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              At <m>x=-2</m>, <m>x=2</m>, and <m>x=3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              At <m>x=-2</m>, <m>x=0</m>, <m>x=2</m>, and <m>x=3</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>\phantom{abcdefghij}</m>
+      </p>
+
+      <image source="images/T1Q1.png" width="100%">
+        <description></description>
+      </image>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Continuity at endpoints</title>
+    
+    <p>
+      Notice that I didn't give <m>x=-4</m> or <m>x=6</m> as options in the last problem.
+    </p>
+
+    <p>
+      If <m>f</m> is defined on a <em>closed</em> interval <m>[a,b]</m>,
+      how do we define continuity at <m>a</m> and <m>b</m>?
+    </p>
+  </slide>
+
+  <slide>
+    <title>Properties of continuous functions</title>
+    
+    <p>
+      The following functions are continuous on their domains:
+      <ul>
+        <li>
+          <p>
+            polynomial and rational functions
+          </p>
+        </li>
+        <li>
+          <p>
+            radical (root) functions
+          </p>
+        </li>
+
+        <li>
+          <p>
+            trig functions: <m>\sin(x),\cos(x),\tan(x),\csc(x),\sec(x),\cot(x)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            exponential functions: <m>e^x, 2^x, 10^x</m>, <etc/>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            logarithms: <m>\ln(x), \log_2(x), \log_{10}(x)</m>, <etc/>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Note: some of these functions hav vertical asymptotes. 
+      These are points of discontinuity, but they are not in the domain.
+    </p>
+
+    <theorem>
+      <statement>
+        <p>
+          If <m>f</m> and <m>g</m> are continuous functions, then so are
+          <m>
+            f+g, f-g, fg, f/g, \,\text{ and } f\circ g
+          </m>.          
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      Note that <m>f\circ g</m> denotes composition: <m>f\circ g(x) = f(g(x))</m>.
+    </p>
+    
+  </slide>
+
+  <slide>
+    <title>Checking continuity</title>
+    
+    <p>
+      Let <m>f(x) = \begin{cases}2x+x^2, \amp x\lt 1\\ 4-x, \amp x\geq 1\end{cases}</m>
+    </p>
+
+    <p>
+      Which of the following is true?
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>f</m> is continuous at 0 and 1.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f</m> is continuous at 0, but not at 1.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f</m> is continuous at 1, but not at 0.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f</m> is not continuous at either 0 or 1.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p pause="yes">
+      How does our method for checking at 0 differ from the method for checking at 1?
+    </p>
+  </slide>
+
+  <slide>
+    <title>Setting a parameter</title>
+
+    <p>
+      Consider the function <m>f(x) = \begin{cases}5x+c,\amp x\leq 2\\ cx^2+2,\amp x\gt 2\end{cases}</m>.
+    </p>
+    
+    <p>
+      For what value of <m>c</m> is <m>f</m> continuous at <m>2</m>?
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>5/2</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>8/3</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\sqrt{2}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Not possible to solve for <m>c</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Answer was a fraction, therefore it doesn't exist
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Types of discontinuity</title>
+    
+    <p>
+      There are many ways that a function can fail to be continuous at a point.
+    </p>
+
+    <p>
+      Some of these are common enough that they have names:
+      <ol>
+        <li>
+          <p>
+            A function <m>f</m> has a <term>jump discontinuity</term> at <m>c</m> if
+            <me>
+              \lim_{x\to c^-}f(x) \neq \lim_{x\to c^+}f(x)
+            </me>
+            
+          </p>
+        </li>
+        <li>
+          <p>
+            A function <m>f</m> has a <term>removeable discontinuity</term> at <m>c</m>
+            if <m>\lim\limits_{x\to c}f(x)</m> exists, but does not equal <m>f(c)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            A function <m>f</m> has an <term>infinite discontinuity</term> at <m>c</m>
+            if it has a vertical asymptote <m>x=c</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Classifying discontinuities</title>
+    
+    <p>
+      What type of discontinuity does each function have?
+    </p>
+
+    <sidebyside widths="30% 30% 30%">
+      <p>
+        <m>f(x) = \dfrac{\abs{x}}{x}</m>, at <m>x=0</m> <m>\phantom{afjlskdafjadslfjad}</m>
+        <ol marker="A.">
+          <li>
+            <p>
+              removeable
+            </p>
+          </li>
+          <li>
+            <p>
+              jump
+            </p>
+          </li>
+          <li>
+            <p>
+              infinite
+            </p>
+          </li>
+          <li>
+            <p>
+              there is no discontinuity
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>f(x) = \dfrac{\sin(x)}{x}</m>, at <m>x=0</m> <m>\phantom{afjlskdafjadslfjad}</m>
+        <ol marker="A.">
+          <li>
+            <p>
+              removeable
+            </p>
+          </li>
+          <li>
+            <p>
+              jump
+            </p>
+          </li>
+          <li>
+            <p>
+              infinite
+            </p>
+          </li>
+          <li>
+            <p>
+              there is no discontinuity
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>f(x) = \dfrac1x</m>, at <m>x=0</m> <m>\phantom{afjlskdafjadslfjad}</m>
+        <ol marker="A.">
+          <li>
+            <p>
+              removeable
+            </p>
+          </li>
+          <li>
+            <p>
+              jump
+            </p>
+          </li>
+          <li>
+            <p>
+              infinite
+            </p>
+          </li>
+          <li>
+            <p>
+              there is no discontinuity
+            </p>
+          </li>
+        </ol>
+      </p>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Intermediate Value Theorem</title>
+    
+    <theorem>
+      <statement>
+        <p>
+          Let <m>f</m> be a continuous function on an interval <m>[a,b]</m>,
+          and suppose that <m>f(a)\lt f(b)</m>.
+        </p>
+
+        <p>
+          Then for every <m>y</m> such that <m>f(a)\lt y\lt f(b)</m>,
+          there is some <m>x\in (a,b)</m> such that <m>f(x)=y</m>.
+        </p>
+      </statement>
+    </theorem>
+    
+  </slide>
+</section>

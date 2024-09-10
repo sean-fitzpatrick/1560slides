@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>November 2</title>
+
+  <slide>
+    <title>Concavity</title>
+    
+    <p>
+      The <q>concavity of a graph</q> has to do with its curvature:
+      in what way does the graph deviate from a straight line?
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            If the graph of a function <m>f</m> curves upward, we say it is <term>concave up</term>.
+            <ul>
+              <li>
+                <p>
+                  When the graph of <m>f</m> is concave up, secant lines lie <em>above</em> the graph,
+                  and tangent lines (where they exist) lie <em>below</em> the graph.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  If <m>f''(x)\gt 0</m> on an interval <m>I</m>, the graph of <m>f</m> is concave up on <m>I</m>
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If the graph of a function <m>f</m> curves downward, we say it is <term>concave down</term>.
+            <ul>
+              <li>
+                <p>
+                  When the graph of <m>f</m> is concave down, secant lines lie <em>below</em> the graph,
+                  and tangent lines (where they exist) lie <em>above</em> the graph.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  If <m>f''(x)\lt 0</m> on an interval <m>I</m>, the graph of <m>f</m> is concave down on <m>I</m>
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      A point <m>c</m> where the graph of <m>f</m> changes concavity is called an <term>inflection point</term>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Finding intervals of concavity</title>
+    
+    <p>
+      Find the interval(s) on which the graph of <m>f(x)=x^4-4x^3</m> is concave down.
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>(-\infty, 3)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(3,\infty)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(0,2)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(-\infty, 0)</m> and <m>(2,\infty)</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Second derivative test</title>
+    
+    <p>
+      Suppose <m>f</m> is a differentiable function.
+    </p>
+
+    <p>
+      At a local minimum, the graph should be concave up: <m>f''(x)\gt 0</m>.
+    </p>
+
+    <p>
+      At a local maximum, the graph should be concave down: <m>f''(x)\lt 0</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>A familiar example?</title>
+    
+    <p>
+      The graph of <m>f'(x)</m> is shown, for some function <m>f(x)</m>.
+    </p>
+
+    <sidebyside widths="45% 45%">
+      <p>
+        <ol marker="(a)">
+          <li>
+            <p>
+              What are the intervals where <m>f(x)</m> is increasing/decreasing?
+            </p>
+          </li>
+  
+          <li>
+            <p>
+              What are the intervals where <m>f(x)</m> is concave up/down?
+            </p>
+          </li>
+  
+          <li>
+            <p>
+              What are the <m>x</m>-coordinates of any critical points or inflection points?
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <image source="images/Tut8deriv.png" width="100%">
+        <description></description>
+      </image>
+    </sidebyside>
+    
+  </slide>
+  
+  <slide>
+    <title>Related rates problems</title>
+    
+    <p>
+      Basic premise: if two or more quantities are related by an equation,
+      and those quantities are <em>changing</em> (with time),
+      then the rates at which they are changing will also be related.
+    </p>
+
+    <p>
+      <em>Example:</em> in an ideal gas, pressure, volume, and temperature are related by the equation
+      <me>
+        PV = nRT
+      </me>,
+      where <m>n</m> and <m>R</m> are constants 
+      (whose values we don't really care about, since this is math class, not chemistry).
+    </p>
+
+    <p>
+      If all three quantities are changing with respect to time, we get
+      <m>
+        P(t)V(t)=nRT(t)
+      </m>,
+      and taking derivatives gives
+      <m>
+        P'(t)V(t)+P(t)V'(t)=nRT'(t)
+      </m>.
+    </p>
+
+    <p pause="yes">
+      Typical question: if temperature remains constant at <m>20^\circ</m> C,
+      and the volume is increasing at a rate of 15 hogsheads per fortnight,
+      at what rate is the pressure changing when the volume is 80 gallons?
+    </p>
+
+    <p pause="yes">
+      State your answer in the form of a question.
+    </p>
+  </slide>
+
+  <slide>
+    <title>An actual example</title>
+    
+    <p>
+      A spherical balloon is being inflated at a rate of 25 cm<m>^3</m> per second.
+      At what rate is the radius of the balloon increasing when the volume is 100 cm<m>^3</m>?
+    </p>
+
+    <p pause="yes">
+      First of all: what is the formula for the volume of a sphere?
+    </p>
+
+    <p pause="yes">
+      What is <m>\frac{dV}{dt}</m> in terms of <m>r</m> and <m>\frac{dr}{dt}</m>?
+    </p>
+
+    <p pause="yes">
+      What is the value of <m>\frac{dr}{dt}</m> when <m>V=100</m>?
+      <ol pause="yes" marker="A.">
+        <li>
+          <p>
+            Not possible to say, since we don't know <m>r</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\dfrac{1}{4\pi}\left(\dfrac{\pi}{75}\right)^{2/3}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\dfrac{1}{4\pi}\left(\dfrac{\pi}{75}\right)^{2/3}(25)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Don't know; none of these answers are decimals
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Another example</title>
+    
+    <p>
+      A baseball diamond is a square with sides that are 90 feet in length.
+    </p>
+
+    <p>
+      A batter hits the ball and runs toward first base at a speed of 20 feet per second.
+    </p>
+
+    <p>
+      At what rate is the distance between the batter and second base changing when the batter is half way to first base?
+    </p>
+
+    <p pause="yes">
+      The relevant distances here:
+      <ul pause="yes">
+        <li>the distance between the batter and first base</li>
+        <li>the distance between the batter and second base</li>
+      </ul>
+    </p>
+    <p pause="yes">
+      What theorem will give us the relationship between these distances?
+    </p>
+
+    <p pause="yes">
+      At what rate is the distance to second base changing?
+    </p>
+  </slide>
+
+  <slide>
+    <title>One more example</title>
+    
+    <p>
+      A spotlight is on the ground, 30 metres away from a tall building.
+      A person, who is 2 metres tall, walks from the light toward the building at a speed of 1.5 metres per second.
+    </p>
+
+    <p>
+      At what rate is the length of the person's shadow changing when they are 10 metres away from the building?
+    </p>
+  </slide>
+</section>

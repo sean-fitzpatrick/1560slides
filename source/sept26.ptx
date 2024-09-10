@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>September 26</title>
+
+
+  <slide>
+    <title>Setting a parameter</title>
+
+    <p>
+      Consider the function <m>f(x) = \begin{cases}5x+k,\amp x\leq 2\\ kx^2+2,\amp x\gt 2\end{cases}</m>.
+    </p>
+    
+    <p>
+      For what value of <m>k</m> is <m>f</m> continuous at <m>2</m>?
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>5/2</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>8/3</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\sqrt{2}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Not possible to solve for <m>k</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Answer was a fraction, therefore it doesn't exist
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Types of discontinuity</title>
+    
+    <p>
+      There are many ways that a function can fail to be continuous at a point.
+    </p>
+
+    <p>
+      Some of these are common enough that they have names:
+      <ol>
+        <li>
+          <p>
+            A function <m>f</m> has a <term>jump discontinuity</term> at <m>c</m> if
+            <me>
+              \lim_{x\to c^-}f(x) \neq \lim_{x\to c^+}f(x)
+            </me>
+            
+          </p>
+        </li>
+        <li>
+          <p>
+            A function <m>f</m> has a <term>removeable discontinuity</term> at <m>c</m>
+            if <m>\lim\limits_{x\to c}f(x)</m> exists, but does not equal <m>f(c)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            A function <m>f</m> has an <term>infinite discontinuity</term> at <m>c</m>
+            if it has a vertical asymptote <m>x=c</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Classifying discontinuities</title>
+    
+    <p>
+      What type of discontinuity does each function have?
+    </p>
+
+    <sidebyside widths="30% 30% 30%">
+      <p>
+        <m>f(x) = \dfrac{\abs{x}}{x}</m>, at <m>x=0</m> <m>\phantom{afjlskdafjadslfjad}</m>
+        <ol marker="A.">
+          <li>
+            <p>
+              removeable
+            </p>
+          </li>
+          <li>
+            <p>
+              jump
+            </p>
+          </li>
+          <li>
+            <p>
+              infinite
+            </p>
+          </li>
+          <li>
+            <p>
+              there is no discontinuity
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>f(x) = \dfrac{\sin(x)}{x}</m>, at <m>x=0</m> <m>\phantom{afjlskdafjadslfjad}</m>
+        <ol marker="A.">
+          <li>
+            <p>
+              removeable
+            </p>
+          </li>
+          <li>
+            <p>
+              jump
+            </p>
+          </li>
+          <li>
+            <p>
+              infinite
+            </p>
+          </li>
+          <li>
+            <p>
+              there is no discontinuity
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>f(x) = \dfrac1x</m>, at <m>x=0</m> <m>\phantom{afjlskdafjadslfjad}</m>
+        <ol marker="A.">
+          <li>
+            <p>
+              removeable
+            </p>
+          </li>
+          <li>
+            <p>
+              jump
+            </p>
+          </li>
+          <li>
+            <p>
+              infinite
+            </p>
+          </li>
+          <li>
+            <p>
+              there is no discontinuity
+            </p>
+          </li>
+        </ol>
+      </p>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Intermediate Value Theorem</title>
+    
+    <theorem>
+      <statement>
+        <p>
+          Let <m>f</m> be a continuous function on an interval <m>[a,b]</m>,
+          and suppose that <m>f(a)\lt f(b)</m>.
+        </p>
+
+        <p>
+          Then for every <m>y</m> such that <m>f(a)\lt y\lt f(b)</m>,
+          there is some <m>x\in (a,b)</m> such that <m>f(x)=y</m>.
+        </p>
+      </statement>
+    </theorem>
+    
+  </slide>
+
+  <slide>
+    <title>Sign diagrams</title>
+    
+    <p>
+      Suppose we know that a function <m>f</m> changes from positive to negative at <m>c</m>.
+      According to the Intermediate Value Theorem, which of the following is true?
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>f(c)=0</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f</m> is not continuous at <m>c</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Either <m>f(c)=0</m> or <m>f</m> is not continuous at <m>c</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            The IVT tells us nothing about <m>f(c)</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p pause="yes">
+      This lets us create a <term>sign diagram</term> for <m>f</m>.
+      On a number line, mark all the zeros and discontinuities of <m>f</m>.
+      Between each of these points, either <m>f</m> is positive, or <m>f</m> is negative.
+    </p>
+  </slide>
+  <slide>
+    <title>Using a sign diagram</title>
+    
+    <p>
+      Let <m>f(x) = \dfrac{(x+1)(x-4)}{(x+2)^2(x-2)}</m>.
+    </p>
+
+    <p>
+      Construct a sign diagram for <m>f(x)</m> to answer the following:
+    </p>
+
+    <p>
+      On what interval(s) is <m>f(x)\gt 0</m>?
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>(-1,2)</m> and <m>(4,\infty)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(-1,2)</m> and <m>(4,\infty)</m> and <m>(-\infty,-2)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(-\infty, -1)</m> and <m>(4,\infty)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(-2,-1)</m> and <m>(2,4)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(-2,-1)</m> and <m>(2,4)</m> and <m>(-\infty, -2)</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Infinite limits</title>
+
+    <p>
+      A function <m>f</m> is <term>unbounded</term> (or has an <term>infinite limit</term>)
+      at <m>c</m> if the value of <m>f(x)</m> can be arbitrarily large when <m>x</m> is close to <m>c</m>.
+    </p>
+
+    <p>
+      Basic principle: if <m>x</m> is very small, <m>\dfrac1x</m> will be very big.
+    </p>
+    
+    <p>
+      Here <q>large</q> could mean large and positive, or large and negative.
+    </p>
+
+    <p>
+      Notation includes:
+      <ul>
+        <li>
+          <p>
+            <m>\lim\limits_{x\to c}f(x)=\infty</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\lim\limits_{x\to c^+}f(x)=-\infty</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\lim\limits_{x\to c^-}f(x)=\infty</m>
+          </p>
+        </li>
+      </ul>
+      <etc/>
+    </p>
+
+    <p>
+      Infinite limits are associated with <term>vertical asymptotes</term>,
+      and are usually caused by a division by zero.
+    </p>
+
+
+  </slide>
+
+  <slide>
+    <title>Evaluating infinite limits</title>
+    
+    <p>
+      Let <m>f(x) = \dfrac{(x+1)(x-4)}{(x+2)^2(x-2)}</m> (same function as 2 slides ago).
+    </p>
+    
+    <p>
+      In each case, which of the following is true?
+    </p>
+
+    <sidebyside widths="40% 20% 40%">
+      <p>
+        <ol marker="A.">
+          <li>
+            <p>
+              <m>\lim\limits_{x\to 2^-}f(x)=\infty</m> and <m>\lim\limits_{x\to 2^+}f(x)=\infty</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\lim\limits_{x\to 2^-}f(x)=-\infty</m> and <m>\lim\limits_{x\to 2^+}f(x)=\infty</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\lim\limits_{x\to 2^-}f(x)=\infty</m> and <m>\lim\limits_{x\to 2^+}f(x)=-\infty</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\lim\limits_{x\to 2^-}f(x)=-\infty</m> and <m>\lim\limits_{x\to 2^+}f(x)=-\infty</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>\phantom{lakjfldskajmasdlf}</m>
+      </p>
+
+      <p>
+        <ol marker="A.">
+          <li>
+            <p>
+              <m>\lim\limits_{x\to -2^-}f(x)=\infty</m> and <m>\lim\limits_{x\to -2^+}f(x)=\infty</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\lim\limits_{x\to -2^-}f(x)=-\infty</m> and <m>\lim\limits_{x\to -2^+}f(x)=\infty</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\lim\limits_{x\to -2^-}f(x)=\infty</m> and <m>\lim\limits_{x\to -2^+}f(x)=-\infty</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\lim\limits_{x\to -2^-}f(x)=-\infty</m> and <m>\lim\limits_{x\to -2^+}f(x)=-\infty</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Knowing your asymptote from a hole in the graph</title>
+    
+    <p>
+      For the function <m>f(x) = \dfrac{x^2-4}{x^3-5x^2+6x}</m>,
+      which of the following are true of the graph <m>y=f(x)</m>?
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            There is one vertical asymptote, at <m>x=0</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            There are two vertical asymptotes, at <m>x=0</m> and <m>x=2</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            There are two vertical asymptotes, at <m>x=2</m> and <m>x=-2</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            There are two vertical asymptotes, at <m>x=0</m> and <m>x=3</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            There are three vertical asymptotes, at <m>x=0</m>, <m>x=2</m>, and <m>x=3</m>
+          </p>
+        </li>
+
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Limits at infinity</title>
+    
+    <p>
+      Limits <em>at</em> infinity have to do with <em>end behaviour</em>:
+      what happens to <m>f(x)</m> when <m>x</m> is really big? (Either positive or negative.)
+    </p>
+
+    <p>
+      Basic principle: if <m>x</m> is really big, <m>\dfrac1x</m> will be really small.
+    </p>
+
+    <p>
+      Notation includes:
+      <ul>
+        <li>
+          <p>
+            <m>\lim\limits_{x\to\infty}f(x)=L</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\lim\limits_{x\to -\infty}f(x)=L</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\lim\limits_{x\to\infty}f(x)=\infty</m>
+          </p>
+        </li>
+      </ul>
+      <etc/>
+    </p>
+
+    <p>
+      If <m>f(x)</m> has a <em>finite</em> limit <m>L</m> as <m>x\to\infty</m>
+      or <m>x\to -\infty</m>, we say that <m>y=L</m> is a <term>horizontal asymptote</term>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Evaluating limits at infinity</title>
+    
+    <p>
+      What can we say about the following limits?
+    </p>
+
+    <p>
+      <ol>
+        <li><m>\lim_{x\to\infty}(x^3)</m></li>
+        <li><m>\lim_{x\to -\infty}(x^3)</m></li>
+        <li><m>\lim_{x\to\infty}\dfrac{1}{x^3}</m></li>
+        <li><m>\lim_{x\to -\infty}\dfrac{1}{x^3}</m></li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Dividing by a power of <m>x</m></title>
+    
+    <p>
+      Let <m>f(x) = \dfrac{3x^2-4x}{4-5x+8x^2}</m>.
+    </p>
+
+    <sidebyside widths="40% 20% 40%">
+      <p>
+        Which of the following is equal to <m>f(x)</m> when <m>x\neq 0</m>?
+        <ol marker="A.">
+          <li>
+            <p>
+              <m>\dfrac{3-4x}{4-5x+8}</m>
+            </p>
+
+            <p> </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\dfrac{3-4/x}{4-5x+8x^2}</m>
+            </p>
+            <p>
+                
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\dfrac{3-4/x}{8-5/x+4/x^2}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>\phantom{adgaflkjalkdjf}</m>
+      </p>
+
+      <p>
+        What is the value of <m>\lim\limits_{x\to\infty}f(x)</m>?
+        <ol marker="A.">
+          <li>
+            <p>
+              <m>3/8</m>
+            </p>
+          </li>
+  
+          <li>
+            <p>
+              <m>3/4</m>
+            </p>
+          </li>
+  
+          <li>
+            <p>
+              <m>0</m>
+            </p>
+          </li>
+  
+          <li>
+            <p>
+              <m>\infty</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Horizontal asymptotes of rational functions</title>
+    
+    <p>
+      A <term>rational function</term> looks like
+      <me>
+        f(x) = \frac{a_mx^m+a_{m-1}x^{m-1}+\cdots+a_1x+a_0}{b_nx^n+b_{n-1}x^{n-1}+\cdots + b_1x+b_0}
+      </me>.
+      (<m>f(x)</m> is the ratio of two polynomials)
+    </p>
+
+    <p>
+      For any rational function:
+      <ol>
+        <li>
+          <p>
+            If <m>m\gt n</m>, there is no horizontal asymptote
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>m\lt n</m>, the horizontal asymptote is <m>y=0</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>m=n</m>, the horizontal asymptote is <m>y=\dfrac{a_n}{b_n}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>An interesting limit</title>
+
+    <p>
+      For the function <m>f(x)=\dfrac{x}{\sqrt{x^2+1}}</m>:
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>\lim\limits_{x\to \infty}f(x)=1</m> and <m>\lim\limits_{x\to -\infty}f(x)=1</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\lim\limits_{x\to \infty}f(x)=1</m> and <m>\lim\limits_{x\to -\infty}f(x)=-1</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\lim\limits_{x\to \infty}f(x)=0</m> and <m>\lim\limits_{x\to -\infty}f(x)=0</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+    
+    
+  </slide>
+
+  <slide>
+    <title>Understanding asymptotes</title>
+    
+    <p>
+      Which of the following is true?
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            The graph of a function cannot cross either a vertical asymptote or a horizontal asymptote
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The graph of a function cannot cross a horizontal asymptote, but it can cross a vertical asymptote
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The graph of a function cannot cross a vertical asymptote, but it can cross a horizontal asymptote
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The graph of a function can cross both a horizontal asymptote and a vertical asymptote
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+</section>

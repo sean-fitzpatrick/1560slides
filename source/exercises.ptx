@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext>
+  <article xml:id="exercise-samples">
+    <title>Sample exercises on limits</title>
+
+    <section xml:id="sec-TaC">
+      <title>Some <q>Terms and Concepts</q> problems from the book</title>
+      
+      <p>
+        The exercises in each section of APEX begin with 3-6 <q>Terms and Concepts</q> problems.
+        These could perhaps be considered reading questions (but I'm not sure they are Beezerian reading questions).
+        Most are True/False, Multiple Choice, or Fill in the Blank.
+      </p>
+
+      <p>
+        Currently these are coded as <webwork/> exercises (or not coded at all),
+        but they could be converted to Runestone format fairly easily.
+      </p>
+
+      <p>
+        Here are the first three Terms and Concepts problems from Section 1.1 in APEX Calculus.
+        The second problem below uses the still-exerimental fill-in-the-blank markup.
+        There is support to add feedback for anticipated wrong answers but this isn't documented yet.
+      </p>
+
+      <exercises xml:id="exercises-TaC">
+        <exercise label="TaC-1-1-short-ans">
+          <statement>
+            <p>
+              In your own words, what does it mean to <q>find the limit of <m>f(x)</m> as <m>x</m> approaches 3</q>?
+            </p>
+          </statement>
+          <response/>
+        </exercise>
+
+        <exercise label="TaC-1-1-FITB">
+          <statement>
+            <p>
+              An expression of the form <m>\frac00</m> is called <fillin mode="string" correct="indeterminate"/>.
+            </p>
+          </statement>
+        </exercise>
+
+        <exercise label="TaC-1-1-TF">
+          <statement correct="no">
+            <p>
+              True or false: the limit of <m>f(x)</m> as <m>x</m> approaches 5 is <m>f(5)</m>.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Evaluating the limit of a function at a point is not necessarily the same as evaluating
+              the function itself at that point. (Otherwise, there would be no need for the concept of a limit!)
+            </p>
+          </feedback>
+        </exercise>
+      </exercises>
+    </section>
+
+    <section xml:id="sec-other">
+      <title>Other exercises</title>
+      
+      <p>
+        These are some exercises I assigned during class last year that would also work as interactive textbook problems.
+      </p>
+
+      <exercises xml:id="exercises-other">
+        <exercise label="other-multi-select">
+          <statement>
+            <p>
+              Which of the following limits can <em>not</em> be evaluated using limit properties?
+              Select all that apply.
+            </p>
+          </statement>
+          <choices randomize="yes">
+            <choice>
+              <statement correct="no">
+                <p>
+                  <m>\lim_{x\to 2}\frac{x^2-4}{x+4}</m>
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  For rational functions, as long as the limit of the denominator is non-zero,
+                  the quotient property can be applied.
+                </p>
+              </feedback>
+            </choice>
+            <choice>
+              <statement correct="yes">
+                <p>
+                  <m>\lim_{x\to 1}\frac{x^2-3x+2}{x^2-1}</m>
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  Since the limit of the denominator is zero,
+                  it is not possible to use the quotient property on this rational function.
+                </p>
+              </feedback>
+            </choice>
+            <choice correct="no">
+              <statement>
+                <p>
+                  <m>\lim_{x\to 0}(x+x^2+x^3+x^4)</m>
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  Recall that any polynomial function can be evaluated by direct substitution,
+                  using the limit properties.
+                </p>
+              </feedback>
+            </choice>
+            <choice>
+              <statement correct="no">
+                <p>
+                  <m>\lim_{x\to -1}\frac{2}{x^2+1}</m>
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  For rational functions, as long as the limit of the denominator is non-zero,
+                  the quotient property can be applied.
+                </p>
+                <p>
+                  Remember that <m>(-1)^2 = +1</m>.
+                </p>
+              </feedback>
+            </choice>
+            <choice correct="yes">
+              <statement>
+                <p>
+                  <m>\lim_{x\to 0}e^{-1/x}</m>
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  Limits get tricky any time there is composition,
+                  and in this case, the exponent in the exponential function becomes infinite,
+                  which is not a situation we've encountered yet.
+                  But in terms of limit properties, we run into trouble as soon as we're forced to divide by zero.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+        </exercise>
+
+        <exercise label="other-matching">
+          <statement>
+            <p>
+              On the left are functions whose limit as <m>x</m> approaches 1 cannot be evaluated using limit properties.
+              Match each function to the function on the right that has the same value at every <m>x\neq 1</m>.
+            </p>
+          </statement>
+          <matches randomize="yes">
+            <match order="2">
+              <premise><m>f(x) = \dfrac{x^2+x-2}{x^2-3x+2}</m></premise>
+              <response><m>g(x) = \dfrac{x+2}{x-2}</m></response>
+            </match>
+            <match order="1">
+              <premise><m>f(x)=\dfrac{x^2-1}{x+1}</m></premise>
+              <response><m>g(x)=x-1</m></response>
+            </match>
+            <match order="3">
+              <premise><m>f(x)=\dfrac{x-1}{\sqrt{x}-1}</m></premise>
+              <response><m>g(x)=\sqrt{x}+1</m></response>
+            </match>
+            <match order="4">
+              <premise><m>f(x)=\dfrac{x^3-3x^2+3x-1}{x^3-1}</m></premise>
+              <response><m>g(x)=\dfrac{x^2-2x+1}{x^2+x+1}</m></response>
+            </match>            
+          </matches>
+        </exercise>
+
+        <exercise label="other-MC">
+          <statement>
+            <p>
+              Recall that <m>\lim_{x\to 0}\frac{\sin(x)}{x}=1</m>.
+              We determined this limit using trigonometry and the Squeeze Theorem,
+              since it cannot be evaluated algebraically.
+            </p>
+
+            <p>
+              Now consider the limit <m>\lim_{x\to 0}\frac{\sin(2x)}{x}</m>.
+              Which of the following is a valid first step toward evaluating this limit?
+            </p>
+          </statement>
+          <choices>
+            <choice correct="no">
+              <statement>
+                <p>
+                  Factor out the 2 to get <m>2\sin(x)</m>
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  Unfortunately, very few functions allow you to <q>factor out</q> a constant.
+                  The correct identity here is <m>\sin(2x)=2\sin(x)\cos(x)</m>.
+                  Using this identity gives another way to evaluate the limit,
+                  but this is not a method that extends well to (for example) the limit of <m>\frac{\sin(7x)}{x}</m>.
+                </p>
+              </feedback>
+            </choice>
+            <choice correct="no">
+              <statement>
+                <p>
+                  Cancel the <m>x</m> in the numerator with the <m>x</m> in the denominator
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  The <m>\sin</m> in <m>\sin(x)</m> is a function, not a number!
+                  It isn't possible to cancel the argument of a function with something outside the function.
+                </p>
+              </feedback>
+            </choice>
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Multiply numerator and denominator by 2
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  Yes! This will leave you with a function of the form <m>\frac{\sin(\theta)}{\theta}</m>,
+                  where <m>\theta=2x</m>. And if <m>x\to 0</m>, <m>2x\to 0</m> as well.
+                </p>
+              </feedback>
+            </choice>
+            <choice correct="no">
+              <statement>
+                <p>
+                  Put your calculator in degrees mode
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  This is only a good idea if you're on your way to Physics class.
+                  Trigonometric functions in calculus always use radians.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+        </exercise>
+      </exercises>
+    </section>
+  </article>
+</pretext>
