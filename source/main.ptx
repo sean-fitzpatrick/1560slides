@@ -36,8 +36,8 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         
             \colorlet{firstcolor}{blue}
             \colorlet{secondcolor}{red}
-            \pgfplotsset{firstcurvestyle/.style={color=firstcolor,mark=none,ultra thick,{Kite}-{Kite},solid,fill=firstcolor!50,fill=none}}
-            \pgfplotsset{secondcurvestyle/.style={color=secondcolor,mark=none,ultra thick,{Kite}-{Kite},dashdotted,fill=secondcolor!50,fill=none}}
+            \pgfplotsset{firstcurvestyle/.style={color=firstcolor,mark=none,thick,{Kite}-{Kite},solid,fill=firstcolor!50,fill=none}}
+            \pgfplotsset{secondcurvestyle/.style={color=secondcolor,mark=none,thick,{Kite}-{Kite},dashdotted,fill=secondcolor!50,fill=none}}
             \pgfplotsset{openinterval/.style={color=black,mark=none,ultra thick,{Circle[open]}-{Circle[open]}}}
             \pgfplotsset{closedinterval/.style={color=black,mark=none,ultra thick,{Circle}-{Circle}}}
         
@@ -55,9 +55,9 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
             \pgfplotsset{xdiscontinuity/.style={axis x discontinuity=parallel}}
             \pgfplotsset{ydiscontinuity/.style={axis y discontinuity=crunch}}
         
-            \pgfplotsset{hollowdot/.style={color=firstcolor,fill=white,only marks,mark=*, mark size=6pt}}
-            \pgfplotsset{soliddot/.style={color=firstcolor,fill=firstcolor,only marks,mark=*, mark size=6pt}}
-            \pgfplotsset{squaremark/.style={color=black,fill=black,only marks,mark size=12pt,mark=square*}}
+            \pgfplotsset{hollowdot/.style={color=firstcolor,fill=white,only marks,mark=*, mark size=4pt}}
+            \pgfplotsset{soliddot/.style={color=firstcolor,fill=firstcolor,only marks,mark=*, mark size=4pt}}
+            \pgfplotsset{squaremark/.style={color=black,fill=black,only marks,mark size=6pt,mark=square*}}
         
             \pgfplotsset{open/.style={firstcurvestyle,{Circle[open]}-{Circle[open]}}}
             \pgfplotsset{openclosed/.style={firstcurvestyle,{Circle[open]}-{Circle}}}
