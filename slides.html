@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-09-10T13:12:22-06:00       *-->
+<!--*       on 2024-09-11T11:32:48-06:00       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -152,6 +152,7 @@ dfn {
     float: left;
     padding-right:2em;
 }
+
 div[style*="display:table-cell"] img[src$=".svg"] {
     width: 100%;
 }
@@ -176,9 +177,9 @@ div[style*="display:table-cell"] img[src$=".svg"] {
 </table></section></section><section><section><h1>September 10</h1></section><section><h3>Why limits?</h3>
 <div align="left"> <p>Short answer: because derivatives (and integrals).</p> <p>Derivatives: on a graph <span class="process-math">\(y=f(x)\text{,}\)</span> what happens to <span class="process-math">\(\dfrac{\Delta y}{\Delta x}\)</span> when <span class="process-math">\(\Delta x\)</span> shrinks to zero?</p> <p>Integrals: what happens when we add up more and more pieces that are getting smaller and smaller?</p> <p></p> <p>Limits let us talk about the value of a function at points where plugging in a number doesn’t make sense.</p> <p>(For example, the value of <span class="process-math">\(\dfrac{\sin(x)}{x}\)</span> when <span class="process-math">\(x=0\text{.}\)</span>)</p>
 </div></section><section><h3>Understanding limits graphically</h3>
-<div align="left"> <p>Suppose we have the following graph of a function <span class="process-math">\(f\text{,}\)</span> but we can’t see what is happening under the square:</p> <div style="display:table;margin-left:1.25%;margin-right:1.25%;">
-<div style="display:table-cell;width:51.2820512820513%;vertical-align:top;"><img src="generated/latex-image/sep9img1.svg" role="img" class="contained" alt="A downward-facing parabola, with one portion blocked by a square."></div>
-<div style="display:table-cell;width:46.1538461538462%;vertical-align:top;"><p><ol class="decimal" id="root-1-2-4-3-3-2-1">
+<div align="left"> <p>Suppose we have the following graph of a function <span class="process-math">\(f\text{,}\)</span> but we can’t see what is happening under the square:</p> <div style="display:table;margin-left:2.5%;margin-right:2.5%;">
+<div style="display:table-cell;width:47.3684210526316%;vertical-align:top;"><img src="generated/latex-image/sep9img1.svg" role="img" class="contained" alt="A downward-facing parabola, with one portion blocked by a square."></div>
+<div style="display:table-cell;width:47.3684210526316%;vertical-align:top;"><p><ol class="decimal" id="root-1-2-4-3-3-2-1">
 <li><p>If you had to guess, when <span class="process-math">\(x\)</span> is close to 2, you would say that <span class="process-math">\(f(x)\)</span> is close to:<ol class="upper-alpha" id="root-1-2-4-3-3-2-1-1-1-3">
 <li><p>0</p></li>
 <li><p>1</p></li>
@@ -239,20 +240,89 @@ div[style*="display:table-cell"] img[src$=".svg"] {
 <li><p><span class="process-math">\(\displaystyle \lim\limits_{x\to 1}\dfrac{x^2-1}{x+1}\)</span></p></li>
 <li><p><span class="process-math">\(\displaystyle \lim\limits_{x\to -1}\dfrac{x^2-1}{x+1}\)</span></p></li>
 </ol></p> <p class="fragment">Remember that <span class="process-math">\(x\to -1\)</span> means <span class="process-math">\(x\)</span> is close to <span class="process-math">\(-1\text{,}\)</span> but <em class="emphasis">not equal</em>.</p> <p class="fragment">Can we replace the last limit with something equivalent (and easier)?</p>
-</div></section><section><h3>Using algebra to evaluate a limit</h3>
-<div align="left"> <p>For the function <span class="process-math">\(f(x) = \dfrac{x^2+4x+3}{x^2-1}\text{,}\)</span> evaluate <span class="process-math">\(\lim\limits_{x\to -1}f(x)\text{.}\)</span></p>
-</div></section><section><h3>A trig limit</h3>
-<div align="left"> <p>Evaluate <span class="process-math">\(\lim\limits_{x\to 0}\dfrac{\sin(3x)}{2x}\text{.}\)</span></p> <p></p> <p>The goal here is not so much the answer as the process. (There is a wrong way to get the right answer!)</p> <p>If you took calc in high school: we don’t get to use L’Hospital’s rule.</p>
-</div></section><section><h3>One-sided limits</h3>
-<div align="left"> <p>For <span class="process-math">\(f(x) = \begin{cases}4\cos(x), \amp x\lt 0\\2, \amp x=0\\ 2-3x^2, \amp x\gt 0\end{cases}\text{,}\)</span> evaluate<div class="displaymath process-math">
+</div></section></section><section><section><h1>September 12</h1></section><section><h3>Using algebra to evaluate a limit</h3>
+<div align="left"> <p>Evaluate the following limits:<ol class="decimal" id="root-1-2-5-2-2-1">
+<li><p><div class="displaymath process-math">
 \begin{equation*}
-\lim_{x\to 0^-}f(x)
+\lim\limits_{x\to -1}\dfrac{x^2+4x+3}{x^2-1}
 \end{equation*}
-</div>and<div class="displaymath process-math">
+</div></p></li>
+<li><p><div class="displaymath process-math">
 \begin{equation*}
-\lim_{x\to 0^+}f(x)\text{.}
+\lim\limits_{x\to 4}\dfrac{x^3-4x^2}{x^3-16x}
+\end{equation*}
+</div></p></li>
+</ol></p>
+</div></section><section><h3>Other algebraic techniques</h3>
+<div align="left"> <ul class="disc" id="root-1-2-5-3-2">
+<li><p>Common denominators. E.g.<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 1}\frac{\frac1x-x}{x^2-1}
+\end{equation*}
+</div></p></li>
+<li><p>Rationalizing. E.g.<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 4}\frac{x^2-5x+4}{2-\sqrt{x}}
+\end{equation*}
+</div></p></li>
+</ul>
+</div></section><section><h3>A trigonometric limit</h3>
+<div align="left"> <p>The limit<div class="displaymath process-math">
+\begin{equation*}
+\lim\limits_{x\to 0}\dfrac{\sin(2x)}{x}
+\end{equation*}
+</div>is a <span class="process-math">\(0/0\)</span> limit.</p> <p>Which of the following is a valid first step?</p> <p><ol class="upper-alpha" id="root-1-2-5-4-4-1">
+<li><p>Factor out the 2 to get <span class="process-math">\(2\sin(x)\)</span></p></li>
+<li><p>Cancel the <span class="process-math">\(x\)</span> in the numerator with the <span class="process-math">\(x\)</span> in the denominator</p></li>
+<li><p>Multiply numerator and denominator by 2</p></li>
+<li><p>Put your calculator in degrees mode</p></li>
+</ol></p>
+</div></section><section><h3>A trig limit</h3>
+<div align="left"> <p>Evaluate<div class="displaymath process-math">
+\begin{equation*}
+\lim\limits_{x\to 0}\dfrac{\sin(3x)}{2x}\text{.}
+\end{equation*}
+</div></p> <p>Recall from the tutorial that <span class="process-math">\(\lim\limits_{x\to 0}\dfrac{\sin(x)}{x}=1\text{.}\)</span></p> <p>The goal here is not so much the answer as the process. (There is a wrong way to get the right answer!)</p> <p>If you took calc in high school: we don’t get to use L’Hospital’s rule.</p> <p>Challenge: evaluate<div class="displaymath process-math">
+\begin{equation*}
+\lim\limits_{x\to 0}\frac{1-\cos(x)}{x}
 \end{equation*}
 </div></p>
+</div></section><section><h3>Piecewise-defined functions</h3>
+<div align="left"> <p>Sometimes we need to work with functions that are defined differently on different parts of their domain.</p> <p>Applications include more than just providing examples for calculus class, including <a class="external" href="https://en.wikipedia.org/wiki/Ultraviolet_index" target="_blank">UV index</a> and your taxes.</p> <p>For the piecewise-defined function <span class="process-math">\(f(x) = \begin{cases}2-x, \amp x\lt -1\\ 1+x^2, \amp -1\leq x\lt 2\\ \sin(\pi x),\amp x\geq 2\end{cases}\text{:}\)</span></p> <div style="display:table;margin-left:0%;margin-right:0%;">
+<div style="display:table-cell;width:40%;vertical-align:top;"><p>What is the value of <span class="process-math">\(f(0)\text{?}\)</span><ol class="upper-alpha" id="root-1-2-5-6-5-1-2">
+<li><p>2</p></li>
+<li><p>0</p></li>
+<li><p><span class="process-math">\(\displaystyle -1\)</span></p></li>
+<li><p>1</p></li>
+</ol></p></div>
+<div style="display:table-cell;width:20%;vertical-align:top;"><p><span class="process-math">\(\phantom{abcdefghijk}\)</span></p></div>
+<div style="display:table-cell;width:40%;vertical-align:top;"><p>What is the value of <span class="process-math">\(f(2)\text{?}\)</span><ol class="upper-alpha" id="root-1-2-5-6-5-3-2">
+<li><p>2</p></li>
+<li><p>0</p></li>
+<li><p>5</p></li>
+<li><p>1</p></li>
+</ol></p></div>
+</div>
+</div></section><section><h3>The absolute value is piecewise-defined</h3>
+<div align="left"> <p>You may have learned that the function <span class="process-math">\(\abs{x}\)</span> measures “distance from 0”:</p> <p>If <span class="process-math">\(x\geq 0\text{,}\)</span> then <span class="process-math">\(\abs{x}=x\text{.}\)</span> If <span class="process-math">\(x\lt 0\text{,}\)</span> then <span class="process-math">\(\abs{x}=-x\text{.}\)</span></p> <p>Which of the following functions is equivalent to <span class="process-math">\(f(x)=\abs{x-2}\text{?}\)</span></p> <p><ol class="upper-alpha" id="root-1-2-5-7-5-1">
+<li><p><span class="process-math">\(\displaystyle f(x) = \begin{cases}x-2, \amp x\geq 2\\ 2-x, \amp x\lt 2\end{cases}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle f(x) = \begin{cases}x-2, \amp x\geq 0\\ 2-x, \amp x\lt 0\end{cases}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle f(x) = \begin{cases}x, \amp x\geq 2\\ -x, \amp x\lt 2\end{cases}\)</span></p></li>
+</ol></p>
+</div></section><section><h3>Finding one-sided limits (graph)</h3>
+<div align="left"> <div style="display:table;margin-left:2.5%;margin-right:2.5%;">
+<div style="display:table-cell;width:47.3684210526316%;vertical-align:top;"><p>For the graph on the right:<ol class="upper-alpha" id="root-1-2-5-8-2-1-1">
+<li><p>The left-hand limit is 3 and the right-hand limit is 3.</p></li>
+<li><p>The left-hand limit is 1 and the right-hand limit is 3.</p></li>
+<li><p>The left-hand limit is 3 and the right-hand limit is 1.</p></li>
+<li><p>The left-hand limit is 1 and the right-hand limit is 1.</p></li>
+<li><p>The left-hand limit is 3 and the right-hand limit does not exist.</p></li>
+</ol></p></div>
+<div style="display:table-cell;width:47.3684210526316%;vertical-align:top;"><img src="generated/latex-image/Sept12a.svg" role="img" class="contained" alt="The graph of a piecewise-defined function."></div>
+</div>
+</div></section><section><h3>One-sided limits</h3>
+<div align="left"> <p>For <span class="process-math">\(f(x) = \begin{cases}4\cos(x), \amp x\lt 0\\2, \amp x=0\\ 2-3x^2, \amp x\gt 0\end{cases}\text{,}\)</span> evaluate <span class="process-math">\(\lim\limits_{x\to 0^-}f(x)\)</span> and <span class="process-math">\(\lim\limits_{x\to 0^+}f(x)
+\text{.}\)</span></p> <p>Reminder: <span class="process-math">\(x\to 0^-\)</span> means <span class="process-math">\(x\lt 0\)</span> and <span class="process-math">\(x\to 0\text{.}\)</span> <span class="process-math">\(x\to 0^+\)</span> means <span class="process-math">\(x\gt 0\)</span> and <span class="process-math">\(x\to 0\text{.}\)</span></p>
 </div></section></section>
 </div>
 </div></body>
