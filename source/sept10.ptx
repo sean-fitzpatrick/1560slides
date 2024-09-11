@@ -38,7 +38,7 @@
       but we can't see what is happening under the square:
     </p>
 
-    <sidebyside widths="50% 45%">
+    <sidebyside widths="45% 45%">
       <image>
         <shortdescription>A downward-facing parabola, with one portion blocked by a square.</shortdescription>
         <latex-image label="sep9img1">
@@ -340,49 +340,6 @@
     </p>
     <p pause="yes">
       Can we replace the last limit with something equivalent (and easier)?
-    </p>
-  </slide>
-
-  <slide>
-    <title>Using algebra to evaluate a limit</title>
-    
-    <p>
-      For the function <m>f(x) = \dfrac{x^2+4x+3}{x^2-1}</m>, evaluate <m>\lim\limits_{x\to -1}f(x)</m>.
-    </p>
-
-  </slide>
-
-  <slide>
-    <title>A trig limit</title>
-    <p>
-      Evaluate <m>\lim\limits_{x\to 0}\dfrac{\sin(3x)}{2x}</m>.
-    </p>
-
-    <p>
-      
-    </p>
-
-    <p>
-      The goal here is not so much the answer as the process. (There is a wrong way to get the right answer!)
-    </p>
-
-    <p>
-      If you took calc in high school: we don't get to use L'Hospital's rule.
-    </p>
-  </slide>
-
-  <slide>
-    <title>One-sided limits</title>
-    <p>
-      For <m>f(x) = \begin{cases}4\cos(x), \amp x\lt 0\\2, \amp x=0\\ 2-3x^2, \amp x\gt 0\end{cases}</m>,
-      evaluate
-      <me>
-        \lim_{x\to 0^-}f(x)
-      </me>
-      and
-      <me>
-        \lim_{x\to 0^+}f(x)
-      </me>.      
     </p>
   </slide>
 </section>

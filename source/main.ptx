@@ -130,7 +130,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         </frontmatter>
 
         <xi:include href="./sept10.ptx"/>
-        <!-- <xi:include href="./sept12.ptx"/> -->
+        <xi:include href="./sept12.ptx"/>
         <!-- <xi:include href="./sept17.ptx"/> -->
         <!-- <xi:include href="./sept19.ptx"/> -->
         <!-- <xi:include href="./sept24.ptx"/> -->

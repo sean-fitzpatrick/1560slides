@@ -4,39 +4,25 @@
   <title>September 19</title>
 
   <slide>
-    <title>Warm-up: a 0/0 limit</title>
+    <title>Using algebra to evaluate a limit</title>
     
     <p>
-      What is the value of <m>\lim\limits_{x\to 4}\dfrac{x^3-4x^2}{x^3-16x}</m>?
-    </p>
-
-    <p>
-      <ol marker="A.">
+      Evaluate the following limits:
+      <ol>
         <li>
           <p>
-            Undefined
+            <me>\lim\limits_{x\to -1}\dfrac{x^2+4x+3}{x^2-1}</me>
           </p>
         </li>
-
         <li>
           <p>
-            <m>\frac12</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            1
-          </p>
-        </li>
-
-        <li>
-          <p>
-            2
+            <me>\lim\limits_{x\to 4}\dfrac{x^3-4x^2}{x^3-16x}</me>
           </p>
         </li>
       </ol>
+      
     </p>
+
   </slide>
 
   <slide>
@@ -69,7 +55,7 @@
     <title>A trigonometric limit</title>
     
     <p>
-      The limit <m>\lim\limits_{x\to 0}\dfrac{\sin(2x)}{x}</m> is a <m>0/0</m> limit.
+      The limit <me>\lim\limits_{x\to 0}\dfrac{\sin(2x)}{x}</me> is a <m>0/0</m> limit.
     </p>
     <p>
       Which of the following is a valid first step? 
@@ -101,6 +87,30 @@
   </slide>
 
   <slide>
+    <title>A trig limit</title>
+    <p>
+      Evaluate <me>\lim\limits_{x\to 0}\dfrac{\sin(3x)}{2x}</me>.
+    </p>
+
+    <p>
+      Recall from the tutorial that <m>\lim\limits_{x\to 0}\frac{\sin(x)}{x}=1</m>.
+    </p>
+
+    <p>
+      The goal here is not so much the answer as the process. (There is a wrong way to get the right answer!)
+    </p>
+
+    <p>
+      If you took calc in high school: we don't get to use L'Hospital's rule.
+    </p>
+
+    <p>
+      Challenge: evaluate <me>\lim\limits_{x\to 0}\frac{1-\cos(x)}{x}</me>
+    </p>
+  </slide>
+
+  
+  <slide>
     <title>Piecewise-defined functions</title>
     
     <p>
@@ -117,7 +127,7 @@
       For the piecewise-defined function <m>f(x) = \begin{cases}2-x, \amp x\lt -1\\ 1+x^2, \amp -1\leq x\lt 2\\ \sin(\pi x),\amp x\geq 2\end{cases}</m>:
     </p>
 
-    <sidebyside widths="40% 20% 40%">
+    <sidebyside widths="45% 45%">
       <p>
         What is the value of <m>f(0)</m>?
         <ol marker="A.">
@@ -142,10 +152,6 @@
             </p>
           </li>
         </ol>
-      </p>
-
-      <p>
-        <m>\phantom{ajdflkdsajfalsdks}</m>
       </p>
 
       <p>
@@ -187,7 +193,7 @@
     </p>
 
     <p>
-      If <m>x\gt 0</m>, then <m>\abs{x}=x</m>. If <m>x\lt 0</m>, then <m>\abs{x}=-x</m>.
+      If <m>x\geq 0</m>, then <m>\abs{x}=x</m>. If <m>x\lt 0</m>, then <m>\abs{x}=-x</m>.
     </p>
 
     <p>
@@ -215,41 +221,11 @@
     </p>
   </slide>
 
-  <slide>
-    <title>One-sided limits</title>
-    
-    <p>
-      For piecewise-defined functions, it may be the case that the values of <m>f(x)</m> 
-      on one side of <m>x=c</m> are nowhere near the values of <m>f(x)</m> on the other side.
-    </p>
-
-    <p>
-      In this case, <m>\lim\limits_{x\to c}f(x)</m> doesn't exist.
-    </p>
-
-    <p>
-      But we might still be able to talk about limits <q>from the left</q> or <q>from the right</q>.
-    </p>
-
-    <p>
-      The <em>left-hand limit</em>
-      <me>\lim\lim_{x\to c^-}f(x)=L</me> 
-      means that <m>f(x)</m> is close to <m>L</m> when <m>x</m> is close to <m>c</m>
-      <alert>and</alert> <m>x\lt c</m>.
-    </p>
-
-    <p>
-      The <em>right-hand limit</em>
-      <me>\lim_{x\to c^+}f(x)=L</me> 
-      means that <m>f(x)</m> is close to <m>L</m> when <m>x</m> is close to <m>c</m>
-      <alert>and</alert> <m>x\gt c</m>.
-    </p>
-  </slide>
-
+  
   <slide>
     <title>Finding one-sided limits (graph)</title>
     
-    <sidebyside widths="50% 50%">
+    <sidebyside widths="45% 45%">
       <p>
         For the graph on the right:
         <ol marker="A.">
@@ -281,126 +257,46 @@
         </ol>
       </p>
 
-      <image source="images/Se19.svg">
-        <description></description>
+      <image>
+        <shortdescription>The graph of a piecewise-defined function.</shortdescription>
+        <latex-image label="Sept12a">
+          \begin{tikzpicture}
+          \begin{axis}[
+              ymin=-.1,
+              ymax=3.5,
+              xmin=-0.1,
+              xmax=4.3,
+              axis equal
+            ]
+            \addplot+ [leftarrow,domain=0:1.98]{-0.5*x^2+x+3};
+            \addplot [firstcurvestyle,rightarrow,domain=2.02:3.4]{0.5*x^2-x+1};
+            %\addplot[soliddot] coordinates{(2,2)};
+            \addplot[soliddot] coordinates{(2,3)};
+            \addplot[hollowdot] coordinates{(2,1)};
+          \end{axis}
+          \end{tikzpicture}
+        </latex-image>
       </image>
     </sidebyside>
   </slide>
 
   <slide>
-    <title>Finding one-sided limits (formula)</title>
-    
+    <title>One-sided limits</title>
     <p>
-      Let <m>f(x) = \begin{cases}4-x^2,\amp x\lt 3\\ 2x-5,\amp x\geq 3\end{cases}</m>.
+      For <m>f(x) = \begin{cases}4\cos(x), \amp x\lt 0\\2, \amp x=0\\ 2-3x^2, \amp x\gt 0\end{cases}</m>,
+      evaluate
+      <me>
+        \lim_{x\to 0^-}f(x)
+      </me>
+      and
+      <me>
+        \lim_{x\to 0^+}f(x)
+      </me>.      
     </p>
 
     <p>
-      To compute the left-hand limit <m>\lim\limits_{x\to 3^-}f(x)</m>:
-    </p>
-
-    <p>
-      <ol marker="A.">
-        <li>
-          <p>
-            We plug in <m>x=2.99</m>, since that's a little less than 3.
-          </p>
-        </li>
-        <li>
-          <p>
-            We plug in <m>3.01</m>, since that's a little more than 3.
-          </p>
-        </li>
-        <li>
-          <p>
-            We set <m>f(x)=4-x^2</m>, since <m>x\lt 3</m>, and take the limit as <m>x\to 3</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            We set <m>f(x)=2x-5</m>, since <m>x\gt 3</m>, and take the limit as <m>x\to 3</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            We plug in <m>x=3</m>, since the limit is the same as <m>f(3)</m>.
-          </p>
-        </li>
-      </ol>
+      Reminder: <m>x\to 0^-</m> means <m>x\lt 0</m> and <m>x\to 0</m>. <m>x\to 0^+</m> means <m>x\gt 0</m> and <m>x\to 0</m>.
     </p>
   </slide>
 
-  <slide>
-    <title>The key theorem</title>
-    
-    <theorem>
-      <statement>
-        <p>
-          Let <m>f(x)</m> be defined for all <m>x</m> in an open interval containing <m>c</m>,
-          except possibly not at <m>x=c</m>. Then
-          <me>
-            \lim_{x\to c}f(x) = L
-          </me>
-          if and only if
-          <me>
-            \lim_{x\to c^-}f(x) = L \quad \text{ and } \quad \lim_{x\to c^+}f(x) = L
-          </me>.
-          
-        </p>
-      </statement>
-    </theorem>
-    
-  </slide>
-
-  <slide>
-    <title>Existence of limits</title>
-    
-    <p>
-      The graph of a function <m>f(x)</m> is shown on the right.
-      At what point(s) <m>c</m> does <m>\lim\limits_{x\to c}f(x)</m> exist?
-    </p>
-
-    <sidebyside widths="40% 20% 40%">
-      <p>
-        <ol marker="A.">
-          <li>
-            <p>
-              At <m>-2</m> and <m>-1</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              At <m>-2</m> and <m>1</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              At <m>-2</m>, <m>-1</m>, and <m>1</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Only at <m>-2</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              At none of <m>-2</m>, <m>-1</m>, or <m>1</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      <p>
-        <m>\phantom{abcsadfadfae}</m>
-      </p>
-
-      <image source="images/Se192.svg">
-        <description></description>
-      </image>
-    </sidebyside>
-  </slide>
 </section>
