@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-09-11T11:32:48-06:00       *-->
+<!--*       on 2024-09-13T10:26:32-06:00       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -323,6 +323,187 @@ div[style*="display:table-cell"] img[src$=".svg"] {
 </div></section><section><h3>One-sided limits</h3>
 <div align="left"> <p>For <span class="process-math">\(f(x) = \begin{cases}4\cos(x), \amp x\lt 0\\2, \amp x=0\\ 2-3x^2, \amp x\gt 0\end{cases}\text{,}\)</span> evaluate <span class="process-math">\(\lim\limits_{x\to 0^-}f(x)\)</span> and <span class="process-math">\(\lim\limits_{x\to 0^+}f(x)
 \text{.}\)</span></p> <p>Reminder: <span class="process-math">\(x\to 0^-\)</span> means <span class="process-math">\(x\lt 0\)</span> and <span class="process-math">\(x\to 0\text{.}\)</span> <span class="process-math">\(x\to 0^+\)</span> means <span class="process-math">\(x\gt 0\)</span> and <span class="process-math">\(x\to 0\text{.}\)</span></p>
+</div></section></section><section><section><h1>September 17</h1></section><section><h3>Finding one-sided limits (formula)</h3>
+<div align="left"> <p>Let <span class="process-math">\(f(x) = \begin{cases}4-x^2,\amp x\lt 3\\ 2x-5,\amp x\geq 3\end{cases}\text{.}\)</span></p> <p>To compute the left-hand limit <span class="process-math">\(\lim\limits_{x\to 3^-}f(x)\text{:}\)</span></p> <p><ol class="upper-alpha" id="root-1-2-6-2-4-1">
+<li><p>We plug in <span class="process-math">\(x=2.99\text{,}\)</span> since that’s a little less than 3.</p></li>
+<li><p>We plug in <span class="process-math">\(3.01\text{,}\)</span> since that’s a little more than 3.</p></li>
+<li><p>We set <span class="process-math">\(f(x)=4-x^2\text{,}\)</span> since <span class="process-math">\(x\lt 3\text{,}\)</span> and take the limit as <span class="process-math">\(x\to 3\text{.}\)</span></p></li>
+<li><p>We set <span class="process-math">\(f(x)=2x-5\text{,}\)</span> since <span class="process-math">\(x\gt 3\text{,}\)</span> and take the limit as <span class="process-math">\(x\to 3\text{.}\)</span></p></li>
+<li><p>We plug in <span class="process-math">\(x=3\text{,}\)</span> since the limit is the same as <span class="process-math">\(f(3)\text{.}\)</span></p></li>
+</ol></p>
+</div></section><section><h3>The key theorem</h3>
+<div align="left"> <article class="theorem theorem-like" id="root-1-2-6-3-2"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
+</h4>
+<p>Let <span class="process-math">\(f(x)\)</span> be defined for all <span class="process-math">\(x\)</span> in an open interval containing <span class="process-math">\(c\text{,}\)</span> except possibly not at <span class="process-math">\(x=c\text{.}\)</span> Then<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to c}f(x) = L
+\end{equation*}
+</div>if and only if<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to c^-}f(x) = L \quad \text{ and } \quad \lim_{x\to c^+}f(x) = L\text{.}
+\end{equation*}
+</div></p></article>
+</div></section><section><h3>Continuity</h3>
+<div align="left"> <article class="definition definition-like" id="root-1-2-6-4-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span>
+</h4>
+<p>A function <span class="process-math">\(f\)</span> is continuous at a point <span class="process-math">\(c\)</span> if<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to c}f(x) = f(c)\text{.}
+\end{equation*}
+</div></p> <p><span class="process-math">\(f\)</span> is continuous on an open interval <span class="process-math">\((a,b)\)</span> if it is continuous at each point in the interval.</p></article> <p>Buried in this equation:<ul class="disc" id="root-1-2-6-4-3-1">
+<li><p><span class="process-math">\(f(x)\)</span> is defined for all <span class="process-math">\(x\)</span> close to <span class="process-math">\(c\)</span></p></li>
+<li>
+<p><span class="process-math">\(\lim\limits_{x\to c}f(x)\)</span> exists</p>
+<p>(So the left and right hand limits must be the same.)</p>
+</li>
+<li><p><span class="process-math">\(f(c)\)</span> is defined</p></li>
+<li><p>The limit at <span class="process-math">\(c\)</span> (which exists) must be equal to the value of <span class="process-math">\(f(c)\)</span> (which is defined)</p></li>
+</ul></p>
+</div></section><section><h3>Continuity, graphically</h3>
+<div align="left"> <div style="display:table;margin-left:0%;margin-right:0%;">
+<div style="display:table-cell;width:45%;vertical-align:top;"><p>The graph of a function is shown on the right. At what points is the function not continuous?<ol class="upper-alpha" id="root-1-2-6-5-2-1-1">
+<li><p>At <span class="process-math">\(x=-2\)</span> only</p></li>
+<li><p>At <span class="process-math">\(x=-2\)</span> and <span class="process-math">\(x=3\)</span></p></li>
+<li><p>At <span class="process-math">\(x=-2\)</span> and <span class="process-math">\(x=2\)</span></p></li>
+<li><p>At <span class="process-math">\(x=-2\text{,}\)</span> <span class="process-math">\(x=2\text{,}\)</span> and <span class="process-math">\(x=3\)</span></p></li>
+<li><p>At <span class="process-math">\(x=-2\text{,}\)</span> <span class="process-math">\(x=0\text{,}\)</span> <span class="process-math">\(x=2\text{,}\)</span> and <span class="process-math">\(x=3\)</span></p></li>
+</ol></p></div>
+<div style="display:table-cell;width:10%;vertical-align:top;"><p><span class="process-math">\(\phantom{abcdefghij}\)</span></p></div>
+<div style="display:table-cell;width:45%;vertical-align:top;"><img src="external/T1Q1.png" class="contained"></div>
+</div> <p class="fragment">What should it mean to say that <span class="process-math">\(f(x)\)</span> is continuous at the endpoints of the interval?</p>
+</div></section><section><h3>Continuity, analytically</h3>
+<div align="left"> <p>Let <span class="process-math">\(f(x) = \begin{cases}5x^2-3x,\amp x\lt 1\\4,\amp x=1\\2\cos(x-1),\amp x\gt 1\end{cases}\text{.}\)</span></p> <p>Is <span class="process-math">\(f\)</span> continuous at <span class="process-math">\(x=1\text{?}\)</span></p> <p class="fragment">How could we change the definition of <span class="process-math">\(f(x)\)</span> to ensure <span class="process-math">\(f\)</span> <em class="emphasis">is</em> continuous at <span class="process-math">\(x=1\text{?}\)</span></p> <p class="fragment">Is <span class="process-math">\(f\)</span> continuous at <span class="process-math">\(x=0\text{?}\)</span> How would you explain this?</p>
+</div></section><section><h3>Properties of continuous functions</h3>
+<div align="left"> <p>The following functions are continuous on their domains:<ul class="disc" id="root-1-2-6-7-2-1">
+<li><p>polynomial and rational functions</p></li>
+<li><p>radical (root) functions</p></li>
+<li><p>trig functions: <span class="process-math">\(\sin(x),\cos(x),\tan(x),\csc(x),\sec(x),\cot(x)\)</span></p></li>
+<li><p>exponential functions: <span class="process-math">\(e^x, 2^x, 10^x\text{,}\)</span> etc.</p></li>
+<li><p>logarithms: <span class="process-math">\(\ln(x), \log_2(x), \log_{10}(x)\text{,}\)</span> etc.</p></li>
+<li><p>Any function formed from any of the above using addition, subtraction, multiplication, division, and composition. (As long as we don’t divide by 0.)</p></li>
+</ul></p> <p>Note: some of these functions have vertical asymptotes. These are points of discontinuity, but they are not in the domain.</p>
+</div></section><section><h3>Checking continuity</h3>
+<div align="left"> <p>Let <span class="process-math">\(f(x)=\sin(3x^2-5x+2)\text{.}\)</span></p> <p>Explain why you know that <span class="process-math">\(f\)</span> is continuous at all real numbers.</p>
+</div></section><section><h3>Setting a parameter</h3>
+<div align="left"> <p>Consider the function <span class="process-math">\(f(x) = \begin{cases}5x+c,\amp x\leq 2\\ cx^2+2,\amp x\gt 2\end{cases}\text{.}\)</span></p> <p>For what value of <span class="process-math">\(c\)</span> is <span class="process-math">\(f\)</span> continuous at <span class="process-math">\(2\text{?}\)</span></p>
+</div></section><section><h3>Types of discontinuity</h3>
+<div align="left"> <p>There are many ways that a function can fail to be continuous at a point.</p> <p>Some of these are common enough that they have names:<ol class="decimal" id="root-1-2-6-10-3-1">
+<li><p>A function <span class="process-math">\(f\)</span> has a <dfn class="terminology">jump discontinuity</dfn> at <span class="process-math">\(c\)</span> if<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to c^-}f(x) \neq \lim_{x\to c^+}f(x)
+\end{equation*}
+</div></p></li>
+<li><p>A function <span class="process-math">\(f\)</span> has a <dfn class="terminology">removable discontinuity</dfn> at <span class="process-math">\(c\)</span> if <span class="process-math">\(\lim\limits_{x\to c}f(x)\)</span> exists, but does not equal <span class="process-math">\(f(c)\)</span></p></li>
+<li><p>A function <span class="process-math">\(f\)</span> has an <dfn class="terminology">infinite discontinuity</dfn> at <span class="process-math">\(c\)</span> if it has a vertical asymptote <span class="process-math">\(x=c\text{.}\)</span></p></li>
+</ol></p>
+</div></section><section><h3>Classifying discontinuities</h3>
+<div align="left"> <p>What type of discontinuity does each function have?</p> <p><ol class="decimal" id="root-1-2-6-11-3-1">
+<li>
+<span class="process-math">\(f(x) = \dfrac{\abs{x}}{x}\text{,}\)</span> at <span class="process-math">\(x=0\)</span>
+</li>
+<li>
+<span class="process-math">\(f(x) = \dfrac{\sin(x)}{x}\text{,}\)</span> at <span class="process-math">\(x=0\)</span>
+</li>
+<li>
+<span class="process-math">\(f(x) = \dfrac1x\text{,}\)</span> at <span class="process-math">\(x=0\)</span>
+</li>
+</ol></p>
+</div></section><section><h3>Intermediate Value Theorem</h3>
+<div align="left"> <article class="theorem theorem-like" id="root-1-2-6-12-2"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span>
+</h4>
+<p>Let <span class="process-math">\(f\)</span> be a continuous function on an interval <span class="process-math">\([a,b]\text{,}\)</span> and suppose that <span class="process-math">\(f(a)\lt f(b)\text{.}\)</span></p> <p>Then for every <span class="process-math">\(y\)</span> such that <span class="process-math">\(f(a)\lt y\lt f(b)\text{,}\)</span> there is some <span class="process-math">\(x\in (a,b)\)</span> such that <span class="process-math">\(f(x)=y\text{.}\)</span></p></article>
+</div></section><section><h3>Challenge</h3>
+<div align="left"> <p>Using the Intermediate Value Theorem, prove that there must be some number <span class="process-math">\(x\)</span> between 0 and 1 such that <span class="process-math">\(\cos(x)=x\text{.}\)</span></p> <p>Hint: consider the function <span class="process-math">\(g(x)=\cos(x)-x\text{.}\)</span> Is it continuous? Can you show that it must have a zero on the interval <span class="process-math">\((0,1)\text{?}\)</span></p>
+</div></section></section><section><section><h1>September 19</h1></section><section><h3>Intermediate Value Theorem</h3>
+<div align="left"> <article class="theorem theorem-like" id="root-1-2-7-2-2"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span>
+</h4>
+<p>Let <span class="process-math">\(f\)</span> be a continuous function on an interval <span class="process-math">\([a,b]\text{,}\)</span> and suppose that <span class="process-math">\(f(a)\lt f(b)\text{.}\)</span></p> <p>Then for every <span class="process-math">\(y\)</span> such that <span class="process-math">\(f(a)\lt y\lt f(b)\text{,}\)</span> there is some <span class="process-math">\(x\in (a,b)\)</span> such that <span class="process-math">\(f(x)=y\text{.}\)</span></p></article>
+</div></section><section><h3>Sign diagrams</h3>
+<div align="left"> <p>Suppose we know that a function <span class="process-math">\(f\)</span> changes from positive to negative at <span class="process-math">\(c\text{.}\)</span> According to the Intermediate Value Theorem, which of the following is true?</p> <p><ol class="upper-alpha" id="root-1-2-7-3-3-1">
+<li><p><span class="process-math">\(\displaystyle f(c)=0\)</span></p></li>
+<li><p><span class="process-math">\(f\)</span> is not continuous at <span class="process-math">\(c\)</span></p></li>
+<li><p>Either <span class="process-math">\(f(c)=0\)</span> or <span class="process-math">\(f\)</span> is not continuous at <span class="process-math">\(c\)</span></p></li>
+<li><p>The IVT tells us nothing about <span class="process-math">\(f(c)\)</span></p></li>
+</ol></p> <p class="fragment">This lets us create a <dfn class="terminology">sign diagram</dfn> for <span class="process-math">\(f\text{.}\)</span> On a number line, mark all the zeros and discontinuities of <span class="process-math">\(f\text{.}\)</span> Between each of these points, either <span class="process-math">\(f\)</span> is positive, or <span class="process-math">\(f\)</span> is negative.</p>
+</div></section><section><h3>Using a sign diagram</h3>
+<div align="left"> <p>Let <span class="process-math">\(f(x) = \dfrac{(x+1)(x-4)}{(x+2)^2(x-2)}\text{.}\)</span></p> <p>Construct a sign diagram for <span class="process-math">\(f(x)\)</span> to answer the following:</p> <p>On what interval(s) is <span class="process-math">\(f(x)\gt 0\text{?}\)</span></p>
+</div></section><section><h3>Infinite limits</h3>
+<div align="left"> <p>A function <span class="process-math">\(f\)</span> is <dfn class="terminology">unbounded</dfn> (or has an <dfn class="terminology">infinite limit</dfn>) at <span class="process-math">\(c\)</span> if the value of <span class="process-math">\(f(x)\)</span> can be arbitrarily large when <span class="process-math">\(x\)</span> is close to <span class="process-math">\(c\text{.}\)</span></p> <p>Basic principle: if <span class="process-math">\(x\)</span> is very small, <span class="process-math">\(\dfrac1x\)</span> will be very big.</p> <p>Here “large” could mean large and positive, or large and negative.</p> <p>Notation includes:<ul class="disc" id="root-1-2-7-5-5-1">
+<li><p><span class="process-math">\(\displaystyle \lim\limits_{x\to c}f(x)=\infty\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \lim\limits_{x\to c^+}f(x)=-\infty\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \lim\limits_{x\to c^-}f(x)=\infty\)</span></p></li>
+</ul>etc.</p> <p>Infinite limits are associated with <dfn class="terminology">vertical asymptotes</dfn>, and are usually caused by a division by zero.</p>
+</div></section><section><h3>Evaluating infinite limits</h3>
+<div align="left"> <p>Let <span class="process-math">\(f(x) = \dfrac{(x+1)(x-4)}{(x+2)^2(x-2)}\)</span> (same function as 2 slides ago).</p> <p>Construct a sign diagram for <span class="process-math">\(f(x)\text{,}\)</span> and use it to find the following:</p> <p><ol class="decimal" id="root-1-2-7-6-4-1">
+<li><span class="process-math">\(\displaystyle \lim_{x\to -2^-}f(x)\)</span></li>
+<li><span class="process-math">\(\displaystyle \lim_{x\to -2^+}f(x)\)</span></li>
+<li><span class="process-math">\(\displaystyle \lim_{x\to 2^-}f(x)\)</span></li>
+<li><span class="process-math">\(\displaystyle \lim_{x\to 2^+}f(x)\)</span></li>
+</ol></p>
+</div></section><section><h3>Knowing your asymptote from a hole in the graph</h3>
+<div align="left"> <p>Identify the vertical asymptotes of the function <span class="process-math">\(f(x) = \dfrac{x^2-4}{x^3-5x^2+6x}\text{.}\)</span></p> <p>Note: <span class="process-math">\(x\)</span> is a common factor in the denominator.</p>
+</div></section><section><h3>Limits at infinity</h3>
+<div align="left"> <p>Limits <em class="emphasis">at</em> infinity have to do with <em class="emphasis">end behaviour</em>: what happens to <span class="process-math">\(f(x)\)</span> when <span class="process-math">\(x\)</span> is really big? (Either positive or negative.)</p> <p>Basic principle: if <span class="process-math">\(x\)</span> is really big, <span class="process-math">\(\dfrac1x\)</span> will be really small.</p> <p>Notation includes:<ul class="disc" id="root-1-2-7-8-4-1">
+<li><p><span class="process-math">\(\displaystyle \lim\limits_{x\to\infty}f(x)=L\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \lim\limits_{x\to -\infty}f(x)=L\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \lim\limits_{x\to\infty}f(x)=\infty\)</span></p></li>
+</ul>etc.</p> <p>If <span class="process-math">\(f(x)\)</span> has a <em class="emphasis">finite</em> limit <span class="process-math">\(L\)</span> as <span class="process-math">\(x\to\infty\)</span> or <span class="process-math">\(x\to -\infty\text{,}\)</span> we say that <span class="process-math">\(y=L\)</span> is a <dfn class="terminology">horizontal asymptote</dfn>.</p>
+</div></section><section><h3>Evaluating limits at infinity</h3>
+<div align="left"> <p>What can we say about the following limits?</p> <p><ol class="decimal" id="root-1-2-7-9-3-1">
+<li><span class="process-math">\(\displaystyle \lim_{x\to\infty}(x^3)\)</span></li>
+<li><span class="process-math">\(\displaystyle \lim_{x\to -\infty}(x^3)\)</span></li>
+<li><span class="process-math">\(\displaystyle \lim_{x\to\infty}\dfrac{1}{x^3}\)</span></li>
+<li><span class="process-math">\(\displaystyle \lim_{x\to -\infty}\dfrac{1}{x^3}\)</span></li>
+</ol></p>
+</div></section><section><h3>Dividing by a power of <span class="process-math">\(x\)</span>
+</h3>
+<div align="left"> <p>Let <span class="process-math">\(f(x) = \dfrac{3x^2-4x}{4-5x+8x^2}\text{.}\)</span></p> <div style="display:table;margin-left:0%;margin-right:0%;">
+<div style="display:table-cell;width:40%;vertical-align:top;"><p>Which of the following is equal to <span class="process-math">\(f(x)\)</span> when <span class="process-math">\(x\neq 0\text{?}\)</span><ol class="upper-alpha" id="root-1-2-7-10-3-1-3">
+<li>
+<p><span class="process-math">\(\dfrac{3-4x}{4-5x+8}\)</span></p>
+<p></p>
+</li>
+<li>
+<p><span class="process-math">\(\dfrac{3-4/x}{4-5x+8x^2}\)</span></p>
+<p></p>
+</li>
+<li><p><span class="process-math">\(\displaystyle \dfrac{3-4/x}{8-5/x+4/x^2}\)</span></p></li>
+</ol></p></div>
+<div style="display:table-cell;width:20%;vertical-align:top;"><p><span class="process-math">\(\phantom{adgaflkjalkdjf}\)</span></p></div>
+<div style="display:table-cell;width:40%;vertical-align:top;"><p>What is the value of <span class="process-math">\(\lim\limits_{x\to\infty}f(x)\text{?}\)</span><ol class="upper-alpha" id="root-1-2-7-10-3-3-2">
+<li><p><span class="process-math">\(\displaystyle 3/8\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle 3/4\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle 0\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \infty\)</span></p></li>
+</ol></p></div>
+</div>
+</div></section><section><h3>Horizontal asymptotes of rational functions</h3>
+<div align="left"> <p>A <dfn class="terminology">rational function</dfn> looks like<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \frac{a_mx^m+a_{m-1}x^{m-1}+\cdots+a_1x+a_0}{b_nx^n+b_{n-1}x^{n-1}+\cdots + b_1x+b_0}\text{.}
+\end{equation*}
+</div>(<span class="process-math">\(f(x)\)</span> is the ratio of two polynomials)</p> <p>For any rational function:<ol class="decimal" id="root-1-2-7-11-3-1">
+<li><p>If <span class="process-math">\(m\gt n\text{,}\)</span> there is no horizontal asymptote</p></li>
+<li><p>If <span class="process-math">\(m\lt n\text{,}\)</span> the horizontal asymptote is <span class="process-math">\(y=0\)</span></p></li>
+<li><p>If <span class="process-math">\(m=n\text{,}\)</span> the horizontal asymptote is <span class="process-math">\(y=\dfrac{a_n}{b_n}\)</span></p></li>
+</ol></p>
+</div></section><section><h3>An interesting limit</h3>
+<div align="left"> <p>For the function <span class="process-math">\(f(x)=\dfrac{x}{\sqrt{x^2+1}}\text{:}\)</span></p> <p><ol class="upper-alpha" id="root-1-2-7-12-3-1">
+<li><p><span class="process-math">\(\lim\limits_{x\to \infty}f(x)=1\)</span> and <span class="process-math">\(\lim\limits_{x\to -\infty}f(x)=1\)</span></p></li>
+<li><p><span class="process-math">\(\lim\limits_{x\to \infty}f(x)=1\)</span> and <span class="process-math">\(\lim\limits_{x\to -\infty}f(x)=-1\)</span></p></li>
+<li><p><span class="process-math">\(\lim\limits_{x\to \infty}f(x)=0\)</span> and <span class="process-math">\(\lim\limits_{x\to -\infty}f(x)=0\)</span></p></li>
+</ol></p>
+</div></section><section><h3>Understanding asymptotes</h3>
+<div align="left"> <p>Which of the following is true?</p> <p><ol class="upper-alpha" id="root-1-2-7-13-3-1">
+<li><p>The graph of a function cannot cross either a vertical asymptote or a horizontal asymptote</p></li>
+<li><p>The graph of a function cannot cross a horizontal asymptote, but it can cross a vertical asymptote</p></li>
+<li><p>The graph of a function cannot cross a vertical asymptote, but it can cross a horizontal asymptote</p></li>
+<li><p>The graph of a function can cross both a horizontal asymptote and a vertical asymptote</p></li>
+</ol></p>
 </div></section></section>
 </div>
 </div></body>
