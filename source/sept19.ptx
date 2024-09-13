@@ -1,175 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section>
-  <title>September 26</title>
-
-
-  <slide>
-    <title>Setting a parameter</title>
-
-    <p>
-      Consider the function <m>f(x) = \begin{cases}5x+k,\amp x\leq 2\\ kx^2+2,\amp x\gt 2\end{cases}</m>.
-    </p>
-    
-    <p>
-      For what value of <m>k</m> is <m>f</m> continuous at <m>2</m>?
-    </p>
-
-    <p>
-      <ol marker="A.">
-        <li>
-          <p>
-            <m>5/2</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>8/3</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>\sqrt{2}</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Not possible to solve for <m>k</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            Answer was a fraction, therefore it doesn't exist
-          </p>
-        </li>
-      </ol>
-    </p>
-  </slide>
-
-  <slide>
-    <title>Types of discontinuity</title>
-    
-    <p>
-      There are many ways that a function can fail to be continuous at a point.
-    </p>
-
-    <p>
-      Some of these are common enough that they have names:
-      <ol>
-        <li>
-          <p>
-            A function <m>f</m> has a <term>jump discontinuity</term> at <m>c</m> if
-            <me>
-              \lim_{x\to c^-}f(x) \neq \lim_{x\to c^+}f(x)
-            </me>
-            
-          </p>
-        </li>
-        <li>
-          <p>
-            A function <m>f</m> has a <term>removeable discontinuity</term> at <m>c</m>
-            if <m>\lim\limits_{x\to c}f(x)</m> exists, but does not equal <m>f(c)</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            A function <m>f</m> has an <term>infinite discontinuity</term> at <m>c</m>
-            if it has a vertical asymptote <m>x=c</m>.
-          </p>
-        </li>
-      </ol>
-    </p>
-  </slide>
-
-  <slide>
-    <title>Classifying discontinuities</title>
-    
-    <p>
-      What type of discontinuity does each function have?
-    </p>
-
-    <sidebyside widths="30% 30% 30%">
-      <p>
-        <m>f(x) = \dfrac{\abs{x}}{x}</m>, at <m>x=0</m> <m>\phantom{afjlskdafjadslfjad}</m>
-        <ol marker="A.">
-          <li>
-            <p>
-              removeable
-            </p>
-          </li>
-          <li>
-            <p>
-              jump
-            </p>
-          </li>
-          <li>
-            <p>
-              infinite
-            </p>
-          </li>
-          <li>
-            <p>
-              there is no discontinuity
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      <p>
-        <m>f(x) = \dfrac{\sin(x)}{x}</m>, at <m>x=0</m> <m>\phantom{afjlskdafjadslfjad}</m>
-        <ol marker="A.">
-          <li>
-            <p>
-              removeable
-            </p>
-          </li>
-          <li>
-            <p>
-              jump
-            </p>
-          </li>
-          <li>
-            <p>
-              infinite
-            </p>
-          </li>
-          <li>
-            <p>
-              there is no discontinuity
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      <p>
-        <m>f(x) = \dfrac1x</m>, at <m>x=0</m> <m>\phantom{afjlskdafjadslfjad}</m>
-        <ol marker="A.">
-          <li>
-            <p>
-              removeable
-            </p>
-          </li>
-          <li>
-            <p>
-              jump
-            </p>
-          </li>
-          <li>
-            <p>
-              infinite
-            </p>
-          </li>
-          <li>
-            <p>
-              there is no discontinuity
-            </p>
-          </li>
-        </ol>
-      </p>
-    </sidebyside>
-  </slide>
-
+  <title>September 19</title>
+  
   <slide>
     <title>Intermediate Value Theorem</title>
     
@@ -230,6 +63,7 @@
       Between each of these points, either <m>f</m> is positive, or <m>f</m> is negative.
     </p>
   </slide>
+
   <slide>
     <title>Using a sign diagram</title>
     
@@ -245,39 +79,7 @@
       On what interval(s) is <m>f(x)\gt 0</m>?
     </p>
 
-    <p>
-      <ol marker="A.">
-        <li>
-          <p>
-            <m>(-1,2)</m> and <m>(4,\infty)</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>(-1,2)</m> and <m>(4,\infty)</m> and <m>(-\infty,-2)</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>(-\infty, -1)</m> and <m>(4,\infty)</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>(-2,-1)</m> and <m>(2,4)</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>(-2,-1)</m> and <m>(2,4)</m> and <m>(-\infty, -2)</m>
-          </p>
-        </li>
-      </ol>
-    </p>
+    
   </slide>
 
   <slide>
@@ -336,112 +138,29 @@
     </p>
     
     <p>
-      In each case, which of the following is true?
+      Construct a sign diagram for <m>f(x)</m>, and use it to find the following:
     </p>
 
-    <sidebyside widths="40% 20% 40%">
-      <p>
-        <ol marker="A.">
-          <li>
-            <p>
-              <m>\lim\limits_{x\to 2^-}f(x)=\infty</m> and <m>\lim\limits_{x\to 2^+}f(x)=\infty</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\lim\limits_{x\to 2^-}f(x)=-\infty</m> and <m>\lim\limits_{x\to 2^+}f(x)=\infty</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\lim\limits_{x\to 2^-}f(x)=\infty</m> and <m>\lim\limits_{x\to 2^+}f(x)=-\infty</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\lim\limits_{x\to 2^-}f(x)=-\infty</m> and <m>\lim\limits_{x\to 2^+}f(x)=-\infty</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      <p>
-        <m>\phantom{lakjfldskajmasdlf}</m>
-      </p>
-
-      <p>
-        <ol marker="A.">
-          <li>
-            <p>
-              <m>\lim\limits_{x\to -2^-}f(x)=\infty</m> and <m>\lim\limits_{x\to -2^+}f(x)=\infty</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\lim\limits_{x\to -2^-}f(x)=-\infty</m> and <m>\lim\limits_{x\to -2^+}f(x)=\infty</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\lim\limits_{x\to -2^-}f(x)=\infty</m> and <m>\lim\limits_{x\to -2^+}f(x)=-\infty</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\lim\limits_{x\to -2^-}f(x)=-\infty</m> and <m>\lim\limits_{x\to -2^+}f(x)=-\infty</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </sidebyside>
+    
+    <p>
+      <ol>
+        <li><m>\lim_{x\to -2^-}f(x)</m></li>
+        <li><m>\lim_{x\to -2^+}f(x)</m></li>
+        <li><m>\lim_{x\to 2^-}f(x)</m></li>
+        <li><m>\lim_{x\to 2^+}f(x)</m></li>
+      </ol>
+    </p>
   </slide>
 
   <slide>
     <title>Knowing your asymptote from a hole in the graph</title>
     
     <p>
-      For the function <m>f(x) = \dfrac{x^2-4}{x^3-5x^2+6x}</m>,
-      which of the following are true of the graph <m>y=f(x)</m>?
+      Identify the vertical asymptotes of the function <m>f(x) = \dfrac{x^2-4}{x^3-5x^2+6x}</m>.
     </p>
 
     <p>
-      <ol marker="A.">
-        <li>
-          <p>
-            There is one vertical asymptote, at <m>x=0</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            There are two vertical asymptotes, at <m>x=0</m> and <m>x=2</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            There are two vertical asymptotes, at <m>x=2</m> and <m>x=-2</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            There are two vertical asymptotes, at <m>x=0</m> and <m>x=3</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            There are three vertical asymptotes, at <m>x=0</m>, <m>x=2</m>, and <m>x=3</m>
-          </p>
-        </li>
-
-      </ol>
+      Note: <m>x</m> is a common factor in the denominator.
     </p>
   </slide>
 

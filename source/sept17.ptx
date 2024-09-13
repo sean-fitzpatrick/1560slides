@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section>
-  <title>September 21</title>
+  <title>September 17</title>
 
   <slide>
     <title>Finding one-sided limits (formula)</title>
@@ -68,59 +68,6 @@
   </slide>
 
   <slide>
-    <title>Existence of limits</title>
-    
-    <p>
-      The graph of a function <m>f(x)</m> is shown on the right.
-      At what point(s) <m>c</m> does <m>\lim\limits_{x\to c}f(x)</m> exist?
-    </p>
-
-    <sidebyside widths="40% 20% 40%">
-      <p>
-        <ol marker="A.">
-          <li>
-            <p>
-              At <m>-2</m> and <m>-1</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              At <m>-2</m> and <m>1</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              At <m>-2</m>, <m>-1</m>, and <m>1</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Only at <m>-2</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              At none of <m>-2</m>, <m>-1</m>, or <m>1</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      <p>
-        <m>\phantom{abcsadfadfae}</m>
-      </p>
-
-      <image source="images/Se192.svg">
-        <description></description>
-      </image>
-    </sidebyside>
-  </slide>
-
-  <slide>
     <title>Continuity</title>
     
     <definition>
@@ -171,42 +118,6 @@
   </slide>
 
   <slide>
-    <title>Some everyday functions</title>
-    
-    <p>
-      Which of the following would best be modelled by a continuous function of time?
-    </p>
-
-    <p>
-      <ol marker="A.">
-        <li>
-          <p>
-            The enrollment in this course.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            The outdoor temperature.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            The outdoor temperature, rounded to the nearest degree.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            The number of subscribers to Sean's YouTube channel.
-          </p>
-        </li>
-      </ol>
-    </p>
-  </slide>
-
-  <slide>
     <title>Continuity, graphically</title>
     
     <sidebyside widths="45% 10% 45%">
@@ -250,22 +161,32 @@
         <m>\phantom{abcdefghij}</m>
       </p>
 
-      <image source="images/T1Q1.png" width="100%">
+      <image source="T1Q1.png" width="100%">
         <description></description>
       </image>
     </sidebyside>
+
+    <p pause="yes">
+      What should it mean to say that <m>f(x)</m> is continuous at the endpoints of the interval?
+    </p>
   </slide>
 
   <slide>
-    <title>Continuity at endpoints</title>
-    
+    <title>Continuity, analytically</title>
     <p>
-      Notice that I didn't give <m>x=-4</m> or <m>x=6</m> as options in the last problem.
+      Let <m>f(x) = \begin{cases}5x^2-3x,\amp x\lt 1\\4,\amp x=1\\2\cos(x-1),\amp x\gt 1\end{cases}</m>.
     </p>
 
     <p>
-      If <m>f</m> is defined on a <em>closed</em> interval <m>[a,b]</m>,
-      how do we define continuity at <m>a</m> and <m>b</m>?
+      Is <m>f</m> continuous at <m>x=1</m>?
+    </p>
+
+    <p pause="yes">
+      How could we change the definition of <m>f(x)</m> to ensure <m>f</m> <em>is</em> continuous at <m>x=1</m>?
+    </p>
+
+    <p pause="yes">
+      Is <m>f</m> continuous at <m>x=0</m>? How would you explain this?
     </p>
   </slide>
 
@@ -303,28 +224,21 @@
             logarithms: <m>\ln(x), \log_2(x), \log_{10}(x)</m>, <etc/>
           </p>
         </li>
+
+        <li>
+          <p>
+            Any function formed from any of the above using addition, subtraction,
+            multiplication, division, and composition. (As long as we don't divide by 0.)
+          </p>
+        </li>
       </ul>
     </p>
 
     <p>
-      Note: some of these functions hav vertical asymptotes. 
+      Note: some of these functions have vertical asymptotes. 
       These are points of discontinuity, but they are not in the domain.
     </p>
 
-    <theorem>
-      <statement>
-        <p>
-          If <m>f</m> and <m>g</m> are continuous functions, then so are
-          <m>
-            f+g, f-g, fg, f/g, \,\text{ and } f\circ g
-          </m>.          
-        </p>
-      </statement>
-    </theorem>
-
-    <p>
-      Note that <m>f\circ g</m> denotes composition: <m>f\circ g(x) = f(g(x))</m>.
-    </p>
     
   </slide>
 
@@ -332,37 +246,11 @@
     <title>Checking continuity</title>
     
     <p>
-      Let <m>f(x) = \begin{cases}2x+x^2, \amp x\lt 1\\ 4-x, \amp x\geq 1\end{cases}</m>
+      Let <m>f(x)=\sin(3x^2-5x+2)</m>.
     </p>
 
     <p>
-      Which of the following is true?
-      <ol marker="A.">
-        <li>
-          <p>
-            <m>f</m> is continuous at 0 and 1.
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>f</m> is continuous at 0, but not at 1.
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>f</m> is continuous at 1, but not at 0.
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>f</m> is not continuous at either 0 or 1.
-          </p>
-        </li>
-      </ol>
-    </p>
-
-    <p pause="yes">
-      How does our method for checking at 0 differ from the method for checking at 1?
+      Explain why you know that <m>f</m> is continuous at all real numbers.
     </p>
   </slide>
 
@@ -377,36 +265,7 @@
       For what value of <m>c</m> is <m>f</m> continuous at <m>2</m>?
     </p>
 
-    <p>
-      <ol marker="A.">
-        <li>
-          <p>
-            <m>5/2</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>8/3</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>\sqrt{2}</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Not possible to solve for <m>c</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            Answer was a fraction, therefore it doesn't exist
-          </p>
-        </li>
-      </ol>
-    </p>
+   
   </slide>
 
   <slide>
@@ -430,7 +289,7 @@
         </li>
         <li>
           <p>
-            A function <m>f</m> has a <term>removeable discontinuity</term> at <m>c</m>
+            A function <m>f</m> has a <term>removable discontinuity</term> at <m>c</m>
             if <m>\lim\limits_{x\to c}f(x)</m> exists, but does not equal <m>f(c)</m>
           </p>
         </li>
@@ -451,85 +310,15 @@
       What type of discontinuity does each function have?
     </p>
 
-    <sidebyside widths="30% 30% 30%">
+    
       <p>
-        <m>f(x) = \dfrac{\abs{x}}{x}</m>, at <m>x=0</m> <m>\phantom{afjlskdafjadslfjad}</m>
-        <ol marker="A.">
-          <li>
-            <p>
-              removeable
-            </p>
-          </li>
-          <li>
-            <p>
-              jump
-            </p>
-          </li>
-          <li>
-            <p>
-              infinite
-            </p>
-          </li>
-          <li>
-            <p>
-              there is no discontinuity
-            </p>
-          </li>
+        
+        <ol>
+          <li><m>f(x) = \dfrac{\abs{x}}{x}</m>, at <m>x=0</m></li>
+          <li> <m>f(x) = \dfrac{\sin(x)}{x}</m>, at <m>x=0</m></li>
+          <li><m>f(x) = \dfrac1x</m>, at <m>x=0</m></li>
         </ol>
       </p>
-
-      <p>
-        <m>f(x) = \dfrac{\sin(x)}{x}</m>, at <m>x=0</m> <m>\phantom{afjlskdafjadslfjad}</m>
-        <ol marker="A.">
-          <li>
-            <p>
-              removeable
-            </p>
-          </li>
-          <li>
-            <p>
-              jump
-            </p>
-          </li>
-          <li>
-            <p>
-              infinite
-            </p>
-          </li>
-          <li>
-            <p>
-              there is no discontinuity
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      <p>
-        <m>f(x) = \dfrac1x</m>, at <m>x=0</m> <m>\phantom{afjlskdafjadslfjad}</m>
-        <ol marker="A.">
-          <li>
-            <p>
-              removeable
-            </p>
-          </li>
-          <li>
-            <p>
-              jump
-            </p>
-          </li>
-          <li>
-            <p>
-              infinite
-            </p>
-          </li>
-          <li>
-            <p>
-              there is no discontinuity
-            </p>
-          </li>
-        </ol>
-      </p>
-    </sidebyside>
   </slide>
 
   <slide>
@@ -549,5 +338,19 @@
       </statement>
     </theorem>
     
+  </slide>
+
+  <slide>
+    <title>Challenge</title>
+    <p>
+      Using the Intermediate Value Theorem,
+      prove that there must be some number <m>x</m> between 0 and 1
+      such that <m>\cos(x)=x</m>.
+    </p>
+
+    <p>
+      Hint: consider the function <m>g(x)=\cos(x)-x</m>.
+      Is it continuous? Can you show that it must have a zero on the interval <m>(0,1)</m>?
+    </p>
   </slide>
 </section>
