@@ -230,7 +230,7 @@
       Let <m>f(x) = \dfrac{3x^2-4x}{4-5x+8x^2}</m>.
     </p>
 
-    <sidebyside widths="40% 20% 40%">
+    
       <p>
         Which of the following is equal to <m>f(x)</m> when <m>x\neq 0</m>?
         <ol marker="A.">
@@ -260,38 +260,8 @@
       </p>
 
       <p>
-        <m>\phantom{adgaflkjalkdjf}</m>
+        Using this, compute <m>\lim\limits_{x\to\infty}f(x)</m>.
       </p>
-
-      <p>
-        What is the value of <m>\lim\limits_{x\to\infty}f(x)</m>?
-        <ol marker="A.">
-          <li>
-            <p>
-              <m>3/8</m>
-            </p>
-          </li>
-  
-          <li>
-            <p>
-              <m>3/4</m>
-            </p>
-          </li>
-  
-          <li>
-            <p>
-              <m>0</m>
-            </p>
-          </li>
-  
-          <li>
-            <p>
-              <m>\infty</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </sidebyside>
   </slide>
 
   <slide>
