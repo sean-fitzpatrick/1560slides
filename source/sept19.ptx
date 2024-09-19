@@ -153,6 +153,18 @@
   </slide>
 
   <slide>
+    <title>Brain logic, or computer logic?</title>
+    <p>
+      Evaluate <m>\lim\limits_{x\to 0^+}\csc(1/x)</m>.
+    </p>
+
+    <p>
+      Try using <m>x=0.1, 0.01, 0.001,\ldots</m>. 
+      What does this tell you about the limit?
+    </p>
+  </slide>
+
+  <slide>
     <title>Knowing your asymptote from a hole in the graph</title>
     
     <p>
