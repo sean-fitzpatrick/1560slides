@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>September 24</title>
+
+  <slide>
+    <title>Understanding asymptotes</title>
+    
+    <p>
+      Which of the following is true?
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            The graph of a function cannot cross either a vertical asymptote or a horizontal asymptote
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The graph of a function cannot cross a horizontal asymptote, but it can cross a vertical asymptote
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The graph of a function cannot cross a vertical asymptote, but it can cross a horizontal asymptote
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The graph of a function can cross both a horizontal asymptote and a vertical asymptote
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Slope: average rate of change</title>
+    
+    <sidebyside widths="50% 50%">
+      <p>
+        For the function <m>f</m> whose graph is shown,
+        what is the average rate of change <m>\left(\dfrac{\Delta y}{\Delta x}\right)</m> on the interval <m>[1,4]</m>?
+        <ol marker="A.">
+          <li>
+            <p>
+              6
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>-6</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              2
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>-2</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <image source="images/Se28Q1.png" width="100%">
+        <description></description>
+      </image>
+    </sidebyside>
+
+    <p pause="yes">
+      What if we used the interval <m>[1,3]</m>? Or <m>[1,2]</m>? Or <m>[1,1.1]</m>? Or <m>[0.9,1]</m>?
+    </p>
+
+    <p pause="yes">
+      <url href="https://www.geogebra.org/calculator/u768yf86">Let's try it out!</url>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Tangent lines</title>
+    
+    <p>
+      The <term>tangent</term> line at a point <m>(a,f(a))</m> on a graph <m>y=f(x)</m>
+      is the line with slope given by
+      <me>
+        m = f'(a) = \lim_{h\to 0}\frac{f(a+h)-f(a)}{h}
+      </me>.
+      
+    </p>
+
+    <p>
+      The slope <m>f'(a)</m> (read f prime at a) is called the <term>derivative</term> of <m>f</m> at <m>a</m>.
+    </p>
+
+    <p pause="yes">
+      Notice that this is the same calculation we'd use to find instantaneous velocity.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Computing a derivative</title>
+    
+    <p>
+      Let <m>f(x)=x^2+3x</m>. Compute the derivative <m>f'(2)</m> by evaluating the limit
+      <me>
+        \lim_{h\to 0}\frac{f(2+h)-f(2)}{h}
+      </me>.
+      
+    </p>
+  </slide>
+
+  <slide>
+    <title>The derivative as a function</title>
+    
+    <p>
+      By varying the point at which we compute the derivative, we can define a new function <m>f'(x)</m>,
+      the <term>derivative</term> of <m>f</m>:
+      <me>
+        f'(x) = \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
+      </me>.
+      
+    </p>
+
+    <p>
+      <em>Using this definition</em>, find <m>f'(x)</m> if <m>f(x) = x^3+5x</m>.
+    </p>
+
+    <p>
+      Note: the binomial formula tells us that <m>(a+b)^3 = a^3+3a^2b+3ab^2+b^3</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>The tangent line</title>
+    
+    <p>
+      To find the equation of the tangent line, we use the point-slope formula:
+    </p>
+
+    <p>
+      The equation of the line through <m>(x_0,y_0)</m> with slope <m>m</m> is
+      <me>
+        y=y_0+m(x-x_0)
+      </me>.
+      
+    </p>
+
+    <p>
+      For the tangent line through <m>(a,f(a))</m> with slope <m>f'(a)</m>,
+      this becomes
+      <me>
+        y=f(a)+f'(a)(x-a)
+      </me>.
+      
+    </p>
+
+    <p>
+      Find:
+      <ol>
+        <li>
+          <p>
+            The equation of the tangent line to <m>y=4x-x^2</m> when <m>x=1</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            The equation of the tangent line to <m>y=\sqrt{x}</m> when <m>x=4</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>A trig example</title>
+    
+    <p>
+      Find <m>f'(x)</m> for the function <m>f(x)=\cos(x)</m>.
+    </p>
+  </slide>
+</section>
