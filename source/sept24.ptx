@@ -70,7 +70,7 @@
         </ol>
       </p>
 
-      <image source="images/Se28Q1.png" width="100%">
+      <image source="Se28Q1.png" width="100%">
         <description></description>
       </image>
     </sidebyside>
@@ -131,6 +131,9 @@
 
     <p>
       <em>Using this definition</em>, find <m>f'(x)</m> if <m>f(x) = x^3+5x</m>.
+    </p>
+
+    <p>
     </p>
 
     <p>
