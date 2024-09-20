@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-09-19T07:55:44-06:00       *-->
+<!--*       on 2024-09-20T09:19:56-06:00       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -497,6 +497,107 @@ f(x) = \frac{a_mx^m+a_{m-1}x^{m-1}+\cdots+a_1x+a_0}{b_nx^n+b_{n-1}x^{n-1}+\cdots
 <li><p>The graph of a function cannot cross a vertical asymptote, but it can cross a horizontal asymptote</p></li>
 <li><p>The graph of a function can cross both a horizontal asymptote and a vertical asymptote</p></li>
 </ol></p>
+</div></section></section><section><section><h1>September 24</h1></section><section><h3>Understanding asymptotes</h3>
+<div align="left"> <p>Which of the following is true?</p> <p><ol class="upper-alpha" id="root-1-2-8-2-3-1">
+<li><p>The graph of a function cannot cross either a vertical asymptote or a horizontal asymptote</p></li>
+<li><p>The graph of a function cannot cross a horizontal asymptote, but it can cross a vertical asymptote</p></li>
+<li><p>The graph of a function cannot cross a vertical asymptote, but it can cross a horizontal asymptote</p></li>
+<li><p>The graph of a function can cross both a horizontal asymptote and a vertical asymptote</p></li>
+</ol></p>
+</div></section><section><h3>Slope: average rate of change</h3>
+<div align="left"> <div style="display:table;margin-left:0%;margin-right:0%;">
+<div style="display:table-cell;width:50%;vertical-align:top;"><p>For the function <span class="process-math">\(f\)</span> whose graph is shown, what is the average rate of change <span class="process-math">\(\left(\dfrac{\Delta y}{\Delta x}\right)\)</span> on the interval <span class="process-math">\([1,4]\text{?}\)</span><ol class="upper-alpha" id="root-1-2-8-3-2-1-4">
+<li><p>6</p></li>
+<li><p><span class="process-math">\(\displaystyle -6\)</span></p></li>
+<li><p>2</p></li>
+<li><p><span class="process-math">\(\displaystyle -2\)</span></p></li>
+</ol></p></div>
+<div style="display:table-cell;width:50%;vertical-align:top;"><img src="external/Se28Q1.png" class="contained"></div>
+</div> <p class="fragment">What if we used the interval <span class="process-math">\([1,3]\text{?}\)</span> Or <span class="process-math">\([1,2]\text{?}\)</span> Or <span class="process-math">\([1,1.1]\text{?}\)</span> Or <span class="process-math">\([0.9,1]\text{?}\)</span></p> <p class="fragment"><a class="external" href="https://www.geogebra.org/calculator/u768yf86" target="_blank">Let’s try it out!</a></p>
+</div></section><section><h3>Tangent lines</h3>
+<div align="left"> <p>The <dfn class="terminology">tangent</dfn> line at a point <span class="process-math">\((a,f(a))\)</span> on a graph <span class="process-math">\(y=f(x)\)</span> is the line with slope given by<div class="displaymath process-math">
+\begin{equation*}
+m = f'(a) = \lim_{h\to 0}\frac{f(a+h)-f(a)}{h}\text{.}
+\end{equation*}
+</div></p> <p>The slope <span class="process-math">\(f'(a)\)</span> (read f prime at a) is called the <dfn class="terminology">derivative</dfn> of <span class="process-math">\(f\)</span> at <span class="process-math">\(a\text{.}\)</span></p> <p class="fragment">Notice that this is the same calculation we’d use to find instantaneous velocity.</p>
+</div></section><section><h3>Computing a derivative</h3>
+<div align="left"> <p>Let <span class="process-math">\(f(x)=x^2+3x\text{.}\)</span> Compute the derivative <span class="process-math">\(f'(2)\)</span> by evaluating the limit<div class="displaymath process-math">
+\begin{equation*}
+\lim_{h\to 0}\frac{f(2+h)-f(2)}{h}\text{.}
+\end{equation*}
+</div></p>
+</div></section><section><h3>The derivative as a function</h3>
+<div align="left"> <p>By varying the point at which we compute the derivative, we can define a new function <span class="process-math">\(f'(x)\text{,}\)</span> the <dfn class="terminology">derivative</dfn> of <span class="process-math">\(f\text{:}\)</span><div class="displaymath process-math">
+\begin{equation*}
+f'(x) = \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}\text{.}
+\end{equation*}
+</div></p> <p><em class="emphasis">Using this definition</em>, find <span class="process-math">\(f'(x)\)</span> if <span class="process-math">\(f(x) = x^3+5x\text{.}\)</span></p> <p></p> <p>Note: the binomial formula tells us that <span class="process-math">\((a+b)^3 = a^3+3a^2b+3ab^2+b^3\text{.}\)</span></p>
+</div></section><section><h3>The tangent line</h3>
+<div align="left"> <p>To find the equation of the tangent line, we use the point-slope formula:</p> <p>The equation of the line through <span class="process-math">\((x_0,y_0)\)</span> with slope <span class="process-math">\(m\)</span> is<div class="displaymath process-math">
+\begin{equation*}
+y=y_0+m(x-x_0)\text{.}
+\end{equation*}
+</div></p> <p>For the tangent line through <span class="process-math">\((a,f(a))\)</span> with slope <span class="process-math">\(f'(a)\text{,}\)</span> this becomes<div class="displaymath process-math">
+\begin{equation*}
+y=f(a)+f'(a)(x-a)\text{.}
+\end{equation*}
+</div></p> <p>Find:<ol class="decimal" id="root-1-2-8-7-5-1">
+<li><p>The equation of the tangent line to <span class="process-math">\(y=4x-x^2\)</span> when <span class="process-math">\(x=1\)</span></p></li>
+<li><p>The equation of the tangent line to <span class="process-math">\(y=\sqrt{x}\)</span> when <span class="process-math">\(x=4\)</span></p></li>
+</ol></p>
+</div></section><section><h3>A trig example</h3>
+<div align="left"> <p>Find <span class="process-math">\(f'(x)\)</span> for the function <span class="process-math">\(f(x)=\cos(x)\text{.}\)</span></p>
+</div></section></section><section><section><h1>September 26</h1></section><section><h3>Recap: derivative as slope of tangent line</h3>
+<div align="left"> <p>Recall: the <dfn class="terminology">derivative</dfn> of a function <span class="process-math">\(f\)</span> is given by<div class="displaymath process-math">
+\begin{equation*}
+f'(x) = \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}\text{.}
+\end{equation*}
+</div></p> <p>The definition was motivated by finding the <a class="external" href="https://www.geogebra.org/calculator/x4hjqvfu" target="_blank">slope of a tangent line</a>. (We can also think of instantaneous velocity.)</p> <p>At a point <span class="process-math">\((c,f(c))\)</span> on a graph <span class="process-math">\(y=f(x)\text{,}\)</span> the equation of the tangent line is<div class="displaymath process-math">
+\begin{equation*}
+y = f(c)+f'(c)(x-c)\text{.}
+\end{equation*}
+</div></p> <p>The derivative also gives a <em class="emphasis">linear approximation</em>: for small <span class="process-math">\(\Delta x\text{,}\)</span><div class="displaymath process-math">
+\begin{equation*}
+\Delta y = f(c+\Delta x)-f(c) \approx f'(c)\Delta x\text{.}
+\end{equation*}
+</div></p>
+</div></section><section><h3>Absolute value</h3>
+<div align="left"> <div style="display:table;margin-left:0%;margin-right:0%;">
+<div style="display:table-cell;width:45%;vertical-align:top;"><p>To the right is the graph of the absolute value function, <span class="process-math">\(f(x)=\lvert x\rvert\text{.}\)</span></p></div>
+<div style="display:table-cell;width:10%;vertical-align:top;"><p><span class="process-math">\(\phantom{abdefg}\)</span></p></div>
+<div style="display:table-cell;width:45%;vertical-align:top;"><img src="external/./images/absval.svg" class="contained"></div>
+</div> <p>What do you think is the slope of the tangent line at <span class="process-math">\(x=c\text{,}\)</span> if <span class="process-math">\(c\gt 0\text{?}\)</span></p> <p>What do you think is the slope of the tangent line at <span class="process-math">\(x=c\text{,}\)</span> if <span class="process-math">\(c\lt 0\text{?}\)</span></p> <p>What do you think is the slope of the tangent line at <span class="process-math">\(x=0\text{?}\)</span></p>
+</div></section><section><h3>Basic derivative rules</h3>
+<div align="left"> <p>Thus begins Unit 2. Goodbye, limits! (For now…)</p> <p>The limit definition of the derivative gives us great intuition, but it’s not very practical.</p> <p>What if we wanted to find the derivative of <span class="process-math">\(f(x)=5x^8-4x^5+2x^4-15x^3-8x+3\text{?}\)</span></p> <p>Or <span class="process-math">\(g(x)=\sin(\sqrt{x^4+7})\text{?}\)</span></p>
+</div></section><section><h3>Simple functions</h3>
+<div align="left"> <p>For a constant function <span class="process-math">\(f(x)=c\text{,}\)</span> what is <span class="process-math">\(f'(x)\text{?}\)</span></p> <p class="fragment">For a linear function <span class="process-math">\(f(x)=mx+b\text{,}\)</span> what is <span class="process-math">\(f'(x)\text{?}\)</span></p>
+</div></section><section><h3>Power functions</h3>
+<div align="left"> <p>We have seen the following so far (assuming we’ve been reading along in the textbook):<ul class="disc" id="root-1-2-9-6-2-1">
+<li><p>The derivative of <span class="process-math">\(f(x)=x\)</span> is <span class="process-math">\(f'(x)=1\)</span></p></li>
+<li><p>The derivative of <span class="process-math">\(f(x)=x^2\)</span> is <span class="process-math">\(f'(x)=2x\)</span></p></li>
+<li><p>The derivative of <span class="process-math">\(f(x)=x^3\)</span> is <span class="process-math">\(f'(x)=3x^2\)</span></p></li>
+<li><p>The derivative of <span class="process-math">\(f(x)=\sqrt{x}=x^{1/2}\)</span> is <span class="process-math">\(f'(x)=\frac{1}{2\sqrt{x}}=\frac12 x^{-1/2}\)</span></p></li>
+<li><p>The derivative of <span class="process-math">\(f(x)=\frac1x=x^{-1}\)</span> is <span class="process-math">\(f'(x)=-\frac{1}{x^2}=-1x^{-2}\)</span></p></li>
+</ul></p> <p>In general, what do you think we should get for the derivative of <span class="process-math">\(f(x)=x^n\text{?}\)</span></p>
+</div></section><section><h3>Constant multiples</h3>
+<div align="left"> <p>If <span class="process-math">\(g(x)=3f(x)\text{,}\)</span> what is the relationship between <span class="process-math">\(g'(x)\)</span> and <span class="process-math">\(f'(x)\text{?}\)</span></p> <p>If <span class="process-math">\(f(x)=12x^{2/3}\text{,}\)</span> what is <span class="process-math">\(f'(x)\text{?}\)</span></p>
+</div></section><section><h3>Sum and difference</h3>
+<div align="left"> <p>Consider functions <span class="process-math">\(f(x) = ax+b\)</span> and <span class="process-math">\(g(x)=cx+d\text{.}\)</span></p> <p>What is the derivative of <span class="process-math">\(f+g\text{?}\)</span></p> <p class="fragment">In general, the derivative of <span class="process-math">\(f(x)+g(x)\)</span> is <span class="process-math">\(f'(x)+g'(x)\text{.}\)</span></p> <p class="fragment">The same is true of differences, and the rule extends to sums/differences with three or more terms.</p>
+</div></section><section><h3>A polynomial</h3>
+<div align="left"> <p>Earlier, we asked what the derivative might be for <span class="process-math">\(f(x)=5x^8-4x^5+2x^4-15x^3-8x+3\text{.}\)</span></p> <p>So, what is it? (Use the rules for powers, sums, and constant multiples.)</p>
+</div></section><section><h3>Other common functions</h3>
+<div align="left"> <p>Here are derivatives of some other common functions. These can be determined using the limit definition.</p> <p><ol class="decimal" id="root-1-2-9-10-3-1">
+<li><p>The derivative of <span class="process-math">\(f(x)=\sin(x)\)</span> is <span class="process-math">\(f'(x)=\cos(x)\)</span></p></li>
+<li><p>The derivative of <span class="process-math">\(f(x)=\cos(x)\)</span> is <span class="process-math">\(f'(x)=-\sin(x)\)</span></p></li>
+<li><p>The derivative of <span class="process-math">\(f(x)=e^x\)</span> is <span class="process-math">\(f'(x)=e^x\)</span></p></li>
+<li><p>The derivative of <span class="process-math">\(f(x)=\ln(x)\)</span> is <span class="process-math">\(f'(x)=\dfrac1x\)</span></p></li>
+</ol></p> <p class="fragment"><dfn class="terminology">Leibniz notation</dfn>: another notation for the derivative is as follows: if <span class="process-math">\(y=f(x)\text{,}\)</span> we write <span class="process-math">\(\dfrac{dy}{dx}=f'(x)\text{.}\)</span></p> <p class="fragment">We can read <span class="process-math">\(\dfrac{d}{dx}\)</span> as “the derivative of”. This allows us to shorten some statements:<div class="displaymath process-math">
+\begin{equation*}
+\frac{d}{dx}(\sin(x))=\cos(x), \frac{d}{dx}(\cos(x))=-\sin(x)\text{,}
+\end{equation*}
+</div>etc.</p>
+</div></section><section><h3>More examples</h3>
+<div align="left"> <p>What is the derivative of <span class="process-math">\(f(x)=4\cos(x)-3e^x+5x^4\text{?}\)</span></p> <p>What is the derivative of <span class="process-math">\(g(x)=\ln(5)+\pi^7+e^3\text{?}\)</span></p>
 </div></section></section>
 </div>
 </div></body>
