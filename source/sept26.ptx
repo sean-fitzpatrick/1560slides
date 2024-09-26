@@ -232,7 +232,7 @@
       We can read <m>\dfrac{d}{dx}</m> as <q>the derivative of</q>. This allows us to shorten some statements:
     </p>
 
-    <p pasue="yes">
+    <p pause="yes">
       <m>\dfrac{d}{dx}(\sin(x))=\cos(x), \dfrac{d}{dx}(\cos(x))=-\sin(x)</m>
     </p>
   </slide>
