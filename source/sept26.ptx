@@ -39,14 +39,10 @@
   <slide>
     <title>Absolute value</title>
     
-    <sidebyside widths="45% 10% 45%">
+    <sidebyside widths="60% 40%">
       <p>
         To the right is the graph of the absolute value function,
         <m>f(x)=\lvert x\rvert</m>.
-      </p>
-
-      <p>
-        <m>\phantom{abdefg}</m>
       </p>
 
       <image source="absval.svg" width="100%">
@@ -234,11 +230,10 @@
 
     <p pause="yes">
       We can read <m>\dfrac{d}{dx}</m> as <q>the derivative of</q>. This allows us to shorten some statements:
-      <me pause="yes">
-        \frac{d}{dx}(\sin(x))=\cos(x), \frac{d}{dx}(\cos(x))=-\sin(x)
-      </me>,
-      <etc/>
-      
+    </p>
+
+    <p pasue="yes">
+      <m>\dfrac{d}{dx}(\sin(x))=\cos(x), \dfrac{d}{dx}(\cos(x))=-\sin(x)</m>
     </p>
   </slide>
 
