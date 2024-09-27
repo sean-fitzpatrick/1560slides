@@ -135,9 +135,9 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <xi:include href="./sept19.ptx"/>
         <xi:include href="./sept24.ptx"/>
         <xi:include href="./sept26.ptx"/>
-        <!-- <xi:include href="./oct1.ptx"/> -->
-        <!-- <xi:include href="./oct3.ptx"/> -->
-        <!-- <xi:include href="./oct8.ptx"/> -->
+        <xi:include href="./oct01.ptx"/>
+        <xi:include href="./oct03.ptx"/>
+        <!-- <xi:include href="./oct08.ptx"/> -->
         <!-- <xi:include href="./oct10.ptx"/> -->
         <!-- <xi:include href="./oct15.ptx"/> -->
         <!-- <xi:include href="./oct17.ptx"/> -->

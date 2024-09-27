@@ -1,48 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section>
-  <title>October 12</title>
+  <title>October 3</title>
 
-  <slide>
-    <title>Function composition</title>
-    
-    <p>
-      If we write <m>h(x)=e^{\sqrt{x}}</m> as a composition <m>f(g(x))</m>, then:
-    </p>
-
-    <p>
-      <ol marker="A.">
-        <li>
-          <p>
-            <m>f(x)=x^2</m> and <m>g(x)=e^x</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>f(x)=e^x</m> and <m>g(x)=x^2</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>f(x)=x^{1/2}</m> and <m>g(x)=e^x</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>f(x)=e^x</m> and <m>g(x)=x^{1/2}</m>
-          </p>
-        </li>
-      </ol>
-    </p>
-
-    <p pause="yes">
-      <alert>True or False:</alert> <m>(e^x)^{1/2}=e^{(x^{1/2})}</m>
-    </p>
-  </slide>
-
+  
   <slide>
     <title>A totally real and not made up problem</title>
     
@@ -56,7 +17,7 @@
     </p>
 
     <p>
-      Recent weather patterns have seen rainfall increase by an average of 5 mm per year. (This is the made up part.)
+      Recent weather patterns have seen rainfall increase by an average of 5 mm per year.
     </p>
 
     <p>
@@ -144,31 +105,9 @@
       When one quantity depends on another, the rates at which they are changing are multiplied.
     </p>
     
-    <image source="./images/composition.svg" width="100%">
+    <image source="composition.svg" width="80%">
       <description></description>
     </image>
-  </slide>
-
-  <slide>
-    <title>An example</title>
-    
-    <p>
-      Consider the functions <m>f(x) = 3x^2-5x</m> and <m>g(x)=4x+3</m>.
-    </p>
-
-    <p>
-      We have
-      <md>
-        <mrow>f(g(x)) \amp = 3(g(x))^2-5g(x)</mrow>
-        <mrow> \amp = 3(4x+3)^2-5(4x+3)</mrow>
-        <mrow> \amp = 3(16x^2+24x+9)-20x-15</mrow>
-        <mrow> \amp = 48x^2+52x+12</mrow>
-      </md>
-    </p>
-
-    <p>
-      True or false: <m>\dfrac{d}{dx}(f(g(x)))=f'(x)g'(x)</m>
-    </p>
   </slide>
 
   <slide>
@@ -192,140 +131,35 @@
     <title>OK, let's try this thing</title>
     
     <p>
-      If <m>h(x)=e^{\sqrt{x}}</m>, which of the following is the correct derivative of <m>h</m>?
+      Find the derivative of the following functions:
     </p>
 
     <p>
-      <ol marker="A.">
+      <ol>
         <li>
           <p>
-            <m>h'(x) = \sqrt{x}e^{\sqrt{x}-1}</m>
+            <m>h(x)=e^{\sqrt{x}}</m>
           </p>
         </li>
 
         <li>
           <p>
-            <m>h'(x) = e^{\frac12 x^{-1/2}}</m>
+            <m>k(x)=\sqrt{e^x}</m>
           </p>
         </li>
 
         <li>
           <p>
-            <m>h'(x)=e^{\sqrt{x}}</m>
+            <m>p(x)=\sin(x^4)</m>
           </p>
         </li>
-
         <li>
           <p>
-            <m>h'(x)=\frac{e^{\sqrt{x}}}{2\sqrt{x}}</m>
+            <m>q(x)=\sin^4(x)</m>
           </p>
         </li>
       </ol>
     </p>
-  </slide>
-
-  <slide>
-    <title>Isn't this the same question? Oh wait, no</title>
-    
-    <p>
-      If <m>h(x)=\sqrt{e^x}</m>, which of the following is <em>not</em> a correct derivative of <m>h</m>?
-    </p>
-
-    <p>
-      <ol marker="A.">
-        <li>
-          <p>
-            <m>\frac12 (e^x)^{-1/2}e^x</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>\dfrac{1}{2\sqrt{e^x}}</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>\dfrac{\sqrt{e^x}}{2}</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>\frac12 e^{x/2}</m>
-          </p>
-        </li>
-      </ol>
-    </p>
-  </slide>
-
-  <slide>
-    <title>Obligatory trig example</title>
-    
-    <sidebyside widths="40% 10% 40%"> 
-      <p>
-        What is the correct derivative of <m>f(x)=\sin(x^4)</m>?
-        <ol marker="A.">
-          <li>
-            <p>
-              <m>f'(x)=4x^3\cos(x^4)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>f'(x)=4x^3\cos(x)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>f'(x)=\cos(x^4)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>f'(x) = \cos(4x^3)</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      <p>
-        <m>\phantom{1234567}</m>
-      </p>
-
-      <p pause="yes">
-        What is the correct derivative of <m>g(x)=\sin^4(x)</m>?
-        <ol marker="A." pause="yes">
-          <li>
-            <p>
-              <m>g'(x)=4\sin^3(x)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>g'(x)=4\cos^3(x)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>g'(x)=4\sin^3(x)\cos(x)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>g'(x)=4x^3\cos(x)</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </sidebyside>
   </slide>
 
   <slide>

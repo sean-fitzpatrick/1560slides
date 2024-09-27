@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section>
-  <title>October 10</title>
+  <title>October 1</title>
 
   <slide>
     <title>A product of functions</title>
@@ -19,6 +19,9 @@
     </p>
 
     <p pause="yes">
+      What if <m>f(x)=x</m> and <m>g(x)=x</m>?
+    </p>
+    <p pause="yes">
       What if you <q>multiply out</q> first: <m>(4x^2+3x)(2x^3)=8x^5+6x^4</m>.
     </p>
   </slide>
@@ -26,16 +29,16 @@
   <slide>
     <title>Area of a rectangle</title>
     
-    <p>
-      Consider a rectangle with length <m>\ell</m> and width <m>w</m>.
-    </p>
-
-    <p>
-      We know that the area will be <m>A = \ell w</m>.
-    </p>
-
-    <sidebyside widths="40% 10% 50%" margins="auto" pause="yes">
+    <sidebyside widths="50% 10% 25%" margins="auto" pause="yes">
       <stack>
+        <p>
+          Consider a rectangle with length <m>\ell</m> and width <m>w</m>.
+        </p>
+    
+        <p>
+          We know that the area will be <m>A = \ell w</m>.
+        </p>
+
         <p>
           Now suppose we change the length to <m>\ell+\Delta \ell</m>
           and the width to <m>w + \Delta w</m>.
@@ -75,11 +78,11 @@
       </stack>
 
       <p>
-        <m>\phantom{alkjsdf}</m>
+        <m>\phantom{abcde}</m>
       </p>
 
-      <image source="./images/rectangle.png" width="100%">
-        <description></description>
+      <image source="rectangle.png">
+        <shortdescription>A rectangle used to illustrate the product rule</shortdescription>
       </image>
     </sidebyside>
 
@@ -110,70 +113,23 @@
     <title>Let's try it!</title>
     
     <p>
-      Find the derivative of <m>p(x)=x^3\sin(x)</m>.
-    </p>
-
-    <p>
-      The answer is:
-      <ol marker="A.">
+      Find the derivatives of the following functions:
+      <ol pause="yes">
         <li>
           <p>
-            <m>3x^2\cos(x)</m>
+            <m>p(x)=x^3\sin(x)</m>.
           </p>
         </li>
-
         <li>
           <p>
-            <m>3x^2\sin(x)-x^3\cos(x)</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>3x^2\sin(x)+x^3\cos(x)</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>4x^4\sin(x)+x^3\cos(x)</m>
+            <m>h(x)=\sqrt{x}\ln(x)</m>
           </p>
         </li>
       </ol>
-    </p>
+    </p>    
   </slide>
 
-  <slide>
-    <title>Let's try it again!</title>
-    
-    <p>
-      Find the derivative of <m>h(x)=\sqrt{x}\ln(x)</m>.
-    </p>
-
-    <p>
-      And the winner is:
-      <ol marker="A.">
-        <li>
-          <p>
-            <m>\dfrac{\ln(x)}{2\sqrt{x}}+\frac{1}{\sqrt{x}}</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>\frac12 x^{-1/2}\ln(x)+\sqrt{x}\left(\frac1x\right)</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Either of these, depending on how much you like simplifying.
-          </p>
-        </li>
-      </ol>
-    </p>
-  </slide>
-
+  
   <slide>
     <title>Oh no, three things this time!</title>
     
@@ -182,25 +138,7 @@
     </p>
 
     <p>
-      <ol marker="A.">
-        <li>
-          <p>
-            <m>-4x^3\sin(x)e^x</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>4x^3\cos(x)e^x-x^4\sin(x)e^x</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>4x^3\cos(x)e^x-x^4\sin(x)e^x+x^4\cos(x)e^x</m>
-          </p>
-        </li>
-      </ol>
+      Hint: multiplication is <em>associative</em>: <m>abc=a(bc)=(ab)c</m>
     </p>
   </slide>
 
@@ -209,11 +147,11 @@
     
     <p>
       Below are four functions written as a product.
-      Which one cannot be done without the product rule?
+      Do they all require the product rule?
     </p>
 
     <p>
-      <ol marker="A.">
+      <ol>
         <li>
           <p>
             <m>f(x)=(42)(x^7)</m>
@@ -262,32 +200,20 @@
     <title>Gotta practice them quotients!</title>
     
     <p>
-      Which of the following is the correct derivative of <m>f(x)=\dfrac{\sin(x)}{x^2+1}</m>?
+      Find the derivative of the following functions:
     </p>
 
     <p>
-      <ol marker="A.">
+      <ol>
         <li>
           <p>
-            <m>f'(x)=\dfrac{\cos(x)(x^2+1)-2x\sin(x)}{(x^2+1)^2}</m>
+            <m>f(x)=\dfrac{\sin(x)}{\cos(x)}</m>?
           </p>
         </li>
 
         <li>
           <p>
-            <m>f'(x)=\dfrac{\cos(x)}{2x}</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>f'(x) = \dfrac{2x\sin(x)-(x^2+1)\cos(x)}{(x^2+1)^2}</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>f'(x) = \dfrac{\cos(x)-2x\sin(x)}{x^2+1}</m>
+            <m>g(x) = \dfrac{e^x}{x^2+1}</m>
           </p>
         </li>
       </ol>
@@ -341,32 +267,6 @@
       What is the derivative of <m>f(x)=\dfrac{x^3\sin(x)}{x^2+e^x}</m>?
     </p>
 
-    <p>
-      <ol marker="A.">
-        <li>
-          <p>
-            <m>\dfrac{3x^2\cos(x)}{2x+e^x}</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>\dfrac{(3x^2\cos(x))(x^2+e^x)-x^3\sin(x)(2x+e^x)}{(x^2+e^x)^2}</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>\dfrac{(3x^2\sin(x)+x^3\cos(x))(x^2+e^x)-(2x+e^x)(x^3\sin(x))}{(x^2+e^x)^2}</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>\dfrac{(3x^2\sin(x)+x^3\cos(x))(x^2+e^x)+(2x+e^x)(x^3\sin(x))}{(x^2+e^x)^2}</m>
-          </p>
-        </li>
-      </ol>
-    </p>
+  
   </slide>
 </section>
