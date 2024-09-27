@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-09-26T08:52:50-06:00       *-->
+<!--*       on 2024-09-27T12:00:05-06:00       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -153,7 +153,9 @@ dfn {
     padding-right:2em;
 }
 
-div[style*="display:table-cell"] img[src$=".svg"] {
+/* make small images full-width in #sidebyside */
+/* could improve with a .sidebyside class */
+div[style*="display:table-cell"] img {
     width: 100%;
 }
           </style>
@@ -177,7 +179,7 @@ div[style*="display:table-cell"] img[src$=".svg"] {
 </table></section></section><section><section><h1>September 10</h1></section><section><h3>Why limits?</h3>
 <div align="left"> <p>Short answer: because derivatives (and integrals).</p> <p>Derivatives: on a graph <span class="process-math">\(y=f(x)\text{,}\)</span> what happens to <span class="process-math">\(\dfrac{\Delta y}{\Delta x}\)</span> when <span class="process-math">\(\Delta x\)</span> shrinks to zero?</p> <p>Integrals: what happens when we add up more and more pieces that are getting smaller and smaller?</p> <p></p> <p>Limits let us talk about the value of a function at points where plugging in a number doesn’t make sense.</p> <p>(For example, the value of <span class="process-math">\(\dfrac{\sin(x)}{x}\)</span> when <span class="process-math">\(x=0\text{.}\)</span>)</p>
 </div></section><section><h3>Understanding limits graphically</h3>
-<div align="left"> <p>Suppose we have the following graph of a function <span class="process-math">\(f\text{,}\)</span> but we can’t see what is happening under the square:</p> <div style="display:table;margin-left:2.5%;margin-right:2.5%;">
+<div align="left"> <p>Suppose we have the following graph of a function <span class="process-math">\(f\text{,}\)</span> but we can’t see what is happening under the square:</p> <div style="display:table;margin-left:2.5%;margin-right:2.5%;" class="sidebyside">
 <div style="display:table-cell;width:47.3684210526316%;vertical-align:top;"><img src="generated/latex-image/sep9img1.svg" role="img" class="contained" alt="A downward-facing parabola, with one portion blocked by a square."></div>
 <div style="display:table-cell;width:47.3684210526316%;vertical-align:top;"><p><ol class="decimal" id="root-1-2-4-3-3-2-1">
 <li><p>If you had to guess, when <span class="process-math">\(x\)</span> is close to 2, you would say that <span class="process-math">\(f(x)\)</span> is close to:<ol class="upper-alpha" id="root-1-2-4-3-3-2-1-1-1-3">
@@ -201,7 +203,7 @@ div[style*="display:table-cell"] img[src$=".svg"] {
 \end{equation*}
 </div>means that when <span class="process-math">\(x\)</span> is close to <span class="process-math">\(c\)</span> (but <em class="emphasis">not equal</em> to <span class="process-math">\(c\)</span>), we can expect <span class="process-math">\(f(x)\)</span> to be close to <span class="process-math">\(L\text{.}\)</span></p> <p>And the closer <span class="process-math">\(x\)</span> gets to <span class="process-math">\(c\text{,}\)</span> the closer <span class="process-math">\(f(x)\)</span> gets to <span class="process-math">\(L\text{.}\)</span></p>
 </div></section><section><h3>Another graphical limit</h3>
-<div align="left"> <div style="display:table;margin-left:2.5%;margin-right:2.5%;">
+<div align="left"> <div style="display:table;margin-left:2.5%;margin-right:2.5%;" class="sidebyside">
 <div style="display:table-cell;width:47.3684210526316%;vertical-align:top;"><p>Referring to the graph on the right, what is the value of <span class="process-math">\(\lim_{x\to 2}f(x)\text{?}\)</span><ol class="upper-alpha" id="root-1-2-4-5-2-1-2">
 <li><p><span class="process-math">\(\displaystyle \lim_{x\to 2}f(x)=1\)</span></p></li>
 <li><p><span class="process-math">\(\displaystyle \lim_{x\to 2}f(x)=2\)</span></p></li>
@@ -211,7 +213,7 @@ div[style*="display:table-cell"] img[src$=".svg"] {
 <div style="display:table-cell;width:47.3684210526316%;vertical-align:top;"><img src="generated/latex-image/sept9img2.svg" role="img" class="contained" alt="A piecewise defined graph with a break at x=2."></div>
 </div>
 </div></section><section><h3>More about that last (non) limit</h3>
-<div align="left"> <div style="display:table;margin-left:2.5%;margin-right:2.5%;">
+<div align="left"> <div style="display:table;margin-left:2.5%;margin-right:2.5%;" class="sidebyside">
 <div style="display:table-cell;width:47.3684210526316%;vertical-align:top;">
 <p>We have language to talk about this situation.</p>
 <p>The <dfn class="terminology">left-hand limit</dfn> at <span class="process-math">\(c\)</span> only considers values <span class="process-math">\(x\lt c\text{.}\)</span></p>
@@ -288,7 +290,7 @@ div[style*="display:table-cell"] img[src$=".svg"] {
 \end{equation*}
 </div></p>
 </div></section><section><h3>Piecewise-defined functions</h3>
-<div align="left"> <p>Sometimes we need to work with functions that are defined differently on different parts of their domain.</p> <p>Applications include more than just providing examples for calculus class, including <a class="external" href="https://en.wikipedia.org/wiki/Ultraviolet_index" target="_blank">UV index</a> and your taxes.</p> <p>For the piecewise-defined function <span class="process-math">\(f(x) = \begin{cases}2-x, \amp x\lt -1\\ 1+x^2, \amp -1\leq x\lt 2\\ \sin(\pi x),\amp x\geq 2\end{cases}\text{:}\)</span></p> <div style="display:table;margin-left:0%;margin-right:0%;">
+<div align="left"> <p>Sometimes we need to work with functions that are defined differently on different parts of their domain.</p> <p>Applications include more than just providing examples for calculus class, including <a class="external" href="https://en.wikipedia.org/wiki/Ultraviolet_index" target="_blank">UV index</a> and your taxes.</p> <p>For the piecewise-defined function <span class="process-math">\(f(x) = \begin{cases}2-x, \amp x\lt -1\\ 1+x^2, \amp -1\leq x\lt 2\\ \sin(\pi x),\amp x\geq 2\end{cases}\text{:}\)</span></p> <div style="display:table;margin-left:0%;margin-right:0%;" class="sidebyside">
 <div style="display:table-cell;width:40%;vertical-align:top;"><p>What is the value of <span class="process-math">\(f(0)\text{?}\)</span><ol class="upper-alpha" id="root-1-2-5-6-5-1-2">
 <li><p>2</p></li>
 <li><p>0</p></li>
@@ -310,7 +312,7 @@ div[style*="display:table-cell"] img[src$=".svg"] {
 <li><p><span class="process-math">\(\displaystyle f(x) = \begin{cases}x, \amp x\geq 2\\ -x, \amp x\lt 2\end{cases}\)</span></p></li>
 </ol></p>
 </div></section><section><h3>Finding one-sided limits (graph)</h3>
-<div align="left"> <div style="display:table;margin-left:2.5%;margin-right:2.5%;">
+<div align="left"> <div style="display:table;margin-left:2.5%;margin-right:2.5%;" class="sidebyside">
 <div style="display:table-cell;width:47.3684210526316%;vertical-align:top;"><p>For the graph on the right:<ol class="upper-alpha" id="root-1-2-5-8-2-1-1">
 <li><p>The left-hand limit is 3 and the right-hand limit is 3.</p></li>
 <li><p>The left-hand limit is 1 and the right-hand limit is 3.</p></li>
@@ -362,7 +364,7 @@ div[style*="display:table-cell"] img[src$=".svg"] {
 <li><p>The limit at <span class="process-math">\(c\)</span> (which exists) must be equal to the value of <span class="process-math">\(f(c)\)</span> (which is defined)</p></li>
 </ul></p>
 </div></section><section><h3>Continuity, graphically</h3>
-<div align="left"> <div style="display:table;margin-left:0%;margin-right:0%;">
+<div align="left"> <div style="display:table;margin-left:0%;margin-right:0%;" class="sidebyside">
 <div style="display:table-cell;width:45%;vertical-align:top;"><p>The graph of a function is shown on the right. At what points is the function not continuous?<ol class="upper-alpha" id="root-1-2-6-5-2-1-1">
 <li><p>At <span class="process-math">\(x=-2\)</span> only</p></li>
 <li><p>At <span class="process-math">\(x=-2\)</span> and <span class="process-math">\(x=3\)</span></p></li>
@@ -505,7 +507,7 @@ f(x) = \frac{a_mx^m+a_{m-1}x^{m-1}+\cdots+a_1x+a_0}{b_nx^n+b_{n-1}x^{n-1}+\cdots
 <li><p>The graph of a function can cross both a horizontal asymptote and a vertical asymptote</p></li>
 </ol></p>
 </div></section><section><h3>Slope: average rate of change</h3>
-<div align="left"> <div style="display:table;margin-left:0%;margin-right:0%;">
+<div align="left"> <div style="display:table;margin-left:0%;margin-right:0%;" class="sidebyside">
 <div style="display:table-cell;width:50%;vertical-align:top;"><p>For the function <span class="process-math">\(f\)</span> whose graph is shown, what is the average rate of change <span class="process-math">\(\left(\dfrac{\Delta y}{\Delta x}\right)\)</span> on the interval <span class="process-math">\([1,4]\text{?}\)</span><ol class="upper-alpha" id="root-1-2-8-3-2-1-4">
 <li><p>6</p></li>
 <li><p><span class="process-math">\(\displaystyle -6\)</span></p></li>
@@ -562,7 +564,7 @@ y = f(c)+f'(c)(x-c)\text{.}
 \end{equation*}
 </div></p>
 </div></section><section><h3>Absolute value</h3>
-<div align="left"> <div style="display:table;margin-left:0%;margin-right:0%;">
+<div align="left"> <div style="display:table;margin-left:0%;margin-right:0%;" class="sidebyside">
 <div style="display:table-cell;width:60%;vertical-align:top;"><p>To the right is the graph of the absolute value function, <span class="process-math">\(f(x)=\lvert x\rvert\text{.}\)</span></p></div>
 <div style="display:table-cell;width:40%;vertical-align:top;"><img src="external/absval.svg" class="contained"></div>
 </div> <p>What do you think is the slope of the tangent line at <span class="process-math">\(x=c\text{,}\)</span> if <span class="process-math">\(c\gt 0\text{?}\)</span></p> <p>What do you think is the slope of the tangent line at <span class="process-math">\(x=c\text{,}\)</span> if <span class="process-math">\(c\lt 0\text{?}\)</span></p> <p>What do you think is the slope of the tangent line at <span class="process-math">\(x=0\text{?}\)</span></p>
@@ -593,6 +595,117 @@ y = f(c)+f'(c)(x-c)\text{.}
 </ol></p> <p class="fragment"><dfn class="terminology">Leibniz notation</dfn>: another notation for the derivative is as follows: if <span class="process-math">\(y=f(x)\text{,}\)</span> we write <span class="process-math">\(\dfrac{dy}{dx}=f'(x)\text{.}\)</span></p> <p class="fragment">We can read <span class="process-math">\(\dfrac{d}{dx}\)</span> as “the derivative of”. This allows us to shorten some statements:</p> <p class="fragment"><span class="process-math">\(\dfrac{d}{dx}(\sin(x))=\cos(x), \dfrac{d}{dx}(\cos(x))=-\sin(x)\)</span></p>
 </div></section><section><h3>More examples</h3>
 <div align="left"> <p>What is the derivative of <span class="process-math">\(f(x)=4\cos(x)-3e^x+5x^4\text{?}\)</span></p> <p>What is the derivative of <span class="process-math">\(g(x)=\ln(5)+\pi^7+e^3\text{?}\)</span></p>
+</div></section></section><section><section><h1>October 1</h1></section><section><h3>A product of functions</h3>
+<div align="left"> <p>Let <span class="process-math">\(f(x)=4x^2+3x\)</span> and let <span class="process-math">\(g(x)=2x^3\text{.}\)</span></p> <p>Let <span class="process-math">\(h(x)=f(x)g(x)\text{.}\)</span></p> <p><em class="emphasis">True or false:</em> <span class="process-math">\(h'(x)=f'(x)g'(x)\)</span></p> <p class="fragment">What if <span class="process-math">\(f(x)=x\)</span> and <span class="process-math">\(g(x)=x\text{?}\)</span></p> <p class="fragment">What if you “multiply out” first: <span class="process-math">\((4x^2+3x)(2x^3)=8x^5+6x^4\text{.}\)</span></p>
+</div></section><section><h3>Area of a rectangle</h3>
+<div align="left"> <div style="display:table;margin-left:2.5%;margin-right:2.5%;" class="sidebyside">
+<div class="fragment" style="display:table-cell;width:52.6315789473684%;vertical-align:top;">
+<p>Consider a rectangle with length <span class="process-math">\(\ell\)</span> and width <span class="process-math">\(w\text{.}\)</span></p>
+<p>We know that the area will be <span class="process-math">\(A = \ell w\text{.}\)</span></p>
+<p>Now suppose we change the length to <span class="process-math">\(\ell+\Delta \ell\)</span> and the width to <span class="process-math">\(w + \Delta w\text{.}\)</span></p>
+<p>What is the resulting change in the area, <span class="process-math">\(\Delta A\text{?}\)</span></p>
+<p><ol class="upper-alpha" id="root-1-2-10-3-2-1-5-1">
+<li><p><span class="process-math">\(\displaystyle \Delta \ell \Delta w\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \Delta \ell + \Delta w\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle w\Delta \ell + \ell \Delta w\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle w\Delta \ell + \ell \Delta w + \Delta \ell \Delta w\)</span></p></li>
+</ol></p>
+</div>
+<div class="fragment" style="display:table-cell;width:10.5263157894737%;vertical-align:top;"><p><span class="process-math">\(\phantom{abcde}\)</span></p></div>
+<div class="fragment" style="display:table-cell;width:26.3157894736842%;vertical-align:top;"><img src="external/rectangle.png" class="contained" alt="A rectangle used to illustrate the product rule"></div>
+</div> <p class="fragment">Now, suppose <span class="process-math">\(\ell=\ell(x)\)</span> and <span class="process-math">\(w=w(x)\)</span> depend on some variable <span class="process-math">\(x\text{.}\)</span> Then <span class="process-math">\(\Delta \ell \approx \ell'(x)\Delta x\)</span> and <span class="process-math">\(\Delta w \approx w'(x)\Delta x\text{.}\)</span> What is <span class="process-math">\(\dfrac{\Delta A}{\Delta x}\text{?}\)</span></p>
+</div></section><section><h3>The Product Rule</h3>
+<div align="left"> <p>If <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are differentiable functions, and <span class="process-math">\(h(x)=f(x)g(x)\text{,}\)</span> then<div class="displaymath process-math">
+\begin{equation*}
+h'(x)=f'(x)g(x)+f(x)g'(x)\text{.}
+\end{equation*}
+</div></p> <p class="fragment">Using Leibniz notation: <span class="process-math">\(\dfrac{d}{dx}(f(x)g(x))=g(x)\dfrac{d}{dx}(f(x))+f(x)\dfrac{d}{dx}(g(x))\)</span></p>
+</div></section><section><h3>Let’s try it!</h3>
+<div align="left"> <p>Find the derivatives of the following functions:<ol class="decimal" id="root-1-2-10-5-2-1">
+<li class="fragment"><p><span class="process-math">\(p(x)=x^3\sin(x)\text{.}\)</span></p></li>
+<li class="fragment"><p><span class="process-math">\(\displaystyle h(x)=\sqrt{x}\ln(x)\)</span></p></li>
+</ol></p>
+</div></section><section><h3>Oh no, three things this time!</h3>
+<div align="left"> <p>What is the derivative of <span class="process-math">\(R(x) = x^4\cos(x)e^x\text{?}\)</span></p> <p>Hint: multiplication is <em class="emphasis">associative</em>: <span class="process-math">\(abc=a(bc)=(ab)c\)</span></p>
+</div></section><section><h3>Is it always a good idea?</h3>
+<div align="left"> <p>Below are four functions written as a product. Do they all require the product rule?</p> <p><ol class="decimal" id="root-1-2-10-7-3-1">
+<li><p><span class="process-math">\(\displaystyle f(x)=(42)(x^7)\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle f(x)=(e^x)(x^7)\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle f(x)=(x^2+2x)(x^7)\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle f(x) = \sqrt{x}(x^7)\)</span></p></li>
+</ol></p>
+</div></section><section><h3>Quotient rule</h3>
+<div align="left"> <p>Let <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> be differentiable functions. For any <span class="process-math">\(x\)</span> such that <span class="process-math">\(g(x)\neq 0\text{,}\)</span> if <span class="process-math">\(h(x)=\dfrac{f(x)}{g(x)}\text{,}\)</span> then<div class="displaymath process-math">
+\begin{equation*}
+h'(x) = \dfrac{f'(x)g(x)-f(x)g'(x)}{(g(x))^2}\text{.}
+\end{equation*}
+</div></p> <p>Leibniz-style:<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{d}{dx}\left(\dfrac{f(x)}{g(x)}\right) = \dfrac{g(x)\frac{d}{dx}f(x)-f(x)\frac{d}{dx}g(x)}{(g(x))^2}
+\end{equation*}
+</div></p>
+</div></section><section><h3>Gotta practice them quotients!</h3>
+<div align="left"> <p>Find the derivative of the following functions:</p> <p><ol class="decimal" id="root-1-2-10-9-3-1">
+<li><p><span class="process-math">\(f(x)=\dfrac{\sin(x)}{\cos(x)}\text{?}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle g(x) = \dfrac{e^x}{x^2+1}\)</span></p></li>
+</ol></p>
+</div></section><section><h3>Do we really have to?</h3>
+<div align="left"> <p>The quotient rule isn’t the nicest formula around. Is it always the best idea?</p> <p>For each of the following, should we use quotient rule?</p> <p><ol class="decimal" id="root-1-2-10-10-4-1">
+<li><p><span class="process-math">\(\displaystyle f(x) = \dfrac{x^3+4x^2}{x}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle f(x) = \dfrac{4}{x^2}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle f(x) = \dfrac{e^x}{15}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle f(x) = \dfrac{\sin(x)}{\cos(x)+x^2}\)</span></p></li>
+</ol></p>
+</div></section><section><h3>Product and quotient rule together? 😱</h3>
+<div align="left"> <p>What is the derivative of <span class="process-math">\(f(x)=\dfrac{x^3\sin(x)}{x^2+e^x}\text{?}\)</span></p>
+</div></section></section><section><section><h1>October 3</h1></section><section><h3>A totally real and not made up problem</h3>
+<div align="left"> <p>A rancher observes that, on average, for every 25 additional bales of hay produced in her fields, the population of her cattle herd increases by 4.</p> <p>She also knows that for every additional 10 mm of rain in a growing season, she will produce 75 more bales of hay.</p> <p>Recent weather patterns have seen rainfall increase by an average of 5 mm per year.</p> <p>At what rate (per year) is the size of her herd changing?<ol class="upper-alpha" id="root-1-2-11-2-5-1">
+<li><p>6 cows per year</p></li>
+<li><p><span class="process-math">\(\dfrac{8}{75}\)</span> of a cow per year</p></li>
+<li><p><span class="process-math">\(\dfrac53\)</span> of a cow per year</p></li>
+<li><p>About 234 cows per year</p></li>
+</ol></p>
+</div></section><section><h3>Composing linear functions</h3>
+<div align="left"> <p>Let <span class="process-math">\(f(x)=3(x-4)+5\)</span> and let <span class="process-math">\(g(x)=-7x+4\)</span></p> <p>What function is <span class="process-math">\(f(g(x))\text{?}\)</span><ol class="upper-alpha" id="root-1-2-11-3-3-2">
+<li><p><span class="process-math">\(\displaystyle -21(x-4)-24\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle -21x-5\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle -21x+5\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle -21(x-4)+17\)</span></p></li>
+</ol></p> <p class="fragment">What is the derivative of <span class="process-math">\(f(g(x))\text{?}\)</span></p> <p class="fragment">How is it related to the derivatives of <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{?}\)</span></p>
+</div></section><section><h3>The concept of the chain rule</h3>
+<div align="left"> <p>Derivatives represent rates of change.</p> <p>When one quantity depends on another, the rates at which they are changing are multiplied.</p> <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/composition.svg" class="contained"></div>
+</div></section><section><h3>The chain rule</h3>
+<div align="left"> <article class="theorem theorem-like" id="root-1-2-11-5-2"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5</span><span class="period">.</span>
+</h4>
+<p>If <span class="process-math">\(g\)</span> is differentiable at <span class="process-math">\(x\text{,}\)</span> and <span class="process-math">\(f\)</span> is differentiable at <span class="process-math">\(g(x)\text{,}\)</span> then <span class="process-math">\(h=f\circ g\)</span> is differentiable at <span class="process-math">\(x\text{,}\)</span> and<div class="displaymath process-math">
+\begin{equation*}
+h'(x) = \dfrac{d}{dx}(f(g(x))) = f'(g(x))g'(x)\text{.}
+\end{equation*}
+</div></p></article>
+</div></section><section><h3>OK, let’s try this thing</h3>
+<div align="left"> <p>Find the derivative of the following functions:</p> <p><ol class="decimal" id="root-1-2-11-6-3-1">
+<li><p><span class="process-math">\(\displaystyle h(x)=e^{\sqrt{x}}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle k(x)=\sqrt{e^x}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle p(x)=\sin(x^4)\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle q(x)=\sin^4(x)\)</span></p></li>
+</ol></p>
+</div></section><section><h3>Example: derivative of <span class="process-math">\(\sec(x)\)</span>
+</h3>
+<div align="left"> <p>We know the derivatives of <span class="process-math">\(\sin(x)\)</span> and <span class="process-math">\(\cos(x)\text{.}\)</span></p> <p>What about their reciprocals, <span class="process-math">\(\csc(x)\)</span> and <span class="process-math">\(\sec(x)\text{?}\)</span></p> <p class="fragment">Observe that <span class="process-math">\(\sec(x) = \dfrac{1}{\cos(x)}=(\cos(x))^{-1}\)</span></p> <p class="fragment"><em class="alert">Caution!!</em> <span class="process-math">\((\cos(x))^{-1}\)</span> is not the same thing as <span class="process-math">\(\cos^{-1}(x)\text{!}\)</span> (Even though <span class="process-math">\((\cos(x))^2\)</span> is the same thing as <span class="process-math">\(\cos^2(x)\text{...}\)</span>)</p> <p class="fragment">By the chain rule, <span class="process-math">\(\dfrac{d}{dx}(\sec(x))=\dfrac{d}{dx}(\cos(x))^{-1}=-1(\cos(x))^{-2}(-\sin(x))\)</span></p> <p class="fragment">We can clean this up: <span class="process-math">\(-1(\cos(x))^{-2}(-\sin(x))=\dfrac{\sin(x)}{\cos^2(x)}=\sec(x)\tan(x)\)</span></p>
+</div></section><section><h3>Goodbye, cruel quotient rule!</h3>
+<div align="left"> <p>It may be helpful to observe that <span class="process-math">\(\dfrac{f(x)}{g(x)}=f(x)(g(x))^{-1}\text{.}\)</span></p>
+</div></section><section><h3>
+<span class="process-math">\(x^a\)</span> and <span class="process-math">\(a^x\)</span>
+</h3>
+<div align="left"> <p>Technically, we’ve only demonstrated the power rule for the dervative of <span class="process-math">\(x^n\text{,}\)</span> when <span class="process-math">\(n=1, 2, 3, \ldots\)</span></p> <p>Recall the following two facts about logarithms:<ol class="decimal" id="root-1-2-11-9-3-1">
+<li><p><span class="process-math">\(\displaystyle \ln(p^q)=q\ln(p)\)</span></p></li>
+<li><p>Since <span class="process-math">\(\ln(x)\)</span> is the inverse of <span class="process-math">\(e^x\text{,}\)</span> <span class="process-math">\(\ln(e^x)=x\)</span> and <span class="process-math">\(e^{\ln(x)}=x\text{.}\)</span></p></li>
+</ol></p> <p>If <span class="process-math">\(f(x)=x^a\)</span> and <span class="process-math">\(g(x)=a^x\text{,}\)</span> then:<ol class="upper-alpha" id="root-1-2-11-9-4-3">
+<li><p><span class="process-math">\(f(x)=e^{a\ln(x)}\)</span> and <span class="process-math">\(g(x)=e^{x\ln(a)}\)</span></p></li>
+<li><p><span class="process-math">\(f(x)=e^{x\ln(a)}\)</span> and <span class="process-math">\(g(x)=e^{a\ln(x)}\)</span></p></li>
+<li><p><span class="process-math">\(f(x)=\ln(e^{ax})\)</span> and <span class="process-math">\(g(x)=\log_a(a^{ex})\)</span></p></li>
+</ol></p>
 </div></section></section>
 </div>
 </div></body>
