@@ -1,33 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project>
+<project ptx-version="2">
   <targets>
-    <target name="web">
-      <format>custom</format>
-      <source>source/main.ptx</source>
-      <publication>publication/publication.ptx</publication>
-      <xsl>xsl/slides.xsl</xsl>
-      <output-dir>output/web</output-dir>
-      <output-filename>slides.html</output-filename>
-    </target>
-    <target name="exercises">
-      <format>html</format>
-      <source>source/exercises.ptx</source>
-      <publication>publication/publication.ptx</publication>
-      <output-dir>output/exercises</output-dir>
-    </target>
+    <target name="slides" format="revealjs" output-filename="slides.html"/>
   </targets>
-  <executables>
-      <latex>latex</latex>
-      <pdflatex>pdflatex</pdflatex>
-      <xelatex>xelatex</xelatex>
-      <pdfsvg>pdf2svg</pdfsvg>
-      <asy>asy</asy>
-      <sage>sage</sage>
-      <pdfpng>convert</pdfpng>
-      <pdfeps>pdftops</pdfeps>
-      <pdfcrop>pdf-crop-margins</pdfcrop>
-      <pageres>pageres</pageres>
-      <node>node</node>
-      <liblouis>file2brl</liblouis>
-    </executables>
 </project>
