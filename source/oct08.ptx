@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>October 8</title>
+
+  <slide>
+    <title>Harder chain rule</title>
+    
+    <p>
+      <em>Exercise:</em> what is the derivative of <m>f(x) = \tan(\sqrt{x^4+1})</m>?
+    </p>
+
+    <p>
+      Reminder: the derivative of <m>\tan(x)</m> is <m>\sec^2(x)</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Products, and quotients, and chain rule, oh my!</title>
+    
+    <p>
+      What is the derivative of <m>f(x) = \dfrac{e^{x^3}\sin^2(x)}{\sqrt{x^2+1}}</m>?
+    </p>
+
+    
+  </slide>
+
+  <slide>
+    <title>Sometimes, logarithms are our friends</title>
+    
+    <p>
+      For any function <m>f(x)</m>, let <m>g(x)=\ln(f(x))</m>. Recall that the derivative of <m>\ln(x)</m> is <m>\dfrac1x</m>.
+    </p>
+
+    <p>
+      By the chain rule,
+      <me>
+        g'(x) = \frac{d}{dx}\ln(f(x)) = \frac{1}{f(x)}\frac{d}{dx}f(x) = \frac{f'(x)}{f(x)}
+      </me>.
+      
+    </p>
+
+    <p>
+      Consider the function <m>f(x) = \dfrac{e^{x^3}\sin^2(x)}{\sqrt{x^2+1}}</m> from the last slide.
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            Use properties of logarithms to simplify <m>\ln(f(x))</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find <m>f'(x)</m> by first finding the derivative of <m>\ln(f(x))</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    
+  </slide>
+
+  <slide>
+    <title>Logarithmic differentiation</title>
+    
+    <p>
+      Let <m>f(x) = (4+x^2)^{3x}</m>. Find <m>f'(x)</m> by computing the derivative of <m>\ln(f(x))</m>.
+    </p>
+
+  </slide>
+
+  <slide>
+    <title>Implicit differentiation</title>
+
+    <p>
+      According to the chain rule, <m>\dfrac{d}{dx}f(g(x))=f'(g(x))g'(x)</m>.
+    </p>
+
+    <p>
+      If we let <m>y=g(x)</m> and write <m>y'=g'(x)</m>, this becomes:
+      <me>
+        \frac{d}{dx}f(y) = f'(y)\,y'
+      </me>.
+      
+    </p>
+
+    <p>
+      For example, <m>\dfrac{d}{dx}(y^2)=2y\,y'</m>, if we assume that <m>y</m> is a function of <m>x</m>.
+    </p>
+    
+    <p>
+      This is called <em>implicit differentiation</em>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>The classic example: a circle</title>
+    
+    <p>
+      Consider the equation <m>x^2+y^2=4</m> (a circle). We say that it <term>implicitly defines</term>
+      <m>y</m> as a function of <m>x</m>.
+    </p>
+
+    <p>
+      This means we can (in principle) find a function <m>g(x)</m> so that <m>y=g(x)</m> satisfies the equation:
+      <me>
+        x^2+(g(x))^2=4
+      </me>.
+      
+    </p>
+
+    <p>
+      The graph of <m>g(x)</m> won't give the <em>whole</em> circle. (Why?) We might need different functions near different points.
+    </p>
+
+    <p pause="yes">
+      Can we find a function that works near the point <m>(0,2)</m>?
+    </p>
+
+    <p pause="yes">
+      Can we find a function that works near the point <m>(1,-\sqrt{3})</m>?
+    </p>
+
+    <p pause="yes">
+      Can we find a function that works near the point <m>(2,0)</m>?
+    </p>
+  </slide>
+
+  <slide>
+    <title>Finding <m>y'</m></title>
+    
+    <p>
+      Use implicit differentiation to find <m>y'</m> if
+      <me>
+        x^2+y^2=4
+      </me>.
+      
+    </p>
+
+    
+  </slide>
+
+  <slide>
+    <title>A harder example</title>
+    
+    <p>
+      Use implicit differentiation to find <m>y'</m> if
+      <m>y</m> is implicitly defined as a function of <m>x</m>
+      by the equation
+      <me>
+        \sin(xy)+xy^3=7
+      </me>.
+      
+    </p>
+
+  </slide>
+
+  <slide>
+    <title>Tangent lines</title>
+    
+    <p>
+      We can use implicit differentiation to find the equation of a tangent line at a given point on a curve.
+    </p>
+
+    <p>
+      Example: find the equation of the tangent line to the curve given by the equation 
+      <me>2x^2y^2+xy^3-x^2-4y^2=2</me>
+      at the point <m>(2,1)</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>One more example</title>
+    
+    <p>
+      What is the equation of the tangent line to the curve
+      <me>
+        (x^2+y^2)^2=4xy
+      </me>
+      at the point <m>(1,1)</m>?      
+    </p>
+  </slide>
+</section>
