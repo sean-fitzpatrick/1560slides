@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-09-27T12:00:05-06:00       *-->
+<!--*       on 2024-10-03T11:13:26-06:00       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -706,6 +706,95 @@ h'(x) = \dfrac{d}{dx}(f(g(x))) = f'(g(x))g'(x)\text{.}
 <li><p><span class="process-math">\(f(x)=e^{x\ln(a)}\)</span> and <span class="process-math">\(g(x)=e^{a\ln(x)}\)</span></p></li>
 <li><p><span class="process-math">\(f(x)=\ln(e^{ax})\)</span> and <span class="process-math">\(g(x)=\log_a(a^{ex})\)</span></p></li>
 </ol></p>
+</div></section></section><section><section><h1>October 8</h1></section><section><h3>Harder chain rule</h3>
+<div align="left"> <p><em class="emphasis">Exercise:</em> what is the derivative of <span class="process-math">\(f(x) = \tan(\sqrt{x^4+1})\text{?}\)</span></p> <p>Reminder: the derivative of <span class="process-math">\(\tan(x)\)</span> is <span class="process-math">\(\sec^2(x)\text{.}\)</span></p>
+</div></section><section><h3>Products, and quotients, and chain rule, oh my!</h3>
+<div align="left"> <p>What is the derivative of <span class="process-math">\(f(x) = \dfrac{e^{x^3}\sin^2(x)}{\sqrt{x^2+1}}\text{?}\)</span></p>
+</div></section><section><h3>Sometimes, logarithms are our friends</h3>
+<div align="left"> <p>For any function <span class="process-math">\(f(x)\text{,}\)</span> let <span class="process-math">\(g(x)=\ln(f(x))\text{.}\)</span> Recall that the derivative of <span class="process-math">\(\ln(x)\)</span> is <span class="process-math">\(\dfrac1x\text{.}\)</span></p> <p>By the chain rule,<div class="displaymath process-math">
+\begin{equation*}
+g'(x) = \frac{d}{dx}\ln(f(x)) = \frac{1}{f(x)}\frac{d}{dx}f(x) = \frac{f'(x)}{f(x)}\text{.}
+\end{equation*}
+</div></p> <p>Consider the function <span class="process-math">\(f(x) = \dfrac{e^{x^3}\sin^2(x)}{\sqrt{x^2+1}}\)</span> from the last slide.</p> <p><ol class="decimal" id="root-1-2-12-4-5-1">
+<li><p>Use properties of logarithms to simplify <span class="process-math">\(\ln(f(x))\)</span></p></li>
+<li><p>Find <span class="process-math">\(f'(x)\)</span> by first finding the derivative of <span class="process-math">\(\ln(f(x))\)</span></p></li>
+</ol></p>
+</div></section><section><h3>Logarithmic differentiation</h3>
+<div align="left"> <p>Let <span class="process-math">\(f(x) = (4+x^2)^{3x}\text{.}\)</span> Find <span class="process-math">\(f'(x)\)</span> by computing the derivative of <span class="process-math">\(\ln(f(x))\text{.}\)</span></p>
+</div></section><section><h3>Implicit differentiation</h3>
+<div align="left"> <p>According to the chain rule, <span class="process-math">\(\dfrac{d}{dx}f(g(x))=f'(g(x))g'(x)\text{.}\)</span></p> <p>If we let <span class="process-math">\(y=g(x)\)</span> and write <span class="process-math">\(y'=g'(x)\text{,}\)</span> this becomes:<div class="displaymath process-math">
+\begin{equation*}
+\frac{d}{dx}f(y) = f'(y)\,y'\text{.}
+\end{equation*}
+</div></p> <p>For example, <span class="process-math">\(\dfrac{d}{dx}(y^2)=2y\,y'\text{,}\)</span> if we assume that <span class="process-math">\(y\)</span> is a function of <span class="process-math">\(x\text{.}\)</span></p> <p>This is called <em class="emphasis">implicit differentiation</em>.</p>
+</div></section><section><h3>The classic example: a circle</h3>
+<div align="left"> <p>Consider the equation <span class="process-math">\(x^2+y^2=4\)</span> (a circle). We say that it <dfn class="terminology">implicitly defines</dfn> <span class="process-math">\(y\)</span> as a function of <span class="process-math">\(x\text{.}\)</span></p> <p>This means we can (in principle) find a function <span class="process-math">\(g(x)\)</span> so that <span class="process-math">\(y=g(x)\)</span> satisfies the equation:<div class="displaymath process-math">
+\begin{equation*}
+x^2+(g(x))^2=4\text{.}
+\end{equation*}
+</div></p> <p>The graph of <span class="process-math">\(g(x)\)</span> won’t give the <em class="emphasis">whole</em> circle. (Why?) We might need different functions near different points.</p> <p class="fragment">Can we find a function that works near the point <span class="process-math">\((0,2)\text{?}\)</span></p> <p class="fragment">Can we find a function that works near the point <span class="process-math">\((1,-\sqrt{3})\text{?}\)</span></p> <p class="fragment">Can we find a function that works near the point <span class="process-math">\((2,0)\text{?}\)</span></p>
+</div></section><section><h3>Finding <span class="process-math">\(y'\)</span>
+</h3>
+<div align="left"> <p>Use implicit differentiation to find <span class="process-math">\(y'\)</span> if<div class="displaymath process-math">
+\begin{equation*}
+x^2+y^2=4\text{.}
+\end{equation*}
+</div></p>
+</div></section><section><h3>A harder example</h3>
+<div align="left"> <p>Use implicit differentiation to find <span class="process-math">\(y'\)</span> if <span class="process-math">\(y\)</span> is implicitly defined as a function of <span class="process-math">\(x\)</span> by the equation<div class="displaymath process-math">
+\begin{equation*}
+\sin(xy)+xy^3=7\text{.}
+\end{equation*}
+</div></p>
+</div></section><section><h3>Tangent lines</h3>
+<div align="left"> <p>We can use implicit differentiation to find the equation of a tangent line at a given point on a curve.</p> <p>Example: find the equation of the tangent line to the curve given by the equation<div class="displaymath process-math">
+\begin{equation*}
+2x^2y^2+xy^3-x^2-4y^2=2
+\end{equation*}
+</div>at the point <span class="process-math">\((2,1)\text{.}\)</span></p>
+</div></section><section><h3>One more example</h3>
+<div align="left"> <p>What is the equation of the tangent line to the curve<div class="displaymath process-math">
+\begin{equation*}
+(x^2+y^2)^2=4xy
+\end{equation*}
+</div>at the point <span class="process-math">\((1,1)\text{?}\)</span></p>
+</div></section></section><section><section><h1>October 10</h1></section><section><h3>Inverse functions</h3>
+<div align="left"> <p>Recall: a function <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">one-to-one</dfn> if it never has the same <span class="process-math">\(y\)</span> value for two different <span class="process-math">\(x\)</span> values. That is, if <span class="process-math">\(x_1\neq x_2\text{,}\)</span> then <span class="process-math">\(f(x_1)\neq f(x_2)\text{.}\)</span></p> <p class="fragment">This means that the equation <span class="process-math">\(y=f(x)\)</span> has a unique solution for <span class="process-math">\(x\text{,}\)</span> for every <span class="process-math">\(y\)</span> in the range of <span class="process-math">\(f\text{.}\)</span> We set <span class="process-math">\(x=f^{-1}(y)\text{,}\)</span> and call <span class="process-math">\(f^{-1}\)</span> the <dfn class="terminology">inverse</dfn> of <span class="process-math">\(f\text{.}\)</span></p> <p class="fragment">Usually we swap <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> and write <span class="process-math">\(y=f^{-1}(x)\)</span> (because we like functions to depend on <span class="process-math">\(x\)</span>).</p> <p class="fragment">Note that <span class="process-math">\(y=f^{-1}(x)\)</span> is the same as <span class="process-math">\(f(y)=x\text{.}\)</span></p> <p class="fragment">Also note <span class="process-math">\(f(f^{-1}(x))=f(y)=x\text{,}\)</span> and <span class="process-math">\(f^{-1}(f(y))=f^{-1}(x)=y\text{,}\)</span> so when we compose a function with its inverse, they cancel out.</p>
+</div></section><section><h3>A familiar inverse</h3>
+<div align="left"> <p>Recall that <span class="process-math">\(\ln(x)\)</span> is defined as the inverse of <span class="process-math">\(e^x\text{:}\)</span></p> <p>If <span class="process-math">\(f(x)=e^x\text{,}\)</span> then <span class="process-math">\(f^{-1}(x)=\ln(x)\text{.}\)</span></p> <p>Pretend for a minute that we don’t already know the derivative of <span class="process-math">\(\ln(x)\text{.}\)</span></p> <p>If <span class="process-math">\(y=\ln(x)\text{,}\)</span> then <span class="process-math">\(e^y=x\text{.}\)</span></p> <p>Given <span class="process-math">\(e^y=x\text{,}\)</span> find <span class="process-math">\(\frac{dy}{dx}\)</span> using implicit differentiation.</p>
+</div></section><section><h3>Finding a general formula</h3>
+<div align="left"> <p>Recall that a function <span class="process-math">\(f\)</span> and its inverse satisfy the relationship<div class="displaymath process-math">
+\begin{equation*}
+f(f^{-1}(x))=x\text{.}
+\end{equation*}
+</div></p> <p>The derivative of the right-hand side of this equation is 1. What is the derivative of the left-hand side?</p>
+</div></section><section><h3>The derivative of an inverse function</h3>
+<div align="left"> <p>According to our last exercise,<div class="displaymath process-math">
+\begin{equation*}
+(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}\text{.}
+\end{equation*}
+</div>We can also say <span class="process-math">\(y'=1/f'(y)\text{,}\)</span> if <span class="process-math">\(y=f^{-1}(x)\text{.}\)</span></p> <p>The function <span class="process-math">\(f(x) = x^2-6x+4\)</span> is not one-to-one. (Why?)</p> <p>It <em class="emphasis">is</em> one-to-one on the domain <span class="process-math">\([3,\infty)\text{:}\)</span> if we complete the square, <span class="process-math">\(f(x)=(x-3)^2-5\text{.}\)</span> On this domain, we can define an inverse <span class="process-math">\(f^{-1}(x)\text{.}\)</span></p> <p>What is the equation of the tangent line to <span class="process-math">\(y=f^{-1}(x)\)</span> when <span class="process-math">\(x=4\text{?}\)</span></p> <p><em class="emphasis">Hint:</em> notice that <span class="process-math">\(f(6)=4\text{.}\)</span></p>
+</div></section><section><h3>Inverse trig functions</h3>
+<div align="left"> <p>Consider <a class="external" href="https://www.geogebra.org/m/u9yymyzn" target="_blank">the graph <span class="process-math">\(y=\sin(x)\)</span></a>.</p> <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/sinx.png" class="contained" alt="A sinusoidal curve depicting the graph of sin(x)"></div> <p>Is the function <span class="process-math">\(f(x)=\sin(x)\)</span> one-to-one?</p> <p>If we want to define an inverse, we need an interval where it is one-to-one. We would also like this interval to include the full range of the function.</p> <p>What is such an interval?</p>
+</div></section><section><h3>The derivative of <span class="process-math">\(\arcsin(x)\)</span>
+</h3>
+<div align="left"> <p>The inverse of <span class="process-math">\(f(x)=\sin(x)\)</span> on <span class="process-math">\([-\pi/2,\pi/2]\)</span> is denoted by either <span class="process-math">\(\sin^{-1}(x)\)</span> or <span class="process-math">\(\arcsin(x)\text{.}\)</span></p> <p><span class="process-math">\(\arcsin(x)\)</span> is less confusing.</p> <p>If <span class="process-math">\(y=\arcsin(x)\text{,}\)</span> then <span class="process-math">\(\sin(y)=x\text{,}\)</span> and <span class="process-math">\(y\in [-\pi/2,\pi/2]\text{.}\)</span></p> <div style="display:table;margin-left:0%;margin-right:0%;" class="sidebyside">
+<div style="display:table-cell;width:45%;vertical-align:top;"><p>Given that <span class="process-math">\(\sin(y)=x\text{,}\)</span> what is <span class="process-math">\(y'\text{?}\)</span><ol class="upper-alpha" id="root-1-2-13-7-5-1-3">
+<li><p><span class="process-math">\(\displaystyle \cos(y)\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \dfrac{1}{\cos(y)}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \dfrac{1}{\sin(x)}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \dfrac{x}{\cos(x)}\)</span></p></li>
+</ol></p></div>
+<div style="display:table-cell;width:10%;vertical-align:top;"><p><span class="process-math">\(\phantom{12345}\)</span></p></div>
+<div style="display:table-cell;width:45%;vertical-align:top;">
+<p class="fragment">Recall that <span class="process-math">\(\cos^2(y)+\sin^2(y)=1\text{.}\)</span> Therefore, <span class="process-math">\(\cos(y) = \pm\sqrt{1-\sin^2(y)}\text{.}\)</span></p>
+<p class="fragment">But <span class="process-math">\(\sin(y)=x\text{,}\)</span> and <span class="process-math">\(\cos(y)\geq 0\)</span> if <span class="process-math">\(y\in [-\pi/2,\pi/2]\text{,}\)</span> so <span class="process-math">\(\cos(y)=\sqrt{1-x^2}\text{.}\)</span></p>
+<p class="fragment">Therefore, <span class="process-math">\(\dfrac{d}{dx}\arcsin(x) = \dfrac{1}{\sqrt{1-x^2}}\)</span></p>
+</div>
+</div>
+</div></section><section><h3>The derivative of <span class="process-math">\(\arctan(x)\)</span>
+</h3>
+<div align="left"> <p>Looking at <a class="external" href="https://www.geogebra.org/m/mydduwrr" target="_blank">the graph of <span class="process-math">\(\tan(x)\)</span></a>, we see that the tangent function also is not one-to-one, but it is one-to-one on the interval <span class="process-math">\(\left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)\text{.}\)</span> (Why an open interval this time?)</p> <p>If <span class="process-math">\(y=\arctan(x)\text{,}\)</span> (also written as <span class="process-math">\(\tan^{-1}(x)\)</span>) then <span class="process-math">\(\tan(y)=x\text{,}\)</span> and <span class="process-math">\(y\in \left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)\text{.}\)</span></p> <p>What is the derivative of <span class="process-math">\(f(x)=\arctan(x)\text{?}\)</span> (Hint: <span class="process-math">\(\sec^2(y)=1+\tan^2(y)\)</span>)</p>
 </div></section></section>
 </div>
 </div></body>
