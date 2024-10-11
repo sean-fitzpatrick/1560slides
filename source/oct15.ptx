@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section>
-  <title>October 26</title>
+  <title>October 15 (End of Unit 2!)</title>
 
   <slide>
     <title>Extreme Values</title>
@@ -26,15 +26,15 @@
       </statement>
     </definition>
 
-    <p>
+    <p pause="yes">
       Note that the maximum and minimum are values of the function (<m>y</m> values).
     </p>
 
-    <p>
+    <p pause="yes">
       It is possible for a max/min to occur at more than one <m>x</m> coordinate.
     </p>
 
-    <p>
+    <p pause="yes">
       We use language like <q><m>f(2)=7</m> is the absolute maximum</q>, 
       or <q><m>f</m> has a global maximum value of <m>7</m> when <m>x=2</m>.</q>
     </p>
@@ -42,15 +42,13 @@
 
   <slide>
     <title>Identifying the max and min</title>
-    <sidebyside widths="40% 60%">
+    <sidebyside widths="50% 35%">
     <p>
       For the function whose graph is shown, which point corresponds to the absolute maximum?
       Which point corresponds to the absolute minimum?
     </p>
 
-    <image source="images/maxmin1.png" width="80%">
-      <description></description>
-    </image>
+    <image source="maxmin1.png"/>
     </sidebyside>
   </slide>
 
@@ -58,9 +56,7 @@
     <title>Identifying the max and min, again</title>
 
     <sidebyside widths="50% 50%">
-      <image source="images/maxmin2.png" width="80%">
-        <description></description>
-      </image>
+      <image source="maxmin2.png"/>
 
       <stack>
         <p>
@@ -97,7 +93,7 @@
       </statement>
     </theorem>
     
-    <p>
+    <p pause="yes">
       <em>Question:</em> where in the interval can the points <m>c_1,c_2</m> occur?
       What can we say about the behaviour of <m>f(x)</m> at these points?
     </p>
@@ -132,20 +128,23 @@
       and see if we can identify the local maximum and minimum values.
     </p>
 
-    <p pause="yes">
-      <em>Note:</em> that whenever we have a global maximum/minimum value,
-      it is also a <alert>local</alert> maximum/minimum value.
-    </p>
+    <sidebyside widths="25% 30% 40%">
+      <image source="maxmin1.png"/>
+      <image source="maxmin2.png"/>
+      <stack>
+        <p pause="yes">
+          The global maximum is the largest of the local maxima,
+          and the global minimum is the smallest of the local minima.
+        </p>
+    
+        <p pause="yes">
+          Think about the local max/min values that did not occur at an endpoint.
+          What did the graph look like near those points?
+        </p>
+      </stack>
+    </sidebyside>
 
-    <p pause="yes">
-      The global maximum is the largest of the local maxima,
-      and the global minimum is the smallest of the local minima.
-    </p>
-
-    <p pause="yes">
-      Think about the local max/min values that did not occur at an endpoint.
-      What did the graph look like near those points?
-    </p>
+    
   </slide>
 
   <slide>

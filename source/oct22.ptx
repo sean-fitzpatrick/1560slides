@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>October 22</title>
+
+  <slide>
+    <title>First derivative test</title>
+    
+    <p>
+      Recall the following:
+      <ul>
+        <li>
+          <p>
+            If <m>f</m> is defined on an <em>open</em> interval <m>(a,b)</m>,
+            and <m>f</m> has a local extremum at a point <m>c</m> in <m>(a,b)</m>,
+            then <m>c</m> is a critical point of <m>f</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            A point <m>c</m> is a critical point if <m>f'(c)=0</m> or <m>f'(c)</m> is undefined.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p pause="yes">
+      Not every critical point is necessarily a maximum or a minimum!
+    </p>
+
+    <p pause="yes">
+      How do we tell if a critical point is a max or a min? (Without graphing...)
+    </p>
+
+    <p pause="yes">
+      <term>First derivative test</term>: 
+      <ul pause="yes">
+        <li>
+          <p>
+            If <m>f'(x)</m> changes from positive to negative at <m>c</m>
+      (moving left to right), then <m>f</m> has a local maximum at <m>c</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>f'(x)</m> changes from negative to positive at <m>c</m>, then <m>f</m> has a local minimum at <m>c</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>f</m> does not change sign at <m>c</m>, there is neither a maximum nor a minimum at <m>c</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+
+  </slide>
+
+  <slide>
+    <title>Classifying critical points</title>
+    
+    <sidebyside widths="45% 5% 45%">
+      <stack>
+        <p>
+          If <m>f(x)=x^4-2x^2</m>, then
+          <md>
+            <mrow>f'(x)\amp =4x^3-4x</mrow>
+            <mrow> \amp =4x(x-1)(x+1)</mrow>
+          </md>.
+          
+        </p>
+
+        <p>
+          Which of the following is true?
+          <ol marker="A.">
+            <li>
+              <p>
+                <m>f</m> has maxima at <m>1</m> and <m>-1</m>, and a minimum at 0.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f</m> has a maximum at 0, and minima at <m>1</m> and <m>-1</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                There is neither a maximum nor a minimum at 0.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f</m> has maxima at 0 and 1, and a minimum at <m>-1</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </stack>
+
+      <p>
+        <m>\phantom{abcd}</m>
+      </p>
+
+      <stack pause="yes">
+        <p>
+          If <m>f(x)=x^4-4x^3</m>, then
+          <md>
+            <mrow>f'(x) \amp = 4x^3-12x^2</mrow>
+            <mrow> \amp = 4x^2(x-3)</mrow>
+          </md>
+        </p>
+
+        <p>
+          Which of the following is true?
+          <ol marker="A.">
+            <li>
+              <p>
+                <m>f</m> has a maximum at 3 and a minimum at 0
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>f</m> has a minimum at 3 and a maximum at 0
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>f</m> has a maximum at 3, and neither a min nor a max at 0
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f</m> has a minimum at 3, and neither a min nor a max at 0
+              </p>
+            </li>
+          </ol>
+        </p>
+      </stack>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Concavity</title>
+    
+    <p>
+      The <q>concavity of a graph</q> has to do with its curvature:
+      in what way does the graph deviate from a straight line?
+    </p>
+
+    <p>
+      <ul pause="yes">
+        <li>
+          <p>
+            If the graph of a function <m>f</m> curves upward, we say it is <term>concave up</term>.
+            <ul pause="yes">
+              <li>
+                <p>
+                  When the graph of <m>f</m> is concave up, secant lines lie <em>above</em> the graph,
+                  and tangent lines (where they exist) lie <em>below</em> the graph.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  If <m>f''(x)\gt 0</m> on an interval <m>I</m>, the graph of <m>f</m> is concave up on <m>I</m>
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If the graph of a function <m>f</m> curves downward, we say it is <term>concave down</term>.
+            <ul pause="yes">
+              <li>
+                <p>
+                  When the graph of <m>f</m> is concave down, secant lines lie <em>below</em> the graph,
+                  and tangent lines (where they exist) lie <em>above</em> the graph.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  If <m>f''(x)\lt 0</m> on an interval <m>I</m>, the graph of <m>f</m> is concave down on <m>I</m>
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p pause="yes">
+      A point <m>c</m> where the graph of <m>f</m> changes concavity is called an <term>inflection point</term>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Finding intervals of concavity</title>
+    
+    <p>
+      Find the intervals on which the graph of <m>f(x)=x^4-4x^3</m> is concave up,
+      and the intervals on which the graph is concave down.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Second derivative test</title>
+    
+    <p>
+      Suppose <m>f</m> is a differentiable function.
+    </p>
+
+    <p>
+      At a local minimum, the graph should be concave up: <m>f''(x)\gt 0</m>.
+    </p>
+
+    <p>
+      At a local maximum, the graph should be concave down: <m>f''(x)\lt 0</m>.
+    </p>
+  </slide>
+  
+</section>
