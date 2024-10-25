@@ -144,7 +144,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <xi:include href="./oct22.ptx"/>
         <xi:include href="./oct24.ptx"/>
         <xi:include href="./oct29.ptx"/>
-        <!-- <xi:include href="./oct31.ptx"/> -->
+        <xi:include href="./oct31.ptx"/>
         <!-- <xi:include href="./nov5.ptx"/> -->
         <!-- <xi:include href="./nov7.ptx"/> -->
         <!-- <xi:include href="./nov19.ptx"/> -->

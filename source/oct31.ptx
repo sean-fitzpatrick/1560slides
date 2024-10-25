@@ -7,9 +7,104 @@
     <title>Optimization problems</title>
     
     <p>
-      TBD
+      Standard context: maximize or minimize some quantity, subject to some constraint.
     </p>
 
+    <p>
+      For example: find the dimensions of the rectangle of largest area that can fit within a semicircle of radius 4.
+      <ul>
+        <li>
+          <p>
+            <m>A = LW</m> for a rectangle.
+          </p>
+        </li>
+        <li>
+          <p>
+            This is a function of two variables! How do we maximize?
+          </p>
+        </li>
+        <li>
+          <p>
+            Use the constraint to eliminate a variable...
+          </p>
+        </li>
+      </ul>
+    </p>
     
+    <p>
+      We might need a picture...
+    </p>
+
+    <image source="maxArea.png">
+      <shortdescription>A rectangle within a semicircle, but not necessarily of maximal area</shortdescription>
+      
+    </image>
+  </slide>
+
+  <slide>
+    <title>A calculus classic: the soda can</title>
+    <p>
+      A standard soda can holds 355 millilitres (cubic centimetres) of fluid.
+    </p>
+
+    <p>
+      What should be the dimensions of the can if we want to minimize the amount of material used to manufacture it?
+    </p>
+
+    <p pause="yes">
+      Note: <q>amount of material</q> is often code for <q>surface area</q>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Serious business</title>
+    <p>
+      Here are some fancy terms and functions relevant to people who like money:
+      <ul>
+        <li>
+          <p>
+            <m>C(x)</m> <mdash/> the cost per unit of producing some item
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>C'(x)</m> <mdash/> the <em>marginal cost</em>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>p(x)</m> <mdash/> the price per unit that can be charged if <m>x</m> units are sold,
+            sometimes known as the <em>demand function</em>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>R(x)=xp(x)</m> <mdash/> the <em>revenue function</em>, and <m>R'(x)</m>, the <em>marginal revenue</em>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>P(x)=R(x)-C(x)</m> <mdash/> the <term>profit function</term>, and <m>P'(x)</m>, the <em>marginal profit</em>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Let <m>c(x) = C(x)/x</m> denote the <em>average cost</em> of an item. Show that if <m>c(x)</m> is a minimum,
+      then the marginal cost equals the average cost.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Something more practical</title>
+    <p>
+      A box with no lid will be constructed from a 40 cm by 50 cm piece of cardboard,
+      by cutting a square from each corner, and then folding up the sides.
+    </p>
+
+    <p>
+      Determine the size of square that should be cut in order to maximize the volume of the box.
+    </p>
   </slide>
 </section>
