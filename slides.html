@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-10-18T12:45:04-06:00       *-->
+<!--*       on 2024-10-25T13:12:52-06:00       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -979,7 +979,7 @@ PV = nRT\text{,}
 \end{equation*}
 </div>where <span class="process-math">\(n\)</span> and <span class="process-math">\(R\)</span> are constants (whose values we don’t really care about, since this is math class, not chemistry).</p> <p>If all three quantities are changing with respect to time, we get <span class="process-math">\(P(t)V(t)=nRT(t)
 \text{,}\)</span> and taking derivatives gives <span class="process-math">\(P'(t)V(t)+P(t)V'(t)=nRT'(t)
-\text{.}\)</span></p> <p class="fragment">Typical question: if temperature remains constant at <span class="process-math">\(20^\circ\)</span> C, and the volume is increasing at a rate of 15 hogsheads per fortnight, at what rate is the pressure changing when the volume is 80 gallons?</p> <p class="fragment">State your answer in the form of a question.</p>
+\text{.}\)</span></p> <p class="fragment">Typical question: if temperature remains constant at <span class="process-math">\(20^\circ\)</span> C, and the volume is increasing at a rate of 15 hogsheads per fortnight, at what rate is the pressure changing when the volume is 80 gallons?</p>
 </div></section><section><h3>An actual example</h3>
 <div align="left"> <p>A spherical balloon is being inflated at a rate of 25 cm<span class="process-math">\(^3\)</span> per second. At what rate is the radius of the balloon increasing when the volume is 100 cm<span class="process-math">\(^3\text{?}\)</span></p> <p class="fragment">First of all: what is the formula for the volume of a sphere?</p> <p class="fragment">What is <span class="process-math">\(\frac{dV}{dt}\)</span> in terms of <span class="process-math">\(r\)</span> and <span class="process-math">\(\frac{dr}{dt}\text{?}\)</span></p> <p class="fragment">What is the value of <span class="process-math">\(\frac{dr}{dt}\)</span> when <span class="process-math">\(V=100\text{?}\)</span><ol class="upper-alpha" id="root-1-2-18-3-5-3">
 <li class="fragment"><p>Not possible to say, since we don’t know <span class="process-math">\(r\)</span></p></li>
@@ -994,6 +994,24 @@ PV = nRT\text{,}
 </ul></p> <p class="fragment">What theorem will give us the relationship between these distances?</p> <p class="fragment">At what rate is the distance to second base changing?</p>
 </div></section><section><h3>One more example</h3>
 <div align="left"> <p>A spotlight is on the ground, 30 metres away from a tall building. A person, who is 2 metres tall, walks from the light toward the building at a speed of 1.5 metres per second.</p> <p>At what rate is the length of the person’s shadow changing when they are 10 metres away from the building?</p>
+</div></section></section><section><section><h1>October 31</h1></section><section><h3>Optimization problems</h3>
+<div align="left"> <p>Standard context: maximize or minimize some quantity, subject to some constraint.</p> <p>For example: find the dimensions of the rectangle of largest area that can fit within a semicircle of radius 4.<ul class="disc" id="root-1-2-19-2-3-1">
+<li><p><span class="process-math">\(A = LW\)</span> for a rectangle.</p></li>
+<li><p>This is a function of two variables! How do we maximize?</p></li>
+<li><p>Use the constraint to eliminate a variable...</p></li>
+</ul></p> <p>We might need a picture...</p> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/maxArea.png" class="contained" alt="A rectangle within a semicircle, but not necessarily of maximal area"></div>
+</div></section><section><h3>A calculus classic: the soda can</h3>
+<div align="left"> <p>A standard soda can holds 355 millilitres (cubic centimetres) of fluid.</p> <p>What should be the dimensions of the can if we want to minimize the amount of material used to manufacture it?</p> <p class="fragment">Note: “amount of material” is often code for “surface area”.</p>
+</div></section><section><h3>Serious business</h3>
+<div align="left"> <p>Here are some fancy terms and functions relevant to people who like money:<ul class="disc" id="root-1-2-19-4-2-1">
+<li><p><span class="process-math">\(C(x)\)</span> — the cost per unit of producing some item</p></li>
+<li><p><span class="process-math">\(C'(x)\)</span> — the <em class="emphasis">marginal cost</em></p></li>
+<li><p><span class="process-math">\(p(x)\)</span> — the price per unit that can be charged if <span class="process-math">\(x\)</span> units are sold, sometimes known as the <em class="emphasis">demand function</em></p></li>
+<li><p><span class="process-math">\(R(x)=xp(x)\)</span> — the <em class="emphasis">revenue function</em>, and <span class="process-math">\(R'(x)\text{,}\)</span> the <em class="emphasis">marginal revenue</em></p></li>
+<li><p><span class="process-math">\(P(x)=R(x)-C(x)\)</span> — the <dfn class="terminology">profit function</dfn>, and <span class="process-math">\(P'(x)\text{,}\)</span> the <em class="emphasis">marginal profit</em></p></li>
+</ul></p> <p>Let <span class="process-math">\(c(x) = C(x)/x\)</span> denote the <em class="emphasis">average cost</em> of an item. Show that if <span class="process-math">\(c(x)\)</span> is a minimum, then the marginal cost equals the average cost.</p>
+</div></section><section><h3>Something more practical</h3>
+<div align="left"> <p>A box with no lid will be constructed from a 40 cm by 50 cm piece of cardboard, by cutting a square from each corner, and then folding up the sides.</p> <p>Determine the size of square that should be cut in order to maximize the volume of the box.</p>
 </div></section></section>
 </div>
 </div></body>
