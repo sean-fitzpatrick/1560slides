@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>November 7</title>
+
+  <slide>
+    <title>Improving the linear approximation</title>
+    
+    <p>
+      When a linear approximation isn't good enough, 
+      we can consider adding in higher-order corrections.
+    </p>
+
+    <p>
+      If the graph <m>y=f(x)</m> is concave down at <m>c</m>,
+      will the linear approximation <m>\ell(x)</m> at <m>c</m>
+      give an overestimate, or an underestimate? 
+    </p>
+
+    <p>
+      What if the graph is concave up?
+    </p>
+
+    <p>
+      To account for this, we can add a <q>second-order correction</q>.
+      That is, we can look for a <em>quadratic approximation</em>
+      <me>
+        q(x) = A+B(x-c)+C(x-c)^2
+      </me>.
+      
+    </p>
+
+    <p pause="yes">
+      We want <m>q(c)=f(c)</m>, so <m>A=f(c)</m>.
+    </p>
+
+    <p pause="yes">
+      We want <m>q'(c)=f'(c)</m> (it seemed like a good idea for the linear approximation),
+      so <m>B = f'(c)</m>. (Notice that <m>q'(x)=B+2C(x-c)</m>.)
+    </p>
+
+    <p pause="yes">
+      It seems reasonable for the quadratic approximation to agree with the concavity of <m>f(x)</m>,
+      so we ask that <m>q''(c)=f''(c)</m>, which implies <m>2C=f''(c)</m>, or <m>C = \frac{f''(c)}{2}</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>A quadratic approximation</title>
+    
+    <p>
+      We just found that a quadratic approximation to <m>f(x)</m> at <m>c</m> is
+      <me>
+        q(x) = f(c)+f'(c)(x-c)+\frac{f''(c)}{2}(x-c)^2
+      </me>.
+      
+    </p>
+
+    <p>
+      What is the quadratic approximation to <m>f(x)=\sqrt{x}</m> at <m>4</m>?
+    </p>
+
+    <p>
+      Recall that we already found the linear approximation <m>\ell(x)=2+\frac14(x-4)</m>.
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>q(x)=-\dfrac14 x^{-3/2}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>q(x) = -\dfrac{1}{64}(x-4)^2</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>q(x) = 2+\dfrac14(x-4)-\dfrac{1}{64}(x-4)^2</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>q(x) = 2+\dfrac14-\dfrac{1}{64}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p pause="yes">
+      Using the quadratic approximation, we find <m>\sqrt{4.2}\approx 2.049875</m>.
+      The calculator gives a value of <m>\sqrt{4.2}\approx 2.04939</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Taylor polynomials</title>
+    
+    <p>
+      The continuation of this process of adding higher-order corrections leads
+      to what are called <term>Taylor polynomials</term>
+    </p>
+
+    <p>
+      Given a function <m>f(x)</m> such that derivatives of <m>f</m> of all orders exist at <m>c</m>,
+      the degree <m>n</m> Taylor polynomial of <m>f</m> at <m>c</m> is
+      <me>
+        p_n(x) = f(c)+f'(c)(x-c)+\frac{f''(c)}{2!}(x-c)^2+\frac{f'''(c)}{3!}(x-c)^3+\cdots + \frac{f^{(n)}(c)}{n!}(x-c)^n
+      </me>.
+      The special case when <m>c=0</m> is called a <term>Maclaurin polynomial</term>.
+    </p>
+
+    <p pause="yes">
+      Note that <m>f^{(n)}(c)</m> means the <m>n</m>th derivative of <m>f</m> at <m>c</m>,
+      and <m>n!</m> is the <term>factorial</term> of <m>n</m>:
+      the product of all integers from 1 to <m>n</m>.
+    </p>
+
+    <p pause="yes">
+      Note <m>1!=1</m>, <m>2! = 1(2)=2</m>, <m>3! = 1(2)(3)=6</m>, <m>4! = 1(2)(3)(4)=24</m>, and so on.
+    </p>
+
+    <p pause="yes">
+      Taylor polynomials can be a <url href="https://www.geogebra.org/m/R7BPfVZC">very effective tool</url>
+      for approximating a function.
+    </p>
+  </slide>
+
+  <slide>
+    <title>We'd better try it out</title>
+    
+    <p>
+      Earlier, we found that the degree 2 Taylor polynomial of <m>f(x)=\sqrt{x}</m> at 4 is
+      <me>
+        p_2(x) = 2 + \frac14(x-2)-\frac{1}{64}(x-2)^2
+      </me>,
+      since <m>f(4)=\sqrt{4}=2</m>, <m>f'(4)=\frac12 (4)^{-1/2} = \frac14</m>, and <m>f''(4)=-\frac14 (4)^{-3/2} = \frac{1}{32}</m>
+    </p>
+
+    <p>
+      What is the degree 5 Maclaurin polynomial of <m>f(x)=\sin(x)</m>? (Maclaurin means Taylor, but <m>c</m> is 0.)
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>p_5(x) = x-x^3+x^5</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>p_5(x) = 1+x+x^2+x^3+x^4+x^5</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>p_5(x) = x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>p_5(x) = -x+\dfrac{x^3}{3!}-\dfrac{x^5}{5!}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p pause="yes">
+      What if we wanted the Maclaurin polynomial of degree 15? What about <m>\sin(2x)</m>?
+    </p>
+  </slide>
+
+  <slide>
+    <title>Do we have time for one more?</title>
+    
+    <p>
+      Find the degree 4 Maclaurin polynomial of <m>f(x) = \dfrac{1}{1-x}</m>.
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            <m>1+1+1+1=4</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>1+0+0+0=1</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>1-x+x^2-x^3+x^4</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>1+x+x^2+x^3+x^4</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p pause="yes">
+      What if we wanted to do the same for <m>f(x) = \dfrac{3}{5-x}</m>?
+    </p>
+  </slide>
+</section>
