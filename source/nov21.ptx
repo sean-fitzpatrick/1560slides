@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>November 21</title>
+
+  <slide>
+    <title>The broken odemeter</title>
+    
+    <p>
+      Note: for constant velocity <m>v</m>, distance travelled is velocity times time: <m>d = vt</m>.
+    </p>
+
+    <p>
+      Note also: the product <m>vt</m> could be interpreted as the area of a rectangle, at least when <m>v,t</m> are both positive.
+    </p>
+
+    <p>
+      Imagine we are driving in a car where the speedometer works, but the odometer is broken,
+      and we want to keep track of how far we've gone. I'm driving, and every minute, you record the following speeds in km/h:
+    </p>
+
+    <tabular>
+      <row>
+        <cell>Time</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>8</cell><cell>9</cell><cell>10</cell>
+      </row>
+      <row>
+        <cell>Speed</cell><cell>60</cell><cell>68</cell><cell>75</cell><cell>81</cell><cell>58</cell><cell>70</cell><cell>74</cell><cell>77</cell><cell>79</cell><cell>82</cell>
+      </row>
+    </tabular>
+
+    <p pause="yes">
+      How far have we gone after 10 minutes?
+    </p>
+
+    <p pause="yes">
+      What would it mean if one of the speeds was negative?
+    </p>
+  </slide>
+
+  <slide>
+    <title>Coming soon: Fundamental Theorem of Calculus</title>
+    
+    <p>
+      Notice that we have two ways of recovering position from velocity:
+      <ol pause="yes">
+        <li>
+          <p>
+            Using an antiderivative
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Calculating (and adding up) areas
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p pause="yes">
+      In the first case, we need to know the velocity function <em>exactly</em>.
+    </p>
+    <p pause="yes">
+      In the second, approximate data is good enough for an estimate.
+    </p>
+
+    <p pause="yes">
+      In the second approach, if it were possible to compute an exact area,
+      the two results would be the same.
+    </p>
+
+    <p pause="yes">
+      This is essentially what the Fundamental Theorem of Calculus says. (Tune in next time.)
+    </p>
+
+  </slide>
+
+  <slide>
+    <title>The definite integral (working definition)</title>
+    
+    <p>
+      First: let's make sense of what we mean by area.
+    </p>
+
+    <p>
+      Let <m>f</m> be a continuous function defined on an interval <m>[a,b]</m>.
+    </p>
+
+    <p>
+      The <term>definite integral</term> of <m>f</m> from <m>a</m> to <m>b</m> is denoted <m>\di \int_a^b f(x)\,dx</m>,
+      and defined to be the <em>total signed area</em> between the graph <m>y=f(x)</m> and the <m>x</m> axis, for <m>a\leq x\leq b</m>.
+    </p>
+
+    <sidebyside widths="50% 40%" margins="auto">
+      <image source="area1.png"/>
+
+      <image source="area2.png"/>
+    </sidebyside>
+  </slide>
+ 
+  <slide>
+    <title>Time to try it out!</title>
+    
+    <p>
+      What is the value of <m>\di \int_1^4 (6-2x)\,dx</m>?
+    </p>
+
+    <p>
+      Suggestion: sketch the line, and think triangles.
+    </p>
+
+    <p>
+      <ol marker="A.">
+        <li>
+          <p>
+            3
+          </p>
+        </li>
+
+        <li>
+          <p>
+            5
+          </p>
+        </li>
+
+        <li>
+          <p>
+            9
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>6x-x^2+C</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      Try for yourself: what are the values of the following?
+      <me>
+        \int_1^3 (6-2x)\,dx \quad \int_3^4 (6-2x)\,dx \quad \int_1^2 (6-2x)\,dx \quad \int_1^1 (6-2x)\,dx
+      </me>
+      
+    </p>
+  </slide>
+
+  <slide>
+    <title>Some properties</title>
+    
+    <p>
+      Using our area interpretation of the integral, we obtain the following properties:
+      <ul>
+        <li>
+          <p>
+            <m>\di \int_a^b f(x)\,dx + \int_b^c f(x)\,dx = \int_a^c f(x)\,dx</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\di \int_a^af(x)\,dx = 0</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\di \int_a^b (f(x)+g(x))\,dx = \int_a^b f(x)\,dx + \int_a^b g(x)\,dx</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\di \int_a^b kf(x)\,dx = k\int_a^b f(x)\,dx</m> if <m>k</m> is a constant
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>f(x)\leq g(x)</m> on <m>[a,b]</m>, then <m>\di \int_a^b f(x)\,dx \leq \int_a^b g(x)\,dx</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      It's not quite as obvious based on our area interpretation, but the following property is also useful:
+      <me>
+        \int_b^a f(x) \,dx = -\int_a^b f(x)\,dx
+      </me>.
+      
+    </p>
+  </slide>
+
+  <slide>
+    <title>Using properties</title>
+    
+    <p>
+      Suppose you know the following:
+      <me>
+        \int_1^3 f(x)\,dx = 6, \quad \int_3^4 f(x)\,dx = 3, \quad \int_1^3 g(x)\,dx = -2,\quad \int_1^4 g(x)\,dx = 1
+      </me>.
+      
+    </p>
+
+    <sidebyside widths="45% 10% 45%">
+      <p>
+        What is the value of <m>\di \int_1^4 (f(x)-2g(x))\,dx</m>?
+        <ol marker="A.">
+          <li>
+            <p>
+              10
+            </p>
+          </li>
+
+          <li>
+            <p>
+              7
+            </p>
+          </li>
+
+          <li>
+            <p>
+              8
+            </p>
+          </li>
+
+          <li>
+            <p>
+              4
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Not enough information to solve
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <m>\phantom{abcdefg}</m>
+      </p>
+
+      <p pause="yes">
+        What is the value of <m>\di \int_3^4(2f(x)+3g(x))\,dx</m>?
+        <ol pause="yes" marker="A.">
+          <li>
+            <p>
+              15
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              9
+            </p>
+          </li>
+
+          <li>
+            <p>
+              22
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Not enough information to solve
+            </p>
+          </li>
+        </ol>
+      </p>
+    </sidebyside>
+  </slide>
+
+  
+</section>

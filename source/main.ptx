@@ -113,14 +113,16 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <subtitle>Fall 2024</subtitle>
 
         <frontmatter>
-            <titlepage>
+            <bibinfo>
                 <author>
                     <personname>Sean Fitzpatrick</personname>
                     <institution>University of Lethbridge</institution>
                 </author>
                 <!-- <event>At a Test Conference</event> -->
                 <!-- <date><today/></date> -->
-            </titlepage>
+            </bibinfo>
+
+            <titlepage><titlepage-items/></titlepage>
 
             <!-- <abstract>
                 <p>An <tag>abstract</tag> can appear on an early slide, optionally.  This is a standard component of a <pretext/> <tag>article</tag> (but not of a <tag>book</tag>).</p>
@@ -147,10 +149,10 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <xi:include href="./oct31.ptx"/>
         <xi:include href="./nov05.ptx"/>
         <xi:include href="./nov07.ptx"/>
-        <!-- <xi:include href="./nov19.ptx"/> -->
-        <!-- <xi:include href="./nov21.ptx"/> -->
-        <!-- <xi:include href="./nov26.ptx"/> -->
-        <!-- <xi:include href="./nov28.ptx"/> -->
-        <!-- <xi:include href="./dec03.ptx"/> -->
+        <xi:include href="./nov19.ptx"/>
+        <xi:include href="./nov21.ptx"/>
+        <xi:include href="./nov26.ptx"/>
+        <xi:include href="./nov28.ptx"/>
+        <xi:include href="./dec03.ptx"/>
     </slideshow>
 </pretext>

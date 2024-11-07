@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>November 26</title>
+
+  <slide>
+    <title>Approximating area with rectangles</title>
+    
+    <p>
+      We only know how to find exact area for a handful of shapes: rectangles, triangles, circles, <etc/>
+    </p>
+
+    <p>
+      The area under <m>y=f(x)</m> is the definite integral, but how do we actually <em>compute</em> these things?
+    </p>
+
+    <p pause="yes">
+      We start by settling for an <em>approximation</em>.
+    </p>
+
+    <p pause="yes">
+      Consider the graph <m>y=10+3x-x^2</m>, on the interval <m>[0,4]</m>.
+    </p>
+
+    <sidebyside widths="40% 10% 40%">
+      <stack pause="yes">
+        <image source="area3.png"/>
+      </stack>
+
+      <p>
+        <m>\phantom{abcde}</m>
+      </p>
+      <stack pause="yes">
+        <p pause="yes">
+          Let's try to approximate the integral <m>\int_0^4 f(x)\,dx</m> using 4 rectangles,
+          with bases along the intervals <m>[0,1],[1,2],[2,3],[3,4]</m>.
+          How should we calculate the heights?
+        </p>
+
+        <p pause="yes">
+          Maybe we should <url href="https://www.geogebra.org/m/f2effbwq">let the computer do it</url>.
+        </p>
+      </stack>
+    </sidebyside>
+
+    
+  </slide>
+
+  <slide>
+    <title>Riemann sums</title>
+    
+    <p>
+      The sums we create by adding up areas of rectangles are called <term>Riemann sums</term>,
+      after Bernhard Riemann.
+    </p>
+
+    <p>
+      The general process is as follows. Given <m>f(x)</m> on <m>[a,b]</m>:
+      <ol pause="yes">
+        <li>
+          <p>
+            Divide the interval <m>[a,b]</m> into smaller sub-intervals by choosing points
+            <m>a=x_0\lt x_1\lt x_2\lt\cdots\lt x_n=b</m> (this is called a <term>partition</term>, which we'll label <m>P</m>)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The length of the interval <m>[x_{i-1},x_i]</m> is denoted <m>\Delta x_i = x_i-x_{i-1}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            It is usually convenient to make each sub-interval the same length, in which case
+            <m>\Delta x_i = \dfrac{b-a}{n}</m> (a <term>uniform partition</term>)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            In each interval, choose a point <m>c_i\in [x_{i-1},x_i]</m>,
+            and plug this into your function to get <m>f(c_i)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The area of the <m>i</m>th rectangle is then <m>A_i = f(c_i)\Delta x_i</m>, for <m>i=1,2,\ldots, n</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Adding the areas gives the <term>Riemann sum</term> <m>\di R(f,P) = \sum_{i=1}^nf(c_i)\Delta x_i</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p pause="yes">
+      Common choices for <m>c_i</m> are the left endpoint (<m>c_i=x_{i-1}</m>), the right endpoint (<m>c_i=x_i</m>),
+      or the midpoint (<m>c_i =(x_{i-1}+x_i)/2</m>).
+    </p>
+  </slide>
+
+  <slide>
+    <title>Time for some exercise</title>
+    
+    <p>
+      Let <m>f(x) = 5x-x^2</m>, on <m>[1,3]</m>.
+    </p>
+
+    <p pause="yes">
+      If we want a uniform partition of <m>[1,3]</m> into 4 rectangles, what is the value of <m>\Delta x</m>?
+    </p>
+
+    <p pause="yes">
+      A. <m>2\phantom{abcd}</m> B. <m>1\phantom{abcd}</m> C. <m>0.5\phantom{abcd}</m> D. <m>0.25</m>
+    </p>
+
+    <p pause="yes">
+      If we want to use left endpoints, which points should we use?
+    </p>
+
+    <p pause="yes">
+      A. <m>1.5, 2, 2.5\phantom{abcd}</m> B. <m>1, 1.5, 2, 2.5\phantom{abcd}</m> C. <m>1,1.5,2,2.5,3\phantom{abcd}</m> D. <m>1.5,2,2.5,3</m>
+    </p>
+
+    <p pause="yes">
+      Our Riemann sum is therefore:
+    </p>
+  </slide>
+
+  <slide>
+    <title>Take it to the limit</title>
+    
+    <p>
+      One more time: a Riemann sum lets us approximate a definite integral using rectangles.
+    </p>
+
+    <p>
+      And the more rectangles we use, the better our approximation gets.
+    </p>
+
+    <p>
+      What if we let <m>n\to\infty</m>?
+    </p>
+
+    <p>
+      Given <m>y=f(x)</m>, <m>a\leq x\leq b</m>, we set <m>\Delta x = \dfrac{b-a}{n}</m>, and then:
+      <me>
+        x_0 = a, x_1 = a+\Delta x, x_2 = a+2\Delta x,\cdots,x_i = a+i\Delta x,\cdots, x_n = a+n\Delta x = b
+      </me>
+    </p>
+
+    <p>
+      In the limit, it turns out to not matter how we choose the <m>c_i</m>,
+      so choose <m>c_i=x_i</m> for convenience.
+    </p>
+
+    <p>
+      Then: <m>\di \int_a^b f(x) \,dx = \lim_{n\to\infty}\sum_{i=1}^n f(x_i)\Delta x</m>
+    </p>
+  </slide>
+
+  <slide>
+    <title>In which Sean demonstrates why we don't use Riemann sums every day</title>
+    
+    <p>
+      Use Riemann sums to evaluate the integral <m>\di \int_1^5 (2x-3)\,dx</m>.
+    </p>
+  </slide>
+</section>

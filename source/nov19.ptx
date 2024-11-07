@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section>
-  <title>November 23</title>
+  <title>November 19</title>
 
   <slide>
     <title>Antiderivatives</title>
@@ -157,8 +157,7 @@
         <p>
           That is, <m>\di \int f(x)\,dx = F(x)+C</m>,
           where <m>F</m> is an antiderivative of  <m>f</m>,
-          and <m>C</m> is any constant.
-          
+          and <m>C</m> is any constant.          
         </p>
       </statement>
     </definition>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section>
-  <title>December 5</title>
+  <title>December 3</title>
 
   <slide>
     <title>Let's try using the FTC again</title>
@@ -66,134 +66,11 @@
     </p>
   </slide>
 
-  <slide>
-    <title>The other part of the FTC</title>
-    
-    <p>
-      I said that the Fundamental Theorem of Calculus has two parts, and we've seen the second.
-    </p>
-
-    <p>
-      What's the first part?
-    </p>
-
-    <p>
-      To use the FTC to evaluate <m>\int_a^b f(x)\,dx</m>, we need an antiderivative.
-      Can we always find one?
-    </p>
-
-    <p>
-      The first part of the FTC says that the answer is <q>yes, but you might not like it</q>.
-    </p>
-
-    <theorem xml:id="thm-ftc1">
-      <statement>
-        <p>
-          Let <m>f</m> be a continuous function on <m>[a,b]</m>.
-        </p>
-
-        <p>
-          Define a function <m>F</m> as follows:
-          <me>
-            F(x) = \int_a^x f(t)\,dt
-          </me>.
-          
-        </p>
-
-        <p>
-          Then <m>F</m> is differentiable on <m>[a,b]</m>, and <m>F'(x)=f(x)</m>.
-        </p>
-      </statement>
-    </theorem>
-    
-  </slide>
-
-  <slide>
-    <title>An exercise</title>
-    
-    <p>
-      Let <m>\di F(x) = \int_1^x 8t^3\,dt</m>
-    </p>
-
-    <p>
-      According to part 1 of the FTC, what is <m>F'(x)</m>?
-    </p>
-
-    <p>
-      A. <m>24t^2\phantom{abcdef}</m> B. <m>24x^2\phantom{abcdef}</m> C. <m>8x^3\phantom{abcdef}</m> D. <m>2x^4</m>
-    </p>
-
-    <p pause="yes">
-      If we use part 2 of the FTC, we can also find <m>\di F(x) = 2t^4\bigr\rvert_1^x = 2x^4-2</m>,
-      so <m>F'(x)=8x^3</m>.
-    </p>
-
-    <p pause="yes">
-      Which method is faster?
-    </p>
-
-    <p pause="yes">
-      What if you had no other way of coming up with an antiderivative?
-    </p>
-  </slide>
-
-  <slide>
-    <title>Some variations on this theme</title>
-    
-    <p>
-      If <m>\di F(x) = \int_0^x (t^2+2t\ln(t^2+1))e^{\sin(t^3)-4t}\,dt</m>,
-      do we have any hope of using the second part of the FTC?
-    </p>
-
-    <p pause="yes">
-      What is <m>F'(x)</m> according to the second part?
-    </p>
-
-    <p pause="yes">
-      What if <m>x</m> is the lower bound?
-    </p>
-
-    <p pause="yes">
-      What if the upper bound is not <m>x</m>, but a <em>function</em> of <m>x</m>?
-    </p>
-
-    <p pause="yes">
-      What if both bounds depend on <m>x</m>?
-    </p>
-  </slide>
-
-  <slide>
-    <title>FTC, part 1: harder problems</title>
-    
-    <p>
-      If <m>\di F(x) = \int_a^x f(t)\,dt</m> and <m>\di G(x) = \int_a^{h(x)}f(t)\,dt</m>, then <m>G(x)=F(h(x))</m>.
-    </p>
-
-    <p>
-      By the chain rule, <m>G'(x)=F'(h(x))h'(x)</m>.
-    </p>
-
-    <p pause="yes">
-      If <m>\di G(x) = \int_2^{\sin(x)}t^2e^{2t}\,dt</m>, what is <m>F'(x)</m>?
-    </p>
-
-    <p pause="yes">
-      A. <m>\int_2^{\cos(x)}t^2e^{2t}\,dt \phantom{abcd}</m> B. <m>(2te^{2t}+2t^2e^{2t})\cos(x) \phantom{abcd}</m> C. <m>\sin^2(x)e^{2\sin(x)}\cos(x)</m>
-    </p>
-
-    <p pause="yes">
-      How about <m>\di \int_{\sin(x)}^{\cos(x)}e^{-t^2}\,dt</m>?
-    </p>
-  </slide>
-
+  
   <slide>
     <title>Substitution</title>
     
     <p>
-      Speaking of chain rule...
-    </p>
-
-    <p pause="yes">
       If <m>F(x)=f(g(x))</m>, then <m>F'(x)=f'(g(x))g'(x)</m>. Therefore, <m>\di \int f'(g(x))g'(x)\,dx = f(g(x))+C</m>.
     </p>
 
@@ -211,9 +88,9 @@
 
     <p pause="yes">
       Or... let <m>u=x^2+4</m>. Then <m>du = 2x\,dx</m> (so <m>4x\,dx = 2\,du</m>), and
-      <me>
-        \int 4x(x^2+4)^7\,dx = \int 2u^7\,du
-      </me>.
+      <m>
+        \displaystyle \int 4x(x^2+4)^7\,dx = \int 2u^7\,du
+      </m>.
       
     </p>
   </slide>
