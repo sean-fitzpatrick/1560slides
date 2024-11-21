@@ -91,7 +91,7 @@
       and defined to be the <em>total signed area</em> between the graph <m>y=f(x)</m> and the <m>x</m> axis, for <m>a\leq x\leq b</m>.
     </p>
 
-    <sidebyside widths="30% 30%" margins="auto">
+    <sidebyside widths="20% 20%" margins="auto">
       <image source="area1.png"/>
 
       <image source="area2.png"/>
