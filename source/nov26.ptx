@@ -168,7 +168,7 @@
     <title>In which Sean demonstrates why we don't use Riemann sums every day</title>
     
     <p>
-      Use Riemann sums to evaluate the integral <m>\di \int_1^5 (2x-3)\,dx</m>.
+      Use Riemann sums to evaluate the integral <m>\di \int_1^3 (5x-x^2)\,dx</m>.
     </p>
   </slide>
 </section>
