@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-11-26T11:46:27-07:00       *-->
+<!--*       on 2024-11-27T13:13:08-07:00       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -1695,32 +1695,10 @@ x(b)-x(a) = (F(b)+C)-(F(a)+C) = F(b)-F(a)\text{.}
 </h4>
 <p>Let <span xmlns:pf="https://prefigure.org" class="process-math">\(f\)</span> be a continuous function defined on the interval <span xmlns:pf="https://prefigure.org" class="process-math">\([a,b]\text{.}\)</span></p> <p>Let <span xmlns:pf="https://prefigure.org" class="process-math">\(F\)</span> be any antiderivative of <span xmlns:pf="https://prefigure.org" class="process-math">\(f\)</span> on <span xmlns:pf="https://prefigure.org" class="process-math">\([a,b]\text{.}\)</span></p> <p>Then <span xmlns:pf="https://prefigure.org" class="process-math">\(\di \int_a^b f(x)\,dx = F(b)-F(a)\text{.}\)</span></p></article><p class="fragment"><em xmlns:pf="https://prefigure.org" class="emphasis">Notation note:</em> we often write <span xmlns:pf="https://prefigure.org" class="process-math">\(F(x)\Bigr\rvert_a^b = F(b)-F(a)\)</span> as an intermediate step when evaluating a definite integral. First we get the antiderivative, and then we plug in the endpoints.</p>
 </div></section><section><h3>Let’s give it a try</h3>
-<div align="left">
-<p>Use the Fundamental Theorem of Calculus to evaluate the integral:<div xmlns:pf="https://prefigure.org" class="displaymath process-math">
-\begin{equation*}
-\int_1^2 (8x-3x^2)\,dx\text{.}
-\end{equation*}
-</div></p>
-<p>The value is:<ol class="upper-alpha" id="root-1-2-25-5-3-1">
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle 4x^2-x^3+C\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle -1\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle 5\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle 3\)</span></p></li>
-</ol></p>
-</div></section><section><h3>We might need more practice</h3>
-<div align="left">
-<p>Evaluate the definite integral:<div xmlns:pf="https://prefigure.org" class="displaymath process-math">
-\begin{equation*}
-\int_0^{\pi}(\sin(x)+e^x-2x)\,dx\text{.}
-\end{equation*}
-</div></p>
-<p>The value is:<ol class="upper-alpha" id="root-1-2-25-6-3-1">
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle -\cos(x)+e^x-x^2+C\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle 1+e^{\pi}-\pi^2\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle -1+e^{\pi}-\pi^2\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle e^{\pi}-2\pi-1\)</span></p></li>
-</ol></p>
-</div></section><section><h3>But why does it work?</h3>
+<div align="left"><p>Use the Fundamental Theorem of Calculus to evaluate the integral:<ol class="decimal" id="root-1-2-25-5-2-1">
+<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle \int_1^2 (8x-3x^2)\,dx\)</span></p></li>
+<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle \int_0^{\pi/4}(\sin(x)+\cos(x))\,dx\)</span></p></li>
+</ol></p></div></section><section><h3>But why does it work?</h3>
 <div align="left">
 <p>Let <span xmlns:pf="https://prefigure.org" class="process-math">\(f\)</span> be continuous on <span xmlns:pf="https://prefigure.org" class="process-math">\([a,b]\text{.}\)</span></p>
 <p class="fragment">Let <span xmlns:pf="https://prefigure.org" class="process-math">\(F\)</span> be an antiderivative of <span xmlns:pf="https://prefigure.org" class="process-math">\(f\)</span> on <span xmlns:pf="https://prefigure.org" class="process-math">\([a,b]\text{,}\)</span> and let <span xmlns:pf="https://prefigure.org" class="process-math">\(a=x_0\lt x_1\lt x_2\lt\ldots\lt x_n\)</span> be a partition of <span xmlns:pf="https://prefigure.org" class="process-math">\([a,b]\text{.}\)</span></p>
@@ -1729,19 +1707,11 @@ x(b)-x(a) = (F(b)+C)-(F(a)+C) = F(b)-F(a)\text{.}
 <p class="fragment">Now notice that <span xmlns:pf="https://prefigure.org" class="process-math">\(F'(c_i)(x_i-x_{i-1}) = f(c_i)\Delta x_i\text{.}\)</span></p>
 <p class="fragment">So, <span xmlns:pf="https://prefigure.org" class="process-math">\(\di \sum_{i=1}^n f(c_i)\Delta x_i = \sum_{i=1}^n (F(x_{i})-F(x_{i-1})) = F(b)-F(a)\text{.}\)</span></p>
 </div></section><section><h3>Less proving, more doing</h3>
-<div align="left">
-<p>Evaluate the following integral:<div xmlns:pf="https://prefigure.org" class="displaymath process-math">
+<div align="left"><p>Evaluate the following integral:<div xmlns:pf="https://prefigure.org" class="displaymath process-math">
 \begin{equation*}
 \int_0^3 \lvert x^2-2x\rvert \,dx\text{.}
 \end{equation*}
-</div><em xmlns:pf="https://prefigure.org" class="alert">Proceed with caution:</em> the absolute value is piecewise-defined! You might need an integral property from Tuesday.</p>
-<p>The result is:<ol class="upper-alpha" id="root-1-2-25-8-3-1">
-<li><p>3</p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle \dfrac83\)</span></p></li>
-<li><p>0</p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle -\dfrac83\)</span></p></li>
-</ol></p>
-</div></section><section><h3>Area between curves</h3>
+</div><em xmlns:pf="https://prefigure.org" class="alert">Proceed with caution:</em> the absolute value is piecewise-defined! You might need an integral property from Section 5.2.</p></div></section><section><h3>Area between curves</h3>
 <div align="left">
 <p>If <span xmlns:pf="https://prefigure.org" class="process-math">\(f(x)\geq 0\)</span> on <span xmlns:pf="https://prefigure.org" class="process-math">\([a,b]\text{,}\)</span> then <span xmlns:pf="https://prefigure.org" class="process-math">\(\int_a^b f(x)\,dx \)</span> is the area under the graph of <span xmlns:pf="https://prefigure.org" class="process-math">\(f(x)\)</span> and above the <span xmlns:pf="https://prefigure.org" class="process-math">\(x\)</span> axis.</p>
 <p>If <span xmlns:pf="https://prefigure.org" class="process-math">\(f(x)\)</span> is sometimes negative, the integral gives us “signed area”.</p>
@@ -1756,31 +1726,14 @@ x(b)-x(a) = (F(b)+C)-(F(a)+C) = F(b)-F(a)\text{.}
 <div style="display:table-cell;width:10%;vertical-align:top;"><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\phantom{abcde}\)</span></p></div>
 <div style="display:table-cell;width:50%;vertical-align:top;"><img src="external/areabetween.png" class="contained"></div>
 </div>
-</div></section><section><h3>Finding area</h3>
-<div align="left">
-<p>Find the area between <span xmlns:pf="https://prefigure.org" class="process-math">\(f(x)=3x^2\)</span> and <span xmlns:pf="https://prefigure.org" class="process-math">\(g(x)=12\text{.}\)</span></p>
-<p><ol class="upper-alpha" id="root-1-2-25-10-3-1">
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle 16\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle 32\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle -32\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle -16\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle 0\)</span></p></li>
-</ol></p>
 </div></section><section><h3>Area again</h3>
 <div align="left">
 <p>A little harder, this time:</p>
 <p>Find the area that lies between <span xmlns:pf="https://prefigure.org" class="process-math">\(f(x)=\sin(x)\)</span> and <span xmlns:pf="https://prefigure.org" class="process-math">\(g(x)=\cos(x)\text{,}\)</span> for <span xmlns:pf="https://prefigure.org" class="process-math">\(0\leq x\leq \pi/2\text{.}\)</span></p>
 <p><em xmlns:pf="https://prefigure.org" class="emphasis">Hint:</em> which curve is on top? And when?</p>
-<p><ol class="upper-alpha" id="root-1-2-25-11-5-1">
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle 2\sqrt{2}-2\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle 0\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle 2-2\sqrt{2}\)</span></p></li>
-<li><p><span xmlns:pf="https://prefigure.org" class="process-math">\(\displaystyle -2\)</span></p></li>
-<li><p>2</p></li>
-</ol></p>
 </div></section><section><h3>The other part of the FTC</h3>
 <div align="left">
-<p>I said that the Fundamental Theorem of Calculus has two parts, and we’ve seen the second.</p>
+<p>The Fundamental Theorem of Calculus has two parts, and we’ve seen the second.</p>
 <p>What’s the first part?</p>
 <p>To use the FTC to evaluate <span xmlns:pf="https://prefigure.org" class="process-math">\(\int_a^b f(x)\,dx\text{,}\)</span> we need an antiderivative. Can we always find one?</p>
 <p>The first part of the FTC says that the answer is “yes, but you might not like it”.</p>
