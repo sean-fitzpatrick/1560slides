@@ -157,7 +157,7 @@
       What if we want to know the area <em>between</em> two curves?
     </p>
 
-    <sidebyside widths="40% 10% 50%">
+    <sidebyside widths="45% 20% 35%">
       <stack>
         <p>
           Example: what is the area between <m>y=x</m> and <m>y=x^2-x-3</m>?
@@ -180,7 +180,7 @@
       </stack>
 
       <p>
-        <m>\phantom{abcde}</m>
+        <m>\phantom{abcdefghigk}</m>
       </p>
 
       <image source="areabetween.png"/>
