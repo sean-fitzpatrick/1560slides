@@ -80,81 +80,21 @@
     
     <p>
       Use the Fundamental Theorem of Calculus to evaluate the integral:
-      <me>
-        \int_1^2 (8x-3x^2)\,dx
-      </me>.
-      
-    </p>
-
-    <p>
-      The value is:
-      <ol marker="A.">
+      <ol>
         <li>
           <p>
-            <m>4x^2-x^3+C</m>
+            <m>\int_1^2 (8x-3x^2)\,dx</m>
           </p>
         </li>
-
         <li>
           <p>
-            <m>-1</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>5</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>3</m>
+            <m>\int_0^{\pi/4}(\sin(x)+\cos(x))\,dx</m>
           </p>
         </li>
       </ol>
     </p>
-  </slide>
 
-  <slide>
-    <title>We might need more practice</title>
     
-    <p>
-      Evaluate the definite integral:
-      <me>
-        \int_0^{\pi}(\sin(x)+e^x-2x)\,dx
-      </me>.
-      
-    </p>
-
-    <p>
-      The value is:
-      <ol marker="A.">
-        <li>
-          <p>
-            <m>-\cos(x)+e^x-x^2+C</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>1+e^{\pi}-\pi^2</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>-1+e^{\pi}-\pi^2</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>e^{\pi}-2\pi-1</m>
-          </p>
-        </li>
-      </ol>
-    </p>
   </slide>
 
   <slide>
@@ -195,37 +135,10 @@
         \int_0^3 \lvert x^2-2x\rvert \,dx
       </me>.
       <alert>Proceed with caution:</alert> the absolute value is piecewise-defined! 
-      You might need an integral property from Tuesday.
+      You might need an integral property from Section 5.2.
     </p>
 
-    <p>
-      The result is:
-      <ol marker="A.">
-        <li>
-          <p>
-            3
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>\dfrac83</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            0
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>-\dfrac83</m>
-          </p>
-        </li>
-      </ol>
-    </p>
+    
   </slide>
 
   <slide>
@@ -274,47 +187,6 @@
     </sidebyside>
   </slide>
 
-  <slide>
-    <title>Finding area</title>
-    
-    <p>
-      Find the area between <m>f(x)=3x^2</m> and <m>g(x)=12</m>.
-    </p>
-
-    <p>
-      <ol marker="A.">
-        <li>
-          <p>
-            <m>16</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>32</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>-32</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>-16</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>0</m>
-          </p>
-        </li>
-      </ol>
-    </p>
-  </slide>
 
   <slide>
     <title>Area again</title>
@@ -332,46 +204,14 @@
       <em>Hint:</em> which curve is on top? And when?
     </p>
 
-    <p>
-      <ol marker="A.">
-        <li>
-          <p>
-            <m>2\sqrt{2}-2</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>0</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>2-2\sqrt{2}</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>-2</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            2
-          </p>
-        </li>
-      </ol>
-    </p>
+    
   </slide>
 
   <slide>
     <title>The other part of the FTC</title>
     
     <p>
-      I said that the Fundamental Theorem of Calculus has two parts, and we've seen the second.
+      The Fundamental Theorem of Calculus has two parts, and we've seen the second.
     </p>
 
     <p>
